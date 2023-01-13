@@ -1,17 +1,17 @@
-import Aayush_Mandal from "../../images/coordinators/Aayush_Mandalnew.jpg";
-import Abhisht_Pandey from "../../images/coordinators/Abhisht_Pandey.jpg";
-import Ambar_Dixit from "../../images/coordinators/Ambar_Dixit_new.jpg";
-import Ananya_Agrahari from "../../images/coordinators/Ananya_Agrahari.jpg";
-import Apoorva_Singh_ from "../../images/coordinators/Apoorva_Singh2.jpg";
-import Astitva from "../../images/coordinators/Astitva.jpg";
-import Dinesh_Jain from "../../images/coordinators/Dinesh_Jain.JPG";
-import K_Srigauri from "../../images/coordinators/K_Srigauri.jpg";
-import Parimal_Mathur from "../../images/coordinators/Parimal_Mathur.jpg";
-import Rajesh_Sahu from "../../images/coordinators/Rajesh_Sahu.jpg";
-import Saurabh_Patel from "../../images/coordinators/Saurabh_Patel.jpg";
-import Shubham_Agrawal from "../../images/coordinators/Shubham_Agrawal.jpg";
-import Swapnil_Pandey from "../../images/coordinators/Swapnil_Pandey.jpg";
-import Syam_Yadavalli from "../../images/coordinators/Syam_Yadavalli.jpg";
+import Aayush_Mandal from "../../../images/coordinators/Aayush_Mandalnew.jpg";
+import Abhisht_Pandey from "../../../images/coordinators/Abhisht_Pandey.jpg";
+import Ambar_Dixit from "../../../images/coordinators/Ambar_Dixit_new.jpg";
+import Ananya_Agrahari from "../../../images/coordinators/Ananya_Agrahari.jpg";
+import Apoorva_Singh_ from "../../../images/coordinators/Apoorva_Singh2.jpg";
+import Astitva from "../../../images/coordinators/Astitva.jpg";
+import Dinesh_Jain from "../../../images/coordinators/Dinesh_Jain.JPG";
+import K_Srigauri from "../../../images/coordinators/K_Srigauri.jpg";
+import Parimal_Mathur from "../../../images/coordinators/Parimal_Mathur.jpg";
+import Rajesh_Sahu from "../../../images/coordinators/Rajesh_Sahu.jpg";
+import Saurabh_Patel from "../../../images/coordinators/Saurabh_Patel.jpg";
+import Shubham_Agrawal from "../../../images/coordinators/Shubham_Agrawal.jpg";
+import Swapnil_Pandey from "../../../images/coordinators/Swapnil_Pandey.jpg";
+import Syam_Yadavalli from "../../../images/coordinators/Syam_Yadavalli.jpg";
 
 export const coordinatorsList = [
   {

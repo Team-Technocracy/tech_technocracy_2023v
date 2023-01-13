@@ -4,7 +4,7 @@ window.addEventListener('scroll',reveal);
 function reveal(){
 
     var reveals=document.querySelectorAll('.reveal');
-    console.log(reveals);
+    // console.log(reveals);
     for(let i=0;i<reveals.length;i++){
 
         var windowheight = window.innerHeight;

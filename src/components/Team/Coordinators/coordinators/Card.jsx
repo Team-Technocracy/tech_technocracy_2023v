@@ -43,6 +43,7 @@ function Card(props) {
                     <img className="card--img" src={props.img} alt="Technocracy Team"></img>
                 </div>
                 <h3 className={`card--name ${overAllC ? `overAllC` : ``}`}>{props.name}</h3>
+                <h4 className={`card--name ${overAllC ? `overAllC` : ``}`}>{props.domain}</h4>
                 <div className={`${socialClassName} ${downAni? "down-animation":""}`} id='card-social' onMouseEnter={handleToggle} onMouseLeave={handleToggle}>
                     <div className='card--social-control'>
                         <div className='card--social-toggle' id='card-toggle' >

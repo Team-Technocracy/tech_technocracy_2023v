@@ -7,9 +7,9 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(216, 95%, 25%);
   --first-color-light: hsl(29, 80%, 70%);
-  --black-color: hsl(0, 1%, 85%);
+  /* --black-color: hsl(0, 1%, 85%); */
   --text-color: hsl(29, 8%, 65%);
-  --body-color: hsl(29, 100%, 99%);
+  /* --body-color: hsl(29, 100%, 99%); */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -65,10 +65,19 @@ ul {
   width: 256px;
   display: flex;
   justify-content: center;
+  /* box-shadow: 0px 0px 4px 4px #00ffff; */
+
+  /*glass effet beginds*/
+  backdrop-filter: blur(1px) saturate(111%);
+  -webkit-backdrop-filter: blur(1px) saturate(111%);
+  background-color: rgba(0, 12, 95, 0.01);
+  /*glass effect ends*/
+  
+border: 4px solid #00ffff99;
   align-items: center;
   flex-direction: column;
   /* top: 90px; */
-  background-color: var(--black-color);
+  /* background-color: var(--black-color); */
   /* padding: 1.25rem 2rem 3rem; */
   border-radius: 1.5rem;
   text-align: center;
@@ -81,16 +90,17 @@ ul {
 }
 
 .card--border img{
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .card--border{
-  width: 210px;
-  height: 210px;
-  border: 2px solid var( --first-color);
+  width: 195px;
+  height: 195px;
+  box-shadow: 0px 0px 2px 2px rgb(248, 220, 120);
+  /* border: 1px solid rgb(248, 220, 120); */
   border-radius: 50%;                                       
   display: grid;
   place-items: center;
@@ -98,14 +108,17 @@ ul {
 }
 
 .card--name{
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  color: rgb(248, 220, 120);
   font-size: var(--h3-font-size);
   font-weight: 500;
 }
 
 .card--social{
   width: 200px;
-  background-color: var(--first-color);
+  background-color: cyan;
+  opacity: 1;
+  
   padding: .75rem;
   border-radius: 3rem;
   text-align: initial;

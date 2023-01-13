@@ -9,7 +9,7 @@
   margin: 5vh auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 2vw;
+  grid-column-gap: 5vw;
   grid-row-gap: 5vh;
 }
 
@@ -41,10 +41,11 @@
 .card {
   width: 100%;
   height: 100%;
-  background: white no-repeat center / contain;
+  background: cyan no-repeat center / contain;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   transition: 0.3s !important;
+
 }
 
 .card:hover {

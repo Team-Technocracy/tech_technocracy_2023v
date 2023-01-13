@@ -13,10 +13,16 @@
 .core {
   width: 250px;
   height: 70px;
-  display: grid;
-  place-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+align-items: center;
+  border: 1px solid cyan;
   flex-wrap: wrap;
-  background: white;
+  backdrop-filter: blur(1px) saturate(111%);
+  -webkit-backdrop-filter: blur(1px) saturate(111%);
+  background-color: rgba(0, 12, 95, 0.01);
+  /* opacity: 0.6; */
   box-shadow: 1px 2px 5px #00000077;
   border-radius: 5px;
   transition: transform 0.3s ease;
@@ -28,15 +34,16 @@
 }
 
 .corename {
-  color: #1b262c;
-  font-size: 16px;
-  font-weight: 700;
+  color: rgb(248, 220, 120);
+  font-size: 0.9rem;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
 .coredomain {
-  color: #1b262cbb;
-  font-weight: 600;
+  color: rgb(248, 220, 120);
+  font-weight: 300;
+  font-size: 0.7rem;
   text-transform: capitalize;
 }

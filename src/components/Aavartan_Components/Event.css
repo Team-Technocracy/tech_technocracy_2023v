@@ -1,0 +1,116 @@
+@font-face{
+    font-family: valorax;
+    src: url(../../assets/fonts/Valorax-lg25V.otf) format("opentype");
+}
+
+.event {
+    padding-top: 2rem;
+    padding-bottom: 2rem;   
+    color: white;
+    /* color: black; */
+    font-family: 'Poppins'; 
+}
+
+.event-body{
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event-title{
+    font-family: modern-warfare;
+    font-weight: 0;
+    font-size: 55px;
+    line-height: 82px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 4rem;
+}
+.event-title::before{
+    content: '';
+	position: absolute;
+	/* left:0; */
+	bottom: 830px;
+	background-color: #e91e63;
+	height: 3px;
+	box-sizing: border-box;
+	width: 70px;
+	transition: all 0.3s ease;
+}
+.event-title:hover::before{
+    width: 280px;
+}
+
+.event-events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.event-events-container{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    gap: 3rem; 
+}
+
+.event-events-container::-webkit-scrollbar {
+    display: none;
+}
+
+.event-slider{
+    padding-top: 2rem;    
+    width: 100%;
+    margin: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: black; */
+}
+
+.event-slider-left{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.event-slider-right{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.event-slider-left:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.event-slider-right:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+
+@media(width<900px){
+    .card-hidden{
+        display: none;
+    }
+    .event-body{
+        padding: 1.2rem !important;
+    }
+    .event-title{
+        font-size: 40px;
+    }
+    .event-title::before{
+        bottom: 690px;
+        width: 0;
+    }
+    .event-title:hover::before{
+        width: 0;
+    }
+}

@@ -35,17 +35,17 @@ export const techteamList = [
   },
   {
     id: 4,
-    name: "Premchand Maddikuntla",
+    name: "Rishav Gandhi",
     imgUrl: "",
-    linkedinUrl: "https://www.linkedin.com/in/premchand-maddikuntla-23699b201",
+    linkedinUrl: "https://www.linkedin.com/in/rishav-gandhi-998a74211",
     instaUrl: "#",
     desi:"Core Coordinator"
   },
   {
     id: 5,
-    name: "Rishav Gandhi",
+    name: "Premchand Maddikuntla",
     imgUrl: "",
-    linkedinUrl: "https://www.linkedin.com/in/rishav-gandhi-998a74211",
+    linkedinUrl: "https://www.linkedin.com/in/premchand-maddikuntla-23699b201",
     instaUrl: "#",
     desi:"Core Coordinator"
   },

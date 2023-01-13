@@ -1,0 +1,140 @@
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+a:hover {
+  color: #bbe1fa;
+}
+
+.listHead {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+}
+
+.footerContainer {
+  width: 100%;
+  min-height: 300px;
+  background: #1b262c;
+  color: white;
+  display: grid;
+  grid-template-columns: [col-start] repeat(auto-fit, minmax(20rem, 1fr)) [col-end];
+  grid-gap: 3rem;
+  padding: 3rem;
+  padding-left: 4rem;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footerLogo {
+  width: 250px;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.linksContainer ul li,
+.contactContainer ul li {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.linksContainer ul li:nth-child(1),
+.contactContainer ul li:nth-child(1) {
+  margin-top: 0px;
+}
+
+.listHead {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialIcon {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footerContainer {
+    align-items: space-around;
+    padding: 3rem;
+  }
+
+  .logoContainer {
+    grid-column: col-start/col-end;
+  }
+
+  .footerLogo {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .footerContainer {
+    grid-gap: 1rem;
+  }
+
+  .linksContainer {
+    justify-content: flex-start;
+  }
+
+  .contactContainer {
+    padding-top: 1rem;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  li {
+    font-size: 1rem;
+  }
+
+  .listHead {
+    font-size: 1.3rem;
+  }
+
+  .footerContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footerLogo {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .footerContainer {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+}

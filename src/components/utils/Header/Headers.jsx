@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./sidenav.module.css";
+import styles from "./headers.module.css";
 
 
 const SideNav = (props) => {
   return (
     <div className={styles.stickynav} >
-      <nav className={styles.sidenav}>{props.name}</nav>
+      <div className={styles.sidenav}>{props.name}</div>
     </div>
   );
 };

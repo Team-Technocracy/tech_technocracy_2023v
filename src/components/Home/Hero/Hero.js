@@ -14,17 +14,18 @@ const Hero = () => {
 		<div id='hero' className={styles.heroWrapper}>
 			<div className={styles.videoWrapper}>
 				<div className={styles.particleWrapperLeft}>
+					
 					<div className='videodiv'>
+					
+
 						<video src={videoBg} autoPlay loop muted />
 					</div>
 					<div className='textcontent'>
-						<h1>Technocracy</h1>
-						<p>Nit Raipur's Student Technical Committee </p>
-						<div className='button_div'>
-							<a href='#contact-us' className='button'>
-								Contact
-							</a>
-						</div>
+					
+						<a href=""><button className="button-49" role="button">Vigyaan</button></a>
+						<p>The Student Technical Committee of NIT Raipur </p>
+						<h2>Team Technocracy</h2>
+					
 					</div>
 				</div>
 			</div>

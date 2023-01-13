@@ -13,6 +13,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import ScrollToTop from 'react-scroll-to-top';
 import ScrollUp from './components/ScrollUp';
+import SideNav from './components/Sidenav/SideNav';
 
 
 
@@ -45,6 +46,7 @@ const App = () => {
 	  
 	  <BrowserRouter>
 	  <Navbar/>
+	  <SideNav/>
 	  <Routes>
 	  <Route exact path='/' element={<HomePage/>} />
 	  {/* </Routes> */}

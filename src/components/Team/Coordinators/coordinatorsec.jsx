@@ -1,5 +1,5 @@
 import React from 'react';
-import SideNav from '../SideNav/sidenav';
+import SideNav from '../../utils/Header/Headers';
 // import CoordinatorsNew from './coordinators/CoordinatorsNew';
 import Card from './coordinators/Card';
 import styles from './coordinatorsec.module.css';
@@ -16,6 +16,7 @@ const CoOrdinatorSec = (props) => {
 						<Card
 							key={item.id}
 							name={item.name}
+							domain={item.domain}
 							img={item.imgUrl}
 							linkedin={item.linkedinUrl}
 							github={item.githubUrl}

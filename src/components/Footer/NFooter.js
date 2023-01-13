@@ -13,7 +13,7 @@ const NFooter = () => {
 	let curQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
   return (
     <>
-    <footer className="footer">
+    <footer id='footer' className="footer">
   	 <div className="f-container">
   	 	<div className="f-row">
   	 		<div className="footer-col logo-sec">

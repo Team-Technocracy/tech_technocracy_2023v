@@ -10,7 +10,7 @@ import '../coordinators/Card.css';
 
 
 function Card(props) {
-
+console.log(props.domain);
     const [aniToggle,setAniToggle] = useState(false);
     const [downAni, setDownAni] = useState(false);
     const [socialClassName,setSocialClassName] = useState('card--social');
@@ -43,7 +43,7 @@ function Card(props) {
                     <img className="card--img" src={props.img} alt="Technocracy Team"></img>
                 </div>
                 <h3 className={`card--name ${overAllC ? `overAllC` : ``}`}>{props.name}</h3>
-                <h4 className={`card--name ${overAllC ? `overAllC` : ``}`}>{props.domain}</h4>
+                <h4 className='domain_name'>{props.domain}</h4>
                 <div className={`${socialClassName} ${downAni? "down-animation":""}`} id='card-social' onMouseEnter={handleToggle} onMouseLeave={handleToggle}>
                     <div className='card--social-control'>
                         <div className='card--social-toggle' id='card-toggle' >

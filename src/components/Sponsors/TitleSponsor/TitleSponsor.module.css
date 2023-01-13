@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .titlecontainer {
+    position: relative;
+    width: 80%;
+    margin: 5vh auto;
+    padding: 0;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.137),
+    -1px -1px 5px rgba(0, 0, 0, 0.178);
+    border-radius: 12px;
+  }
+  
+  .titlecard {
+    width: 55vw;
+    height: 80vh;
+    margin: auto;
+    background: url("../../../images/Generic/wiproLogo.png") no-repeat center /
+      contain;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .sub {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 1350px) {
+    .titlecontainer {
+      width: 90vw;
+    }
+    .titlecard {
+      width: 60vw;
+    }
+  }
+  
+  @media screen and (max-width: 1250px) {
+    .titlecontainer {
+      width: 95vw;
+    }
+    .titlecard {
+      width: 65vw;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .titlecontainer {
+      width: 100%;
+    }
+    .titlecard {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .titlecontainer {
+      width: 90%;
+    }
+    .titlecard {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .titlecard {
+      width: 85%;
+      background-size: contain;
+      height: 40vh;
+    }
+  }
+  

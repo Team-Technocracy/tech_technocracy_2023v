@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.joinusform {
+  margin: 5vh auto;
+  background: transparent;
+  overflow: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: white;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.856);
+}
+
+.success {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: rgb(0, 109, 0);
+  font-weight: 600;
+}
+
+.form_container {
+  width: 80%;
+}
+
+.close_button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.close_button:hover,
+.close_button:active {
+  color: white;
+}
+
+.h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.form {
+  display: block;
+}
+
+.forminput {
+  width: 100%;
+  height: 2.5em;
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 1em;
+  line-height: 2em;
+  display: block;
+  border: 2px solid rgb(134, 134, 134);
+  outline: none;
+  margin: 1.5em auto;
+}
+
+.input_div {
+  position: relative;
+  height: auto;
+}
+
+.error {
+  position: absolute;
+  bottom: -1.2rem;
+  margin: 0;
+  padding: 0;
+  color: rgb(180, 14, 14);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.submit {
+  width: auto;
+  height: 2.5em;
+  font-size: 1em;
+  line-height: 2em;
+  display: block;
+  outline: none;
+  margin: 1em auto;
+  padding: 0em 2em;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}

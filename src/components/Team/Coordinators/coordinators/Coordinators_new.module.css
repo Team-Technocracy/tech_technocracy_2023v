@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+
+.cardsWrapper {
+    margin: 4vw 3vw;
+    height: 19vw;
+    width: 16vw;
+    transition: .8s;
+    position: relative;
+    border-radius: 1vw 5vw;
+    overflow: hidden;
+    box-shadow: 10px 9px 20px 8px rgb(0 0 0 / 55%);
+    /* border: 2px solid red; */
+}
+
+.cardFront {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position:top;
+    background-size: cover;
+    transition: 0.4s ease-in;
+}
+
+.cardBack {
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    height: 100%;
+    transform: translate(-100%, -100%);
+    color: white;
+    transition: all 0.5s;
+    display: grid;
+    grid-template-rows: 50% 33%;
+    place-items: center;
+    align-items: flex-end;
+}
+
+.cardBack>h1 {
+    position: relative;
+    font-size: 1.2vw;
+    font-weight:600;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+
+.cardsWrapper:hover .cardBack {
+    transform: translate(0%, -100%);
+}
+
+.cardsWrapper:hover .cardFront {
+    background-color: rgba(0, 0, 0, 0.4);
+    filter: blur(7px) brightness(0.6);
+}
+
+.socialLinks>a {
+    border: 3px solid white;
+    border-radius: 100%;
+    padding: 0.6vw 0.7vw 0.5vw;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.socialLinks>a:hover {
+    border-color: #61cdffd5;
+    color: #61cdffd5;
+}
+
+.socialLinks>a:last-child:hover {
+    border-color: #ee22bbd5;
+    color: #ee22bbd5;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.socialLinks>a>svg {
+    font-size: 1.2vw;
+    stroke-width: 0.7vw;
+}
+
+
+@media screen and (max-width: 900px) {
+    .cardsWrapper {
+        margin: 4vw 5vw;
+        height: 22vw;
+        width: 19vw;
+    }
+
+    .cardBack>h1 {
+        font-size: 1.3vw;
+    }
+    
+    .cardBack>h2 {
+        font-size: 1.05vw;
+    }
+
+    .socialLinks>a {
+        border: 3px solid white;
+        padding: 0.9vw 1.2vw 0.8vw;
+    }
+    
+    .socialLinks>a>svg {
+        font-size: 1.5vw;
+        stroke-width: 0.9vw;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .cardsWrapper {
+        margin: 5vw 5vw;
+        height: 40vw;
+        width: 37vw;
+        border-radius: 2vw 10vw;
+    }
+
+    .cardBack>h1 {
+        font-size: 2.6vw;
+    }
+    
+
+    .socialLinks>a {
+        border: 2px solid white;
+        padding: 1vw 1.3vw 0.9vw;
+    }
+    
+    .socialLinks>a>svg {
+        font-size: 2.5vw;
+        stroke-width: 1.2vw;
+    }
+
+}
+  
+@media screen and (max-width: 500px) {
+
+    .cardsWrapper {
+        margin: 10vw 0;
+        height: 56vw;
+        width: 53vw;
+        border-radius: 3vw 15vw;
+    }
+
+
+    .cardBack>h1 {
+        font-size: 3.7vw;
+    }
+    
+    .cardBack>h2 {
+        font-size: 2.7vw;
+    }
+
+    .socialLinks>a {
+        border: 2px solid white;
+        padding: 2vw 2.3vw 1.5vw;
+    }
+    
+    .socialLinks>a>svg {
+        font-size: 3.8vw;
+        stroke-width: 3.2vw;
+    }
+
+}

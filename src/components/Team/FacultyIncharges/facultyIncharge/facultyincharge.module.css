@@ -1,0 +1,192 @@
+.facultycontainer {
+  width: 80vw;
+  margin: 10px auto;
+}
+
+.facultycard {
+  position: relative;
+  display: block;
+  max-width: 600px;
+  width: 30vw;
+  height: 60vh;
+  margin: 30px auto;
+  border-radius: 1.5%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  background: no-repeat left / cover;
+  overflow: hidden;
+}
+
+
+.faculty {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  opacity: 0.95;
+  background: linear-gradient(#00000012, #0000003b 40%, #000000b7);
+}
+
+.facultynote {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.facultyquote {
+  width: 85%;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.quote {
+  color: beige;
+  font-size: 17px;
+  text-align: justify;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+.quotations {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.designation {
+  text-align: right;
+  color: lavender;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .facultycontainer {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .facultycard {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .facultycontainer {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .facultycard {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .facultycontainer {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .facultycard {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .facultycontainer {
+    width: 95vw;
+    margin: auto;
+  }
+
+  .facultycard {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .facultycontainer {
+    width: 100%;
+  }
+
+  .facultycard {
+    width: 60%;
+    margin: 5vh auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .facultycontainer {
+    width: 96%;
+    margin: auto;
+  }
+  .facultycard {
+    width: 90%;
+    height: 60vh;
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .facultycontainer {
+    width: 98%;
+    margin: auto;
+  }
+  .facultycard {
+    width: 94%;
+    height: 60vh;
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .facultycontainer {
+    width: 96%;
+    margin: auto;
+  }
+  .facultycard {
+    width: 92%;
+    height: 60vh;
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .facultycontainer {
+    width: 95%;
+    margin: auto;
+  }
+
+  .facultycard {
+    height: 50vh;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .facultycontainer {
+    width: 95%;
+    height: 50vh;
+    margin: auto;
+  }
+
+  .facultycard {
+    margin: auto;
+    width: 95%;
+  }
+
+  .facultyquote {
+    margin: auto;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+
+  .designation {
+    font-size: 12px;
+  }
+}

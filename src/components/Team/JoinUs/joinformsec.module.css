@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.joinformsec {
+  overflow: auto;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  display: grid;
+  place-items: center;
+  z-index: 10000;
+}

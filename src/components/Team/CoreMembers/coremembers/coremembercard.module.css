@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.corecard {
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+}
+
+.core {
+  width: 250px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  flex-wrap: wrap;
+  background: white;
+  box-shadow: 1px 2px 5px #00000077;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.corecard:hover .core {
+  transform: translateY(-5px) translateZ(5px) scale(1.05);
+  box-shadow: 1px 4px 10px #000000a2;
+}
+
+.corename {
+  color: #1b262c;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.coredomain {
+  color: #1b262cbb;
+  font-weight: 600;
+  text-transform: capitalize;
+}

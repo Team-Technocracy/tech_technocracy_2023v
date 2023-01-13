@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161622;
+    padding: 7px 14px;
+}
+
+img {
+    height: 65px;
+    width: 200px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #fff;
+
+}
+
+#navbar li a:before {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 2px;
+    width: 0;
+    right: 0;
+    top: -10px;
+    transition: 0.3s;
+
+}
+
+#navbar li a:after {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+}
+
+#navbar li a:hover:before {
+
+    width: 100%;
+}
+
+#navbar li a:hover:after {
+
+    width: 100%;
+}
+
+.responsive-open {
+    display: none;
+}
+.responsive-close {
+    display: none;
+}
+
+.responsive-open i {
+    color: #fff;
+    align-items: center;
+}
+.responsive-close i {
+    color: #fff;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0px;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(15, 76, 117);
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 40px 0 0 10px;
+        transition: 1s;
+        z-index:9999999;
+    }
+    #navbar.active{
+        right: 0vw;
+    }
+    #navbar li{
+
+        margin-bottom: 35px;
+    }
+    .responsive-open{
+        display: block;
+    }
+    .responsive-open i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .responsive-close i{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .responsive-close{
+        position: absolute;
+        display: block;
+        bottom: calc(100% - 70px);
+        left: calc(100% - 50px);
+    }
+
+    
+}

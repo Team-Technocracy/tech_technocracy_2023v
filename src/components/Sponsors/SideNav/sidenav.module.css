@@ -1,0 +1,27 @@
+.stickynav {
+  position: -webkit-sticky ;
+  position: sticky;
+  /* top: 11vh; */
+  background: none;
+  min-height: 10vh;
+  line-height: 10vh;
+  z-index: 20;
+  margin: 5vh auto;
+}
+
+.sidenav {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  color: #0f4c75;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+@media screen and (max-width: 360px) {
+  .sidenav {
+    font-size: 28px;
+  }
+}

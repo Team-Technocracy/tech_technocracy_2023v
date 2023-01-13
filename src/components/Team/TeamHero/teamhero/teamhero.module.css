@@ -1,0 +1,135 @@
+/* .teamhero {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 89vh;
+  display: grid;
+  grid-template-columns: 95fr 105fr;
+  background: no-repeat center / cover;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+}
+
+.hero2 {
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.herowrap {
+  width: 30vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.ourteam {
+  font-size: 30px;
+  margin: 15px auto;
+}
+
+.hr {
+  width: 25vw;
+  border: 1px sold white;
+  margin: 5px auto;
+}
+
+.ourteamstory {
+  font-size: 18px;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+  .teamhero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .hero1 {
+    display: block;
+    height: 40vh;
+  }
+
+  .hero2 {
+    display: grid;
+    place-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .herowrap {
+    width: 80%;
+    margin: auto;
+  }
+
+  .ourteam {
+    font-size: 28px;
+    margin: 10px auto;
+  }
+
+  .hr {
+    width: 80vw;
+  }
+  .ourteamstory {
+    width: 75vw;
+    font-size: 24px;
+    margin: 5px auto;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ourteam {
+    font-size: 28px;
+  }
+
+  .ourteamstory {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .teamhero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hr {
+    width: 70vw;
+  }
+
+  .hero1 {
+    display: block;
+    height: 40vh;
+  }
+
+  .hero2 {
+    display: grid;
+    place-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .herowrap {
+    width: 80%;
+    margin: auto;
+  }
+
+  .ourteam {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+
+  .ourteamstory {
+    font-size: 14px;
+    margin: 5px auto;
+    text-align: justify;
+  }
+} */

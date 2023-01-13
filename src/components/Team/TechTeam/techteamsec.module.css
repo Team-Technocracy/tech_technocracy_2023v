@@ -23,7 +23,12 @@
   grid-row-gap: 60px;
   place-items: center;
 }
-
+.text{
+    text-align: center;
+    color: cyan;
+    font-size: 24px;
+    font-weight: bold;
+}
 @media screen and (max-width: 1360px) {
   .container {
     width: 90vw;

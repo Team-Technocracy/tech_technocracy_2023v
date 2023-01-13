@@ -10,13 +10,13 @@
     src: url(../../assets/fonts/ModernWarfare-OV7KP.ttf) format("truetype");
 }
 
-.f-row{
+.frow{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.footer-col{
+.footercol{
 	padding: 3rem 0;
 }
 
@@ -28,11 +28,11 @@ ul{
     padding: 50px 50px;
 }
 
-.f-container{
+.fcontainer{
 	margin: 0;
 }
 
-.footer-col h4{
+.footercol h4{
 	font-size: 20px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -41,7 +41,7 @@ ul{
 	position: relative;
 	font-family: morden-warface;
 }
-.footer-col h4::before{
+.footercol h4::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -53,14 +53,14 @@ ul{
 	transition: all 0.3s ease;
 }
 
-.footer-col h4:hover::before{
+.footercol h4:hover::before{
 	width: 200px;
 }
 
-.footer-col ul li:not(:last-child){
+.footercol ul li:not(:last-child){
 	margin-bottom: 10px;
 }
-.footer-col ul li a{
+.footercol ul li a{
 	font-size: 18px;
 	color: #ffffff;
 	text-decoration: none;
@@ -70,13 +70,13 @@ ul{
 	transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
+.footercol ul li a:hover{
 	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	padding-left: 8px;
 }
-.footer-col .fsocial-links a{
+.footercol .fsociallinks a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -87,11 +87,11 @@ ul{
 	/* border-radius: 50%; */
 	transition: all 0.5s ease;
 }
-.footer-col .fsocial-links a:hover{
+.footercol .fsociallinks a:hover{
 	transform: scale(1.3);
 }
 
-.logo-sec{
+.logosec{
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -100,65 +100,65 @@ ul{
 	padding-top: 0;
 }
 
-.f-quotes-sec{
+.fquotessec{
 	margin-top: 3rem;
 	margin-left: 2rem;
 
 }
 
-.f-quotes{
+.fquotes{
 	font-family: 'Kanit';
 	font-weight: 400;
 	font-style: italic;
 	font-size: 18px;
 }
 
-.f-saidby{
+.fsaidby{
 	float: right;
 	font-family: 'Kanit';
 	font-weight: 400;
 	font-size: 17px;
 
 }
-.f-saidby:hover{
+.fsaidby:hover{
 	padding-right: 8px;
 	transition: all 0.5s ease;
 }
 
 /*responsive*/
 @media(max-width: 900px){
-  .footer-col{
+  .footercol{
     width: 50%;
     margin-bottom: 30px;
 }
-.f-quotes-sec{
+.fquotessec{
 	margin-left: 0rem;
 }
 }
 @media(max-width: 700px){
-  .footer-col{
+  .footercol{
     width: 100%;
 	align-items: center;
 	padding: 1rem 0;
 }
-.footer-col h4{
+.footercol h4{
 	text-align: center;
 }
-.footer-col h4::before{
+.footercol h4::before{
 	width: 100%;
 	text-align: center;
 }
-.footer-col ul{
+.footercol ul{
 	text-align: center;
 	/* align-items: center; */
 }
-.fsocial-links{
+.fsociallinks{
 	display: flex;
 	justify-content: space-around;
 }
 }
 
-.linkss{
+/* .linkss{
 	padding: 0 1rem 0 0;
 	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
   -webkit-background-clip: text;
@@ -168,7 +168,7 @@ ul{
 	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 
 

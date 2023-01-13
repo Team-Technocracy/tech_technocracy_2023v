@@ -1,26 +1,26 @@
 import React from 'react'
-import './EventCard.css'
+import styles from './EventCard.module.css'
 
 const EventCard = ({img,title,date,time,details}) => {
   return (
     <>
-    <div className="eventcard-card">
-        <img class='eventcard-image' src={img} alt="Event Poster"></img>
-        <div className="eventcard-cardtitle" style={{}}>
+    <div className={styles.eventcardcard}>
+        <img class={styles.eventcardimage} src={img} alt="Event Poster"></img>
+        <div className={styles.eventcardcardtitle} style={{}}>
             {title}
         </div>
-        <div className="eventcard-line">
+        <div className={styles.eventcardline}>
         </div>
-        <div className="eventcard-carddetails">
+        <div className={styles.eventcardcarddetails}>
             {details}
         </div>
-        <div className="eventcard-carddetails">
+        <div className={styles.eventcardcarddetails}>
             Date : {date}
         </div>
-        <div className="eventcard-carddetails">
+        <div className={styles.eventcardcarddetails}>
             Time : {time}
         </div>
-        <div className="aavartan-button">
+        <div className={styles.aavartanbutton}>
             <button>Register</button>
         </div>
     </div>

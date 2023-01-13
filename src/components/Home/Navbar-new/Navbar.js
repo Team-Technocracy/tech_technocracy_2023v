@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <div>
             <nav>
-                <a href="#"><img src={tc2}></img></a>
+                <a href="#"><img src={tc2} className="tclogo"></img></a>
                 <div>
                     <ul id="navbar" className={toggler?"#navbar active":"navbar"}>
                         <li><a href="#">HOME</a></li>

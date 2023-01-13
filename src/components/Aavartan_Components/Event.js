@@ -35,7 +35,7 @@ const Event = () => {
                     ))}    
                     </div>
                 </div>
-                <div className="event-slider">
+                <div className={styles.eventslider}>
                     <div className={styles.eventsliderleft} onClick={() => scroll('left')}>
                         <img src={leftArrow} alt="leftArrow"></img>
                     </div>

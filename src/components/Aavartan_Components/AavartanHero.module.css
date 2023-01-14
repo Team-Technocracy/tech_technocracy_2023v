@@ -1,0 +1,151 @@
+.ahcontainer{
+    position: relative;
+}
+.ahvideo{
+    margin-top: -80px;
+}
+.ahcentered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    color: white;
+    /* text-align: center; */
+    font-family: modern-warfare;
+}
+
+.ahabout{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 18px;
+    transform: translate(-20%, -50%);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+
+
+.button49,
+.button49:after {
+  width: 13rem;
+  height: 4rem;
+  line-height: 50px;
+  font-size: 1.8rem;
+  font-family: modern-warfare;
+  background: linear-gradient(45deg, transparent 5%, #37AEE2 0%, #1E96C8 100%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 3px -3px 5px 2px black; */
+}
+
+@media(width<900px){
+    .button49,
+.button49:after{
+    top:85%;
+}
+}
+
+.button49:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'ALTERNATE TEXT';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #57effe 5%);
+    text-shadow: -3px -3px 0px white, 3px 3px 0px #57effe;
+    clip-path: var(--slice-0);
+  }
+
+  .button49:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+
+  @media(width<900px){
+    .ahcentered{
+        font-size:2.5rem;
+        top: 15%;
+        left: 10%;
+        transform: translate(10%, 50%);
+    }
+    .ahabout{
+        font-size: 13px;
+    }
+    .ahvideo{
+        margin-top: -400px;
+    }
+    .btnh, .btnh:after{
+        width: 18rem;
+        font-size: 1rem;
+    }
+}
+
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }

@@ -105,11 +105,7 @@
     .alayouttitle{
         font-size: 40px;
     }
-    .alayouttitle::before{
-        bottom: -2520px;
-        width: 0;
-    }
-    .alayouttitle:hover::before{
-        width: 0;
+    .main{
+        padding-bottom: 0;
     }
 }

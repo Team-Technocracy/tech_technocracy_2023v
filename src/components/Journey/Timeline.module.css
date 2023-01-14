@@ -1,0 +1,32 @@
+
+.timeline_date{
+    font-family: "Bebas Neue", sans-serif;
+    color:aliceblue;
+}
+
+.info{
+    background-color: #3d4489;
+}
+
+.vertical_timeline_element_title{
+    color:green;
+}
+
+.timeline_info{
+    color: white !important;
+    margin:0 !important;
+}
+
+.timeline_title{
+    padding-bottom:15px;
+}
+
+.title{
+    color:white;
+    margin:40px 40px 50px 40px;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 2.5rem;
+}

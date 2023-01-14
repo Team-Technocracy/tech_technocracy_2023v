@@ -174,3 +174,27 @@ ul{
 
 
 
+.techteamlink{
+	/* bottom: 0; */
+	font-family: morden-warface;
+	position: absolute;
+	color: whitesmoke;
+
+	padding-top: 140px;
+}
+.techteamlink::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+	transition: all 0.3s ease;
+
+}
+.techteamlink:hover::before{
+	width: 200px;
+	cursor: pointer;
+}

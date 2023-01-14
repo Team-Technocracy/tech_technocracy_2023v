@@ -8,6 +8,8 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import FavoriteSharpIcon from '@material-ui/icons/FavoriteRounded';
+
 
 const NFooter = () => {
 	let curQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
@@ -26,11 +28,10 @@ const NFooter = () => {
   	 		<div className="footer-col">
   	 			<h4>TECHNOCRACY</h4>
   	 			<ul>
-  	 				<li><a href="#">About Us</a></li>
-  	 				<li><a href="#">Aavartan</a></li>
-  	 				<li><a href="#">Vigyaan</a></li>
-  	 				<li><a href="#">Sponsors</a></li>
-  	 				<li><a href="#">Team</a></li>
+  	 				<li><a href="#aavartan">Aavartan</a></li>
+  	 				<li><a href="#aavartan">Vigyaan</a></li>
+  	 				<li><a href="#spons">Sponsors</a></li>
+  	 				<li><a href="#team">Team</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
@@ -48,6 +49,10 @@ const NFooter = () => {
   	 				<a href="#"><InstagramIcon className='linkss2'/></a>
   	 				<a href="#"><LinkedInIcon className='linkss2'/></a>
   	 			</div>
+				
+					<div className="techteamlink">Made with <FavoriteSharpIcon style={{ color: "red",fontSize: "20px",paddingTop:"2px" }}/> by Tech Team</div>
+
+			
   	 		</div>
   	 	</div>
   	 </div>

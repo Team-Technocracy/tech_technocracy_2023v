@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import styles from "./techteamcards.module.css";
+import styles from './techteamcard.module.css';
 import Aos from "aos";
-import "./techteamcard.css"
 import "aos/dist/aos.css";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const TechTeamCards = (props) => {
   useEffect(() => {
@@ -10,13 +10,13 @@ const TechTeamCards = (props) => {
   }, []);
   
   return (
-    <div class="container">
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-image ">
-            <img width= "100%" height="100%" src={props.image} alt="profile"></img>
+    <div class={styles.containers}>
+      <div class={styles.cardwrapper}>
+        <div class={styles.card}>
+          <div >
+            <img class={styles.cardimage} width= "100%" height="100%" src={props.image} alt="profile"></img>
           </div>
-          <ul class="social-icons">
+          <ul class={styles.socialicons}>
             {/* <li>
               <a href="">
                 <i class="fab fa-facebook-f"></i>
@@ -29,7 +29,7 @@ const TechTeamCards = (props) => {
             </li> */}
             <li>
               <a href={props.linkedin}>
-                <i class="fab fa-linkedin"></i>
+                <LinkedInIcon/>
               </a>
             </li>
             {/* <li>
@@ -39,10 +39,10 @@ const TechTeamCards = (props) => {
             </li> */}
           </ul>
 
-          <div class="details ">
+          <div class={styles.details}>
             <h2>{props.name}
               <br></br>
-              <span class="job-title">{props.desi}</span>
+              <span class={styles.jobtitle}>{props.desi}</span>
             </h2>
           </div>
         </div>

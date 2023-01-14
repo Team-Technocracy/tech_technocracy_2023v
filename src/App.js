@@ -1,6 +1,6 @@
 
 // import Home from './components/Home/Home';
-import Navbar from './components/Home/Navbar-new/Navbar';
+// import Navbar from './components/Home/Navbar-new/Navbar';
 // import Journey from './components/Journey/Timeline';
 // import Sponsors from './components/Sponsors/Spons';
 // import Team from './components/Team/team';
@@ -45,7 +45,7 @@ const App = () => {
 
 	  
 	  <BrowserRouter>
-	  <Navbar/>
+	  {/* <Navbar/> */}
 	  <SideNav/>
 	  <Routes>
 	  <Route exact path='/' element={<HomePage/>} />

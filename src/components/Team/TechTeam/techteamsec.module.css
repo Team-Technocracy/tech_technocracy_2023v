@@ -13,17 +13,44 @@
   scrollbar-width: none; 
 }
 .techteamsec {
-  margin: 10vh auto;
+  /* margin: 10vh auto; */
 }
 .container {
   width: 80vw;
   margin: 5vh auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 60px;
   place-items: center;
 }
+.technav{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0vh;
+  background: none;
+  min-height: 10vh;
+  line-height: 10vh;
+  z-index: 20;
 
+}
+.headertech{
+ 
+  font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    color: cyan;
+    font-family: "Montserrat", sans-serif;
+    backdrop-filter: blur(1px) saturate(111%);
+    -webkit-backdrop-filter: blur(1px) saturate(111%);
+    background-color: rgba(0, 1, 9, 0.805);
+}
+.text{
+    text-align: center;
+    color: cyan;
+    font-size: 24px;
+    font-weight: bold;
+}
 @media screen and (max-width: 1360px) {
   .container {
     width: 90vw;

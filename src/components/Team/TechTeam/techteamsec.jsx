@@ -1,11 +1,15 @@
 import React from "react";
-import SideNav from "../../Sponsors/SideNav/sidenav";
+// import SideNav from "../../utils/Header/Headers";
 import TechTeamCard from "./techteam/techteamcard.jsx";
 import styles from "./techteamsec.module.css";
 import {techteamList} from "./techteamList";
+import FavoriteSharpIcon from '@material-ui/icons/FavoriteRounded';
 const TechTeamSec = () => {
     return <div className={styles.techteamsec}>
-        <SideNav name="Our Tech Team" />
+		<div className={styles.technav}>
+
+		<div className={styles.headertech}>Our Tech Team</div>
+		</div>
         <div className={styles.container}>
         {techteamList.map((item) => {
 						return (
@@ -20,7 +24,9 @@ const TechTeamSec = () => {
 						);
 					return null;
 				})}
+			
         </div>
+		<div className={styles.text}>Made with <FavoriteSharpIcon style={{ color: "red",fontSize: "24px",paddingTop:"2px" }}/> by Tech Team</div>
     </div>
 };
 

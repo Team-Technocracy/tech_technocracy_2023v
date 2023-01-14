@@ -8,7 +8,7 @@ import Team from './Team/team';
 function HomePage () {
     return (
         <>
-      
+         <Navbar/>
         <Home/>
         {/* <Journey/> */}
         <Sponsors/>

@@ -4,18 +4,20 @@
     justify-content: space-evenly;
     margin: 0 auto;
 }
+
 .cardwrapper {
-    width: 400px;
-    height: 500px;
+    width: 280px;
+    height: 350px;
     position: relative;
 }
+
 .card {
     border: 1px solid cyan;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 350px;
-    height: 450px;
+    width: 250px;
+    height: 330px;
     transform: translate(-50%, -50%);
     border-radius: 16px;
     overflow: hidden;
@@ -24,9 +26,11 @@
     transition: 0.5s;
     color: black;
 }
+
 .cardimage img {
     object-fit: cover;
 }
+
 .card .cardimage {
     position: absolute;
     object-fit: cover;
@@ -36,14 +40,17 @@
     background-color: #000;
     transition: 0.5s;
 }
+
 .card:hover img {
     opacity: 0.8;
     transition: 0.5s;
 }
+
 .card:hover .cardimage {
-    transform: translateY(-100px);
+    /* transform: translateY(-100px); */
     transition: all 0.9s;
 }
+
 /**** Social Icons *****/
 .socialicons {
     position: absolute;
@@ -53,9 +60,11 @@
     z-index: 3;
     display: flex;
 }
+
 .socialicons li {
     list-style: none;
 }
+
 .socialicons li a {
     position: relative;
     display: block;
@@ -63,65 +72,85 @@
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: rgb(248, 220, 120);;
+    color: rgb(248, 220, 120);
+    ;
     font-size: 24px;
     font-weight: bold;
     margin: 0 6px;
     transition: 0.4s;
     transform: translateY(200px);
-    opacity: 0;
-}
-.card:hover .socialicons li a {
-    transform: translateY(0px);
     opacity: 1;
+}
+
+.card:hover .socialicons li a {
+    transform: translateY(70px);
+    opacity: 1;
+}
+.card:hover .details {
+    z-index: 2;
+    background-color: black;
+    box-shadow: 2px 2px 6px 6px black;
+    opacity: 0.8;
 }
 .socialicons li a:hover {
     background-color: rgba(0, 255, 255, 0.1);
     transition: 0.2s;
 }
+
 .socialicons li a:hover {
+
     color: rgb(248, 220, 120);
 }
-.socialicons li a  {
+
+.socialicons li a {
     transition: 0.8s;
 }
+
 .socialicons li a:hover {
     transform: rotateY(360deg);
     color: rgb(248, 220, 120);
 }
+
 .card:hover li:nth-child(1) a {
     transition-delay: 0.1s;
 }
+
 .card:hover li:nth-child(2) a {
     transition-delay: 0.2s;
 }
+
 .card:hover li:nth-child(3) a {
     transition-delay: 0.3s;
 }
+
 .card:hover li:nth-child(4) a {
     transition-delay: 0.4s;
 }
+
 /**** Personal Details ****/
 .details {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 255, 255, 0.1);
+    /* background-color: rgba(0, 255, 255, 0.1); */
     width: 100%;
     height: 120px;
     z-index: 1;
-    padding: 10px;
+    padding: 10px;  
 }
+
+
 .details h2 {
-    color: rgb(248, 220, 120);
+    color: whitesmoke;
     font-size: 1.2rem;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     margin: 30px 0;
-    padding: 0;
+    padding: 2px;
     text-align: center;
 }
+
 .details h2 .jobtitle {
     color: rgb(248, 220, 120);
     font-size: 0.9rem;
@@ -130,6 +159,7 @@
     line-height: 2.5rem;
     font-weight: 300;
 }
+
 /* .jane {
     position: absolute;
     bottom: -120px;
@@ -157,22 +187,24 @@
 
 @media (max-width: 450px) {
     .cardwrapper {
-        width: 200px;
-        height: 400px;
+        width: 280px;
+    height: 350px;
     }
+
     .card {
         width: 250px;
-        height: 350px;
+        height: 330px;
     }
 }
 
 @media (max-width: 768px) {
     .cardwrapper {
-        width: 315px;
-        height: 415px;
+        width: 280px;
+        height: 350px;
     }
+
     .card {
-        width: 275px;
-        height: 375px;
+        width: 250px;
+        height: 330px;
     }
 }

@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore,{
-  
   EffectCoverflow,
   Pagination,
   Navigation
-} from "swiper/core";
+} from "swiper";
 import { Autoplay } from 'swiper';
 import "swiper/swiper.min.css";
 import "./EveningShows.css";
@@ -24,7 +23,9 @@ import 'aos/dist/aos.css';
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 export default function EveningShow() {
-  SwiperCore.use([Autoplay])
+  SwiperCore.use([Autoplay]);
+  SwiperCore.use([Pagination]);
+  SwiperCore.use([Navigation]);
   useEffect(() => {
     AOS.init();
   }, [])

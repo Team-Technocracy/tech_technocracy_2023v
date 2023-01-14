@@ -1,4 +1,4 @@
-.problem-statement-container{
+.problemstatementcontainer{
     background: linear-gradient(to right, #1e2464, #090a1f) ;
     background-image: url(../../assets/svgs/blueback.svg), linear-gradient(to right, #1e2464, #090a1f);
     display: flex;
@@ -8,17 +8,17 @@
     background-attachment: fixed;
 }
 @media(width<900px){
-    .problem-statement-container{
+    .problemstatementcontainer{
         background-image: url('../../assets/svgs/new.svg'), linear-gradient(to right, #1e2464, #090a1f);
         padding: 3rem 0;    
     }
 }
-.problem-statement-middle{
+.problemstatementmiddle{
     width: 60%;
     display: flex;
     flex-direction: column;
 }
-.ps-row{
+.psrow{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,15 +26,15 @@
     justify-items: center;
 }
 
-.ps-col{
+.pscol{
     margin: 2rem 3rem;
 }
-.ps-h-col{
+.pshcol{
     margin: 1rem;
 }
 
-.button-49,
-.button-49:after {
+.button49,
+.button49:after {
   width: 13rem;
   height: 4rem;
   line-height: 50px;
@@ -53,7 +53,7 @@
   /* box-shadow: 3px -3px 5px 2px black; */
 }
 
-.ps-title{
+.pstitle{
     font-family: modern-warfare;
     font-weight: 0;
     font-size: 55px;
@@ -64,23 +64,22 @@
     color: white;
     margin:10rem 0 5rem 0;
 }
-.ps-title::before{
-    content: '';
+/* .pstitle::before{
+  content: '';
 	position: absolute;
-	/* left:0; */
-	bottom: 1000px;
+	bottom: 0px;
 	background-color: #e91e63;
 	height: 3px;
 	box-sizing: border-box;
 	width: 70px;
 	transition: all 0.3s ease;
 }
-.ps-title:hover::before{
+.pstitle:hover::before{
     width: 675px;
-}
+} */
 
 
-.button-49:after {
+.button49:after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 0 0);
   --slice-2: inset(50% -6px 30% 0);
@@ -101,45 +100,45 @@
 }
 
 
-.btn-h, .btn-h:after{
+.btnh, .btnh:after{
     background: linear-gradient(45deg, transparent 5%, #1b966d 0%, #1ec879 100%);
     height: 7rem;
     width: 18rem;
     line-height: 35px;
     box-shadow: 6px 0px 0px #40f133;
 }
-.btn-h:after{
+.btnh:after{
     background: linear-gradient(45deg, transparent 3%, #1ec879 3%, #1ec879 5%, #40f133 5%);
     text-shadow: -3px -3px 0px white, 3px 3px 0px #40f133;
 }
 
-.button-49:hover:after {
+.button49:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
 
 @media(width<900px){
-    .ps-title{
+    .pstitle{
         font-size: 30px;
         margin-top: 3rem;
         margin-bottom: 3rem;
         line-height: 35px;
     }
-    .ps-title::before{
+    .pstitle::before{
         width: 0;
     }
-    .problem-statement-middle{
+    .problemstatementmiddle{
         width: 80%;
     }
-    .button-49, .button-49:after{
+    .button49, .button49:after{
         width: 10rem;
         height: 3rem;
         font-size: 1.2rem;
     }
-    .ps-col{
+    .pscol{
         margin: 1rem;
     }
-    .btn-h, .btn-h:after{
+    .btnh, .btnh:after{
         width: 18rem;
         font-size: 1rem;
     }

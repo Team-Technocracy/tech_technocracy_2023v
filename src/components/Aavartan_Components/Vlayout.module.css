@@ -84,10 +84,9 @@
     color: white;
     margin-top: 10rem;
 }
-.alayouttitle::before{
+/* .alayouttitle::before{
     content: '';
 	position: absolute;
-	/* left:0; */
 	bottom: 0px;
 	background-color: #e91e63;
 	height: 3px;
@@ -97,7 +96,7 @@
 }
 .alayouttitle:hover::before{
     width: 675px;
-}
+} */
 
 @media(width<900px){
     .alayouttitle{

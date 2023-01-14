@@ -1,21 +1,25 @@
-.vigyaan-container{
+.vigyaancontainer{
     padding: 0;
     margin: 0;
     background-image:  linear-gradient(to right, #1e2464, #090a1f);
 }
 
-.vigyaan-phone{
+.vigyaanphone{
     display: none;
+    width: 100%;
+    height: auto;
 }
-.vigyaan-lappy{
+.vigyaanlappy{
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 @media(width<900px){
-    .vigyaan-phone{
+    .vigyaanphone{
         display: block;
     }
-    .vigyaan-lappy{
+    .vigyaanlappy{
         display: none;
     }
 }

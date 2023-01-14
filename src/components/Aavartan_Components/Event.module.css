@@ -11,7 +11,7 @@
     font-family: 'Poppins'; 
 }
 
-.event-body{
+.eventbody{
     padding: 5rem 10rem;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     flex-direction: column;
 }
 
-.event-title{
+.eventtitle{
     font-family: modern-warfare;
     font-weight: 0;
     font-size: 55px;
@@ -28,10 +28,9 @@
     letter-spacing: 1px;
     margin-bottom: 4rem;
 }
-.event-title::before{
+/* .eventtitle::before{
     content: '';
 	position: absolute;
-	/* left:0; */
 	bottom: 830px;
 	background-color: #e91e63;
 	height: 3px;
@@ -39,11 +38,11 @@
 	width: 70px;
 	transition: all 0.3s ease;
 }
-.event-title:hover::before{
+.eventtitle:hover::before{
     width: 280px;
-}
+} */
 
-.event-events{
+.eventevents{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +50,7 @@
     width: 100%;
 }
 
-.event-events-container{
+.eventeventscontainer{
     display: flex;
     flex-direction: row;
     width: max-content;
@@ -61,11 +60,11 @@
     gap: 3rem; 
 }
 
-.event-events-container::-webkit-scrollbar {
+.eventeventscontainer::-webkit-scrollbar {
     display: none;
 }
 
-.event-slider{
+.eventslider{
     padding-top: 2rem;    
     width: 100%;
     margin: 0 10rem;
@@ -75,42 +74,42 @@
     /* color: black; */
 }
 
-.event-slider-left{
+.eventsliderleft{
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-.event-slider-right{
+.eventsliderright{
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-.event-slider-left:hover{
+.eventsliderleft:hover{
     transform: scale(1.1);
     transition: all .2s ease-in-out;
 }
 
-.event-slider-right:hover{
+.eventsliderright:hover{
     transform: scale(1.1);
     transition: all .2s ease-in-out;
 }
 
 
 @media(width<900px){
-    .card-hidden{
+    .cardhidden{
         display: none;
     }
-    .event-body{
+    .eventbody{
         padding: 1.2rem !important;
     }
-    .event-title{
+    .eventtitle{
         font-size: 40px;
     }
-    .event-title::before{
+    .eventtitle::before{
         bottom: 690px;
         width: 0;
     }
-    .event-title:hover::before{
+    .eventtitle:hover::before{
         width: 0;
     }
 }

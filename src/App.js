@@ -14,6 +14,7 @@ import { Helmet } from 'react-helmet';
 import ScrollToTop from 'react-scroll-to-top';
 import ScrollUp from './components/ScrollUp';
 import SideNav from './components/Sidenav/SideNav';
+import TechTeamSec from './components/Team/TechTeam/techteamsec';
 
 
 
@@ -52,6 +53,7 @@ const App = () => {
 	  {/* </Routes> */}
 	  {/* <Routes> */}
 	  <Route exact path='/aavartan' element={<Aavartan/>} />
+	  <Route exact path='/tech-team' element={<TechTeamSec/>} />
 	  {/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 			</Routes>
 	  <Helmet>
@@ -72,6 +74,7 @@ const App = () => {
 					zIndex: 100000,
 					width: isDesktop ? '40px' : '70px',
 					height: isDesktop ? '40px' : '70px',
+					bottom: "55px",
 				}}
 				component={<ScrollUp />}
 				/>

@@ -1,22 +1,23 @@
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore,{
-  
   EffectCoverflow,
   Pagination,
   Navigation
-} from "swiper/core";
+} from "swiper";
 import { Autoplay } from 'swiper';
 import "swiper/swiper.min.css";
 import "./EveningShows.css";
 
 
-import f1 from '../../assets/images/f1.png'
-import f2 from '../../assets/images/f2.png'
-import f3 from '../../assets/images/f3.png'
-import f4 from '../../assets/images/f4.png'
-import f5 from '../../assets/images/f5.png'
-import f6 from '../../assets/images/f6.png'
+import es1 from '../../assets/images/es1.png'
+import es2 from '../../assets/images/es2.png'
+import es3 from '../../assets/images/es3.png'
+import es4 from '../../assets/images/es4.png'
+import es5 from '../../assets/images/es5.png'
+import es6 from '../../assets/images/es6.png'
+import es7 from '../../assets/images/es7.png'
+import es8 from '../../assets/images/es8.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -24,7 +25,9 @@ import 'aos/dist/aos.css';
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 export default function EveningShow() {
-  SwiperCore.use([Autoplay])
+  SwiperCore.use([Autoplay]);
+  SwiperCore.use([Pagination]);
+  SwiperCore.use([Navigation]);
   useEffect(() => {
     AOS.init();
   }, [])
@@ -54,22 +57,28 @@ export default function EveningShow() {
         
       >
         <SwiperSlide>
-          <img src={f1} />
+          <img src={es1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={f2} />
+          <img src={es2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={f3} />
+          <img src={es3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={f4} />
+          <img src={es4} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={f5} />
+          <img src={es5} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={f6} />
+          <img src={es6} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={es7} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={es8} />
         </SwiperSlide>
       </Swiper>
     </div>

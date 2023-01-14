@@ -5,6 +5,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5rem;
 }
 .grid{
     display: grid;
@@ -85,10 +86,9 @@
     margin-top: 2rem;
 }
 
-.alayouttitle::before{
+/* .alayouttitle::before{
     content: '';
 	position: absolute;
-	/* left:0; */
 	bottom: 0px;
 	background-color: #e91e63;
 	height: 3px;
@@ -99,7 +99,7 @@
 
 .alayouttitle:hover::before{
     width: 665px;
-}
+} */
 
 @media(width<900px){
     .alayouttitle{

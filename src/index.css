@@ -31,6 +31,9 @@ ul {
     background-attachment: scroll;
     background-repeat: repeat;
 }
+section{
+	scroll-snap-align: start;
+}
 
 
 /* https://colorhunt.co/palette/167893 */

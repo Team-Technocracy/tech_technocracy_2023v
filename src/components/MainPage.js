@@ -1,6 +1,6 @@
 import Home from './Home/Home';
 import Navbar from './Home/Navbar-new/Navbar';
-// import Journey from './components/Journey/Timeline';
+import Journey from './Journey/index';
 import Sponsors from './Sponsors/Spons';
 import Team from './Team/team';
 
@@ -10,7 +10,7 @@ function HomePage () {
         <>
          <Navbar/>
         <Home/>
-        {/* <Journey/> */}
+        <Journey/>
         <Sponsors/>
         <Team/>
         </>

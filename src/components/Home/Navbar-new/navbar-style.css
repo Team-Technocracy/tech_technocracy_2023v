@@ -106,11 +106,15 @@ nav {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background: rgb(15, 76, 117);
-        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        backdrop-filter: blur(12px);
+              background: rgba(7, 85, 91, 0.253);
         padding: 40px 0 0 10px;
-        transition: 1s;
+         transition: ease-out; 
         z-index:9999999;
+    }
+    #bars{
+      font-size: 40px;
+        color:white
     }
     #navbar.active{
         right: 0vw;

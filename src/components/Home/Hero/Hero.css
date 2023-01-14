@@ -100,6 +100,8 @@
 	font-size: 100px;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-shadow: 5px 5px  #cc0f39;
+	color: rgba(0, 153, 255, 0.93);
 }
 
 .textcontent p {

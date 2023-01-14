@@ -180,12 +180,14 @@ ul{
 	display: flex;
 }
 
-.techteamlink{
-	/* bottom: 0; */
+
+.techteamlink a{
+	text-decoration: none;
 	font-family: morden-warface;
 	position: absolute;
 	color: whitesmoke;
 	padding-top: 8rem;
+	font-size: 0.8em;
 }
 
 @media(width<900px){
@@ -209,4 +211,16 @@ ul{
 .techteamlink:hover::before{
 	width: 280px;
 	cursor: pointer;
+}
+.techanchor{
+	background: linear-gradient(90deg, rgba(248,220,120,0.9) 0%, rgba(67,177,248,0.9) 0%, rgba(233,30,99,0.9) 80%);
+	background: ( ) no-repeat;
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ font-family: modern-warfare;
+ font-size: 1.2rem;
+ padding: 2px;
+ display: inline-block;
+
 }

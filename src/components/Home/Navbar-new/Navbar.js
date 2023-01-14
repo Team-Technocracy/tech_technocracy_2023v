@@ -13,10 +13,11 @@ function Navbar() {
                 <a href="#"><img className="navlogo" src={tc2}></img></a>
                 <div>
                     <ul id="navbar" className={toggler?"#navbar active":"navbar"}>
-                        <li><a href="#hero">HOME</a></li>
+                        <li><Link to="/">HOME</Link></li>
                         <li><Link to="/aavartan">AAVARTAN</Link></li>
-                        <li><a href="#spons">SPONSORS</a></li>
-                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="/#journey">JOURNEY</a></li>
+                        <li><a href="/#spons">SPONSORS</a></li>
+                        <li><a href="/#team">TEAM</a></li>
                         <li><a href="#footer">CONTACT</a></li>
                         <div className="responsive-close" onClick={()=>setToggler(!toggler)}><MenuIcond id='bars'/></div>
                     </ul>

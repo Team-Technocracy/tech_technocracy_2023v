@@ -14,9 +14,9 @@ nav {
     background-color: transparent;
     padding: 7px 14px;
     z-index: 100000;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    margin-bottom: 100%;
+   
 }
 
 .navlogo {

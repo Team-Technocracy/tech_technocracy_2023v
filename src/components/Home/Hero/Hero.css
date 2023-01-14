@@ -100,19 +100,24 @@
 	font-size: 100px;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-shadow: 5px 5px  #cc0f39;
-	color: rgba(0, 153, 255, 0.93);
+	text-shadow: 5px 5px  #cc0f39, -5px -5px cyan;
+	color: white;
+	letter-spacing: 3px;
+	
 }
 
 .textcontent p {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 8px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .button_div {
 	margin-top: 40px;
 	margin-left: 50px;
+	
 	z-index: 100;
 	align-items: flex-start;
 }

@@ -51,7 +51,7 @@ const NFooter = () => {
   	 				<a href="#"><InstagramIcon style={{ color: "#2FA4FF", fontSize:"35px" }}/></a>
   	 				<a href="#"><LinkedInIcon style={{ color: "#2FA4FF", fontSize:"35px" }}/></a>
   	 			</div>
-				<div className={styles.techteamlink} to="/tech-team">Made with&nbsp; <FavoriteSharpIcon style = {{ color: "red",fontSize: "20px",paddingTop:"2px" }}/> &nbsp;by Tech Team</div>
+				<div className={styles.techteamlink} to="/tech-team"> <a href="/tech-team">Made with <span className={styles.techanchor}  >Magic</span> by Tech Team</a> </div>
   	 		</div>
   	 	</div>
   	 </div>

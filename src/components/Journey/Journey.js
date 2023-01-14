@@ -4,6 +4,7 @@ import "react-vertical-timeline-component/style.min.css";
 import styles from "./Timeline.module.css";
 import { ReactComponent as Milestone } from "./Icons/flag-solid.svg";
 // import { animationDelay } from "../../constants";
+import SideNav from '../utils/Header/Headers';
 
 function Journey(){
 
@@ -13,9 +14,9 @@ function Journey(){
     let showing_element_arrow={color:"#3d4489"}
 
     return(
-        <div>
+        <div id="journey">
+           <SideNav name="Our Journey"/>
         <div className={styles.title} >
-            <h1>Our Journey</h1>
         </div>
         <VerticalTimeline 
             lineColor={'#08f7fe'}

@@ -7,6 +7,7 @@ import Vibhuti_Chandrakar from "../../../images/TechTeam/Vibhuti_Chandrakar.jpg"
 import Piyush_Kumar from "../../../images/TechTeam/Piyush_Kumar.jpg";
 import Somil_Puri from "../../../images/TechTeam/Somil_Puri.jpg";
 import Ankit_Kumar_Lakra from "../../../images/TechTeam/Ankit_Kumar_Lakra.jpg";
+import Premchand_Maddikuntla from '../../../images/TechTeam/Premchand_Maddikuntla.jpg'
 
 export const techteamList = [
   {
@@ -44,8 +45,8 @@ export const techteamList = [
   {
     id: 5,
     name: "Premchand Maddikuntla",
-    imgUrl: "",
-    linkedinUrl: "https://www.linkedin.com/in/premchand-maddikuntla-23699b201",
+    imgUrl: Premchand_Maddikuntla,
+    linkedinUrl: "https://www.linkedin.com/in/prem913",
     instaUrl: "#",
     desi:"Core Coordinator"
   },

@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet';
 import ScrollToTop from 'react-scroll-to-top';
 import ScrollUp from './components/ScrollUp';
 import SideNav from './components/Sidenav/SideNav';
-import TechTeamSec from './components/Team/TechTeam/techteamsec';
+import TechTeamSec from './components/Team/TechTeam/TechTeamMain';
 
 
 
@@ -66,7 +66,7 @@ const App = () => {
 				</Helmet>
 			</BrowserRouter>
 
-			<Footer />
+			{/* <Footer /> */}
 			<ScrollToTop
 				smooth
 				style={{

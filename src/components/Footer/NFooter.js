@@ -10,13 +10,13 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 // import FavoriteSharpIcon from '@material-ui/icons/FavoriteRounded';
 import classnames from 'classnames';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-const NFooter = () => {
+function NFooter (){
 	let curQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
 	return (
-		<>
+		<div>
 			<footer id='footer' className={styles.footer}>
 				<div className={styles.fcontainer}>
 					<div className={styles.frow}>
@@ -51,13 +51,15 @@ const NFooter = () => {
 								<a href="https://www.instagram.com/nitrr.aavartan/?hl=en" target='_blank' rel='noreferrer'><InstagramIcon style={{ color: "#2FA4FF", fontSize: "35px" }} /></a>
 								<a href="https://in.linkedin.com/company/aavartan" target='_blank' rel='noreferrer'><LinkedInIcon style={{ color: "#2FA4FF", fontSize: "35px" }} /></a>
 							</div>
-							<div className={styles.techteamlink} to="/tech-team"> <a href="/tech-team">Made with <span className={styles.techanchor}  >Magic</span> by Tech Team</a> </div>
+							<div className={styles.techteamlink}> <Link to="/tech-team">Made with <span className={styles.techanchor}  >Magic</span> by Tech Team</Link> </div>
+						
 						</div>
 					</div>
 				</div>
 			</footer>
-		</>
-	)
+				
+		</div>
+	);
 }
 
 export default NFooter

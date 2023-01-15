@@ -1,3 +1,4 @@
+import NFooter from './Footer/NFooter';
 import Home from './Home/Home';
 import Navbar from './Home/Navbar-new/Navbar';
 
@@ -15,6 +16,7 @@ function HomePage () {
         <Journey/>
         <Sponsors/>
         <Team/>
+        <NFooter/>
         </>
     )
 }

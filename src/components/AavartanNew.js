@@ -9,6 +9,7 @@ import Vigyaan from './Aavartan_Components/Vigyaan'
 import ProblemSt from './Aavartan_Components/ProblemSt'
 import Navbar from './Home/Navbar-new/Navbar'
 import AavartanHero from './Aavartan_Components/AavartanHero'
+import NFooter from './Footer/NFooter'
 
 const AavartanNew = () => {
   return (
@@ -22,6 +23,7 @@ const AavartanNew = () => {
         <Vigyaan/>
         <ProblemSt/>
         <LayoutVigyan/>
+        <NFooter/>
     </div>
     </>
   )

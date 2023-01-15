@@ -9,6 +9,7 @@ import Somil_Puri from "../../../images/TechTeam/Somil_Puri.jpg";
 import Ankit_Kumar_Lakra from "../../../images/TechTeam/Ankit_Kumar_Lakra.jpg";
 
 import Rishav_Gandhi from "../../../images/TechTeam/rishav-gandhi.jpeg";
+import D_Anuj from "../../../images/TechTeam/d_anuj.jpg";
 
 import Premchand_Maddikuntla from '../../../images/TechTeam/Premchand_Maddikuntla.jpg'
 
@@ -90,8 +91,8 @@ export const techteamList = [
   {
     id: 10,
     name: "Anuj Singh",
-    imgUrl: "",
-    linkedinUrl: "https://www.linkedin.com/in/",
+    imgUrl: D_Anuj,
+    linkedinUrl: "https://www.linkedin.com/in/d-anuj-kumar",
     instaUrl: "#",
     desi:"Executive"
   },

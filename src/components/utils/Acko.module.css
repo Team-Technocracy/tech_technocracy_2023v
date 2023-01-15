@@ -1,0 +1,44 @@
+.techteamlink {
+	/* bottom: 0; */
+	position: relative;
+	color: whitesmoke;
+	text-decoration: none;
+	font-family: morden-warface;
+	font-size: 0.8em;
+	width: 100%;
+	text-align: right;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	background-image: linear-gradient(to right, #20276B, #000000);
+}
+
+.techteamlink::before {
+	content: '';
+	position: absolute;
+	right: 50px;
+	bottom: 20px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+	transition: all 0.3s ease;
+
+}
+
+.techteamlink:hover::before {
+	width: 270px;
+	cursor: pointer;
+}
+
+.techanchor {
+	background: linear-gradient(90deg, rgba(248, 220, 120, 0.9) 0%, rgba(67, 177, 248, 0.9) 0%, rgba(233, 30, 99, 0.9) 80%);
+	background: () no-repeat;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-family: modern-warfare;
+	font-size: 1.2rem;
+	padding: 2px;
+	display: inline-block;
+
+}

@@ -1,0 +1,175 @@
+@font-face{
+    font-family: valorax;
+    src: url(../../assets/fonts/Valorax-lg25V.otf) format("opentype");
+}
+
+@font-face{
+    font-family: modern-warfare;
+    src: url(../../assets/fonts/ModernWarfare-OV7KP.ttf) format("truetype");
+}
+
+.herocontainer{
+    padding: 0 10rem;
+}
+.herotitle{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    padding: 10rem 0;
+    font-family: modern-warfare;
+}
+.herowrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.herowrapperleft{
+    width: 50%;
+    padding: 1rem;
+}
+
+.herowrapperright{
+    width: 50%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.herowrapperright img{
+    height:450px;
+    animation: rotate 4s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+
+.herowrapperheading{
+    color: white;
+    font-family: modern-warfare;
+    font-size: 56px;
+    line-height: 1.18;
+    margin: 2rem 0;
+    font-weight: 0;
+    letter-spacing: 1px;
+}
+/* .herowrapperheading::before{
+    content: '';
+	position:relative;
+	bottom: 380px;
+	background-color: #e91e63;
+	height: 3px;
+	box-sizing: border-box;
+	width: 70px;
+	transition: all 0.3s ease;
+}
+.herowrapperheading:hover::before{
+    width: 250px;
+} */
+
+.herowrapperdescription{
+    color: white;
+    font-size: 21px;
+    line-height: 1.41;
+    margin: 2rem 0;
+}
+
+
+.herowrapperbutton button{
+    padding: 0.8rem 2rem;
+    margin: 2rem 0;
+    font-size: 20px;
+    border-radius: 0 20px 0 20px;
+    font-weight: 0;
+    font-family: modern-warfare;
+    cursor: pointer;
+}
+.herowrapperbutton button:hover{
+    background-color: antiquewhite;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: valorax;
+}
+
+.herowrapperbtn button{
+	padding: 0.5rem 1rem;
+	font-size: 1.6rem;
+	color: cyan !important;
+	font-family: modern-warfare;
+	font-weight: 0;
+	border-radius: 5px;
+	border: 2px solid cyan;
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+    background-color: transparent;
+}
+
+.herowrapperbtn button:hover {
+	background-color: cyan;
+	color: #161622 !important;
+	transition: background-color 0.2s ease;
+}
+
+
+@media(width<1200px){
+    .herowrapper{
+        flex-direction: column;
+    }
+    .herowrapperleft{
+        width: 100%;
+        padding: 1rem;
+    }
+    .herowrapperright{
+        width: 100%;
+        padding:1rem;
+    }
+    .herowrapperright img{
+        height:385px;
+    }
+    .herocontainer{
+        padding: 0rem;
+    }
+    .herotitle{
+        font-size: 40px;
+        padding: 5rem 0;
+    }
+    .herowrapperheading{
+        font-size: 40px;
+        text-align: center;
+    }
+    .herowrapperdescription{
+        font-size: 15px;
+    }
+    .herowrapperbutton button{
+        padding: 0.4rem 1rem;
+        font-size: 15px;
+        font-weight: 0;
+        border-radius: 0 10px 0 10px;
+    }
+    .herowrapperbtn{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(width<900px){
+    .herowrapperright img{
+        height:300px;
+    }
+    .herowrapperheading::before{
+    bottom: 710px;
+    }
+    .herowrapperheading:hover::before{
+        width: 180px;
+    }
+}
+

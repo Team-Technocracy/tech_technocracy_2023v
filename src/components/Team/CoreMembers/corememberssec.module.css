@@ -6,12 +6,17 @@
 
 .coresec {
   width: 100%;
-  margin: 10vh auto;
+  /* margin: 10vh auto; */
+  background-image: url(../../../assets/svgs/blueback.svg), linear-gradient(to right, #1e2464, #090a1f);
+background-attachment: fixed;
+padding-bottom: 20px;
+
 }
 
 .corecontainer {
   width: 80vw;
   margin: 5vh auto;
+  margin-bottom: 0vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 5vh;

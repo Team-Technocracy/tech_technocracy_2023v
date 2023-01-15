@@ -1,4 +1,4 @@
-import SideNav from '../SideNav/sidenav';
+import SideNav from '../../utils/Header/Headers';
 import CoreMemberCard from './coremembers/coremembercard';
 
 import styles from './corememberssec.module.css';

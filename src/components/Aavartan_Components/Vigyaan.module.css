@@ -1,0 +1,25 @@
+.vigyaancontainer{
+    padding: 0;
+    margin: 0;
+    background-image:  linear-gradient(to right, #1e2464, #090a1f);
+}
+
+.vigyaanphone{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.vigyaanlappy{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media(width<900px){
+    .vigyaanphone{
+        display: block;
+    }
+    .vigyaanlappy{
+        display: none;
+    }
+}

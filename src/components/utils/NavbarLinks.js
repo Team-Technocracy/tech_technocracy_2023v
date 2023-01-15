@@ -14,7 +14,7 @@ const data = [
   //   text: "SMACK D-BUG",
   // },
   {
-    to:'/#aavartan',
+    to:'/aavartan',
     text: "Aavartan"
   },
   {

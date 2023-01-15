@@ -1,15 +1,18 @@
 import Home from './Home/Home';
 import Navbar from './Home/Navbar-new/Navbar';
-// import Journey from './components/Journey/Timeline';
+
+import Journey from './Journey/Journey';
+
 import Sponsors from './Sponsors/Spons';
 import Team from './Team/team';
-import Footer from './Footer/NFooter';
+
 
 function HomePage () {
     return (
         <>
+         <Navbar/>
         <Home/>
-        {/* <Journey/> */}
+        <Journey/>
         <Sponsors/>
         <Team/>
         </>

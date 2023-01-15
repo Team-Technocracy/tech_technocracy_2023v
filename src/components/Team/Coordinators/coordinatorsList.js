@@ -19,7 +19,8 @@ export const coordinatorsList = [
     name: "Ananya Agrahari",
     imgUrl: Ananya_Agrahari,
     linkedinUrl: "https://www.linkedin.com/in/ananyaagrahari09",
-    instaUrl: "#",
+    domain:"Sponsorship",
+    // instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
     
@@ -32,6 +33,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Sponsorship"
 
   },
   {
@@ -42,6 +44,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Event Management"
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Event Management"
   },
   {
     id: 5,
@@ -60,15 +64,17 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Vigyaan"
   },
   {
     id: 6,
-    name: "Astitva",
+    name: "Astitva Choubey",
     imgUrl: Astitva,
     linkedinUrl: "https://www.linkedin.com/in/astitva-choubey-595003190",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Sponsorship"
   },
   {
     id: 7,
@@ -78,6 +84,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Public Relations"
   },
   {
     id: 8,
@@ -87,6 +94,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Design"
   },
   {
     id: 9,
@@ -96,6 +104,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Vigyaan"
   },
   {
     id: 10,
@@ -105,6 +114,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Design"
   },
   {
     id: 11,
@@ -114,6 +124,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Event Management"
   },
   {
     id: 12,
@@ -123,6 +134,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Public Relations"
   },
   {
     id: 13,
@@ -132,6 +144,7 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Documentation"
   },
   {
     id: 14,
@@ -141,5 +154,6 @@ export const coordinatorsList = [
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain:"Tech"
   },
 ];

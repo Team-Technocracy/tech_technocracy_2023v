@@ -1,0 +1,34 @@
+.stickynav {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0vh;
+    background: none;
+    min-height: 6vh;
+    line-height: 6vh;
+    z-index: 20;
+    margin: 0vh auto;
+  }
+  
+  .sidenav {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family:modern-warfare;
+    backdrop-filter: blur(2px) saturate(111%);
+    -webkit-backdrop-filter: blur(2px) saturate(111%);
+    /* background-color: rgba(0, 1, 9, 0.805); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(67,177,248,0.9) 0%, rgba(30,36,100,0.9) 80%);  } */
+    /* background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(174,49,168,0.9) 0%, rgba(121,0,255,0.9) 100%); */
+    /* background: linear-gradient(to right, #3e0071db 10%, #e91e62be  100%); */
+    background: linear-gradient(90deg, rgba(248,220,120,0.9) 0%, rgba(67,177,248,0.9) 0%, rgba(233,30,99,0.9) 80%);
+}  
+/* #fb2577bd */
+  
+  @media screen and (max-width: 360px) {
+    .sidenav {
+      font-size: 28px;
+    }
+  }
+  

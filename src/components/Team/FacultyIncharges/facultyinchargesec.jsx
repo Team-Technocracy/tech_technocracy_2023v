@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./facultyinchargesec.module.css";
-import SideNav from "../SideNav/sidenav";
+import SideNav from "../../utils/Header/Headers";
 import FacultyCard from "./facultyIncharge/facultyincharge";
 import facultyimage from "../../../images/faculty/Faculty.png";
 

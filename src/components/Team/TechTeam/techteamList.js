@@ -1,5 +1,6 @@
 import Syam_Yadavalli from "../../../images/TechTeam/Syam_Yadavalli.jpg";
 import Harsh_Ranjan_Sinha from "../../../images/TechTeam/Harsh_Ranjan_Sinha.jpg";
+import Rishav_Gandhi from "../../../images/TechTeam/Rishav_Gandhi.jpg";
 import Shazma_Siddiqui from "../../../images/TechTeam/Shazma_Siddiqui.jpg";
 import Aniket_Kumar from "../../../images/TechTeam/Aniket_Kumar.jpg";
 import Rahul_Singh from "../../../images/TechTeam/Rahul_Singh.jpg";
@@ -36,7 +37,7 @@ export const techteamList = [
   {
     id: 4,
     name: "Rishav Gandhi",
-    imgUrl: "",
+    imgUrl: Rishav_Gandhi,
     linkedinUrl: "https://www.linkedin.com/in/rishav-gandhi-998a74211",
     instaUrl: "#",
     desi:"Core Coordinator"

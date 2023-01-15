@@ -22,7 +22,7 @@
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1095px) {
   .co_container , .ov_container {
     grid-template-columns: repeat(3, 4fr);
     margin: auto;

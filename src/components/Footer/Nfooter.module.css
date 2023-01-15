@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;1,300&family=Roboto+Mono:ital,wght@0,300;0,600;1,300&family=Source+Code+Pro:ital,wght@0,300;0,600;1,400&display=swap');
+
+/* @font-face{
+    font-family: gotham;
+    src: url(../../assets/fonts/Gotham-Bold.otf) format("opentype");
+} */
+@font-face{
+    font-family: morden-warface;
+    src: url(../../assets/fonts/ModernWarfare-OV7KP.ttf) format("truetype");
+}
+
+.frow{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.footercol{
+	padding: 3rem 0;
+}
+
+ul{
+	list-style: none;
+}
+.footer{
+	background-image: linear-gradient(to right,#20276B, #000000);
+    padding: 50px 50px;
+	border-top: 0.5px solid whitesmoke;
+	;
+}
+
+.fcontainer{
+	margin: 0;
+}
+
+.footercol h4{
+	font-size: 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 300;
+	position: relative;
+	font-family: morden-warface;
+}
+.footercol h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+	transition: all 0.3s ease;
+}
+
+.footercol h4:hover::before{
+	width: 200px;
+}
+
+.footercol ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footercol ul li a{
+	font-size: 18px;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: 'Kanit';
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+}
+
+.footercol ul li a:hover{
+	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
+	background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	/* padding-left: 8px; */
+	transform: translateX(8px);
+}
+.footercol .fsociallinks a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	/* background-color: rgba(255,255,255,0.2); */
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	/* border-radius: 50%; */
+	transition: all 0.5s ease;
+}
+.footercol .fsociallinks a:hover{
+	transform: scale(1.3);
+}
+
+.logosec{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 25%;
+	padding-top: 0;
+}
+
+.fquotessec{
+	margin-top: 3rem;
+	margin-left: 2rem;
+
+}
+
+.fquotes{
+	font-family: 'Kanit';
+	font-weight: 400;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.fsaidby{
+	float: right;
+	font-family: 'Kanit';
+	font-weight: 400;
+	font-size: 17px;
+
+}
+.fsaidby:hover{
+	padding-right: 8px;
+	transition: all 0.5s ease;
+}
+
+/*responsive*/
+@media(max-width: 900px){
+  .footercol{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.f-quotessec{
+	margin-left: 0rem;
+}
+}
+@media(max-width: 700px){
+  .footercol{
+    width: 100%;
+	align-items: center;
+	padding: 1rem 0;
+}
+.footercol h4{
+	text-align: center;
+}
+.footercol h4::before{
+	width: 100%;
+	text-align: center;
+}
+.footercol ul{
+	text-align: center;
+	/* align-items: center; */
+}
+.fsociallinks{
+	display: flex;
+	justify-content: space-around;
+}
+}
+
+.linkss{
+	padding: 0 1rem 0 0;
+	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.linkss2{
+	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
+  -webkit-background-clip: text;
+background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.linker{
+	font-size: 15px;
+}
+
+.footercol ul li{
+	display: flex;
+}
+
+
+/* .techteamlink a{
+	text-decoration: none;
+	font-family: morden-warface;
+	position: absolute;
+	color: whitesmoke;
+	padding-top: 8rem;
+	font-size: 0.8em;
+}
+
+@media(width<900px){
+	.techteamlink{
+		padding-top: 2rem;
+	}
+}
+
+.techteamlink::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+	transition: all 0.3s ease;
+}
+
+.techteamlink:hover::before{
+	width: 280px;
+	cursor: pointer;
+}
+.techanchor{
+	background: linear-gradient(90deg, rgba(248,220,120,0.9) 0%, rgba(67,177,248,0.9) 0%, rgba(233,30,99,0.9) 80%);
+	background: ( ) no-repeat;
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+ font-family: modern-warfare;
+ font-size: 1.2rem;
+ padding: 2px;
+ display: inline-block;
+
+} */

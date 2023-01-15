@@ -62,7 +62,7 @@
   margin-top: 0;
 }
 
-.eveningshow-title::before{
+/* .eveningshow-title::before{
   content: '';
 	position: absolute;
 	bottom: 630px;
@@ -75,20 +75,20 @@
 
 .eveningshow-title:hover::before{
   width: 560px;
-}
+} */
 
 @media(width<900px){
   .eveningshow-title{
     font-size:40px !important;
     margin: 0 0 2rem 0;
   }
-  .eveningshow-title::before{
+  /* .eveningshow-title::before{
     bottom: 360px;
     width: 0;
   }
   .eveningshow-title:hover::before{
     width: 0;
-  }
+  } */
 
 }
 

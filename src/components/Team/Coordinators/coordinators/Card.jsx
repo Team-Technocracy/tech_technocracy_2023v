@@ -10,7 +10,7 @@ import '../coordinators/Card.css';
 
 
 function Card(props) {
-console.log(props.domain);
+// console.log(props.domain);
     const [aniToggle,setAniToggle] = useState(false);
     const [downAni, setDownAni] = useState(false);
     const [socialClassName,setSocialClassName] = useState('card--social');

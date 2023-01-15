@@ -1,16 +1,16 @@
 import tc2 from "../../../images/tcLogo.png";
 import "./navbar-style.css";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuIcond from '@material-ui/icons/Clear';
 function Navbar() {
     const [toggler,setToggler]=useState(false);
-    console.log(toggler);
+    // console.log(toggler);
     return (
         <div>
             <nav>
-                <a href="#"><img className="navlogo" src={tc2}></img></a>
+                <a href="#"><img className="navlogo" src={tc2} alt='#jpg' ></img></a>
                 <div>
                     <ul id="navbar" className={toggler?"#navbar active":"navbar"}>
                         <li><Link to="/">HOME</Link></li>

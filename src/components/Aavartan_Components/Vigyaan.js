@@ -6,10 +6,10 @@ import vigyaanPhone from '../../assets/svgs/1.png'
 const Vigyaan = () => {
   return (
     <>
-    <div className={styles.vigyaancontainer}>
-       <img src={vigyaanLappy} alt="" width="100%" className={styles.vigyaanlappy}/>
-       <img src={vigyaanPhone} alt="" width="100%" className={styles.vigyaanphone}/>
-    </div>
+      <div id="vigyaan" className={styles.vigyaancontainer}>
+        <img src={vigyaanLappy} alt="" width="100%" className={styles.vigyaanlappy} />
+        <img src={vigyaanPhone} alt="" width="100%" className={styles.vigyaanphone} />
+      </div>
     </>
   )
 }

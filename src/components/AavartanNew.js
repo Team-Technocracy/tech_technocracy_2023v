@@ -14,17 +14,17 @@ import NFooter from './Footer/NFooter'
 const AavartanNew = () => {
   return (
     <>
-    <div className="aavartan-container">
-        <Navbar/>
-        <AavartanHero/>
-        <Event/>
-        <EveningShows/>
-        <Layout/>
-        <Vigyaan/>
-        <ProblemSt/>
-        <LayoutVigyan/>
-        <NFooter/>
-    </div>
+      <div className="aavartan-container">
+        <Navbar />
+        <AavartanHero />
+        {/* <Event/> */}
+        <EveningShows />
+        <Layout />
+        <Vigyaan />
+        <ProblemSt />
+        <LayoutVigyan />
+        <NFooter />
+      </div>
     </>
   )
 }

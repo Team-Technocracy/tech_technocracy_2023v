@@ -4,7 +4,7 @@
 // import Journey from './components/Journey/Timeline';
 // import Sponsors from './components/Sponsors/Spons';
 // import Team from './components/Team/team';
-import Footer from './components/Footer/NFooter';
+// import Footer from './components/Footer/NFooter';
 import HomePage from './components/MainPage';
 import Aavartan from './components/AavartanNew';
 // import TechTeam from './components/Team/TechTeam/techteamsec';

@@ -202,7 +202,7 @@ background-clip: text;
 	}
 }
 
-.techteamlink::before{
+.techteamlink a::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -214,7 +214,7 @@ background-clip: text;
 	transition: all 0.3s ease;
 }
 
-.techteamlink:hover::before{
+.techteamlink a:hover::before{
 	width: 280px;
 	cursor: pointer;
 }

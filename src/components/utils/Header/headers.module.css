@@ -6,7 +6,7 @@
     min-height: 6vh;
     line-height: 6vh;
     z-index: 20;
-    margin: 5vh auto;
+    margin: 0vh auto 5vh auto;
   }
   
   .sidenav {

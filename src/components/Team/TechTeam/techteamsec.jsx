@@ -5,7 +5,7 @@ import styles from "./techteamsec.module.css";
 import {techteamList} from "./techteamList";
 import FavoriteSharpIcon from '@material-ui/icons/FavoriteRounded';
 const TechTeamSec = () => {
-    return <div className={styles.techteamsec}>
+    return <div id="tech-team" className={styles.techteamsec}>
 		<div className={styles.technav}>
 
 		<div className={styles.headertech}>Our Tech Team</div>

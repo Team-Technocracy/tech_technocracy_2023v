@@ -30,8 +30,8 @@ const NFooter = () => {
 						<div className={styles.footercol}>
 							<h4>TECHNOCRACY</h4>
 							<ul>
-								<li><a href="#aavartan">Aavartan</a></li>
-								<li><a href="#aavartan">Vigyaan</a></li>
+								<li><a href="/aavartan">Aavartan</a></li>
+								<li><a href="/aavartan">Vigyaan</a></li>
 								<li><a href="#spons">Sponsors</a></li>
 								<li><a href="#team">Team</a></li>
 							</ul>

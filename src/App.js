@@ -35,39 +35,39 @@ const App = () => {
 		setIsDesktop(window.innerWidth > 768);
 	};
 
-  return (
-    <div>
-		
-      {/* <Home/> */}
-      {/* <Journey/> */}
-	  {/* <Aavartan/> */}
-      {/* <Sponsors/> */}
-      {/* <Team/> */}
+	return (
+		<div>
 
-	  
-	  <BrowserRouter>
-	  {/* <Navbar/> */}
-	  <SideNav/>
-	  <Routes>
-	  <Route exact path='/' element={<HomePage/>} />
-	  {/* </Routes> */}
-	  {/* <Routes> */}
-	  <Route exact path='/aavartan' element={<Aavartan/>} />
-	  <Route exact path='/tech-team' element={<TechTeamSec/>} />
-	  {/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
-			</Routes>
-	  <Helmet>
-				<title>Technocracy NIT Raipur</title>
-				<meta name='description' content='Technocracy official NIT Raipur' />
-				<meta
-					name='keywords'
-					content='technocracy,tc,raipur,nit,nit raipur,aavartan,tech,tech-fest,chhattisgarh,cg'
-				/>
-			</Helmet>
+			{/* <Home/> */}
+			{/* <Journey/> */}
+			{/* <Aavartan/> */}
+			{/* <Sponsors/> */}
+			{/* <Team/> */}
+
+
+			<BrowserRouter>
+				{/* <Navbar/> */}
+				<SideNav />
+				<Routes>
+					<Route exact path='/' element={<HomePage />} />
+					{/* </Routes> */}
+					{/* <Routes> */}
+					<Route exact path='/aavartan' element={<Aavartan />} />
+					<Route exact path='/tech-team' element={<TechTeamSec />} />
+					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
+				</Routes>
+				<Helmet>
+					<title>Technocracy | NIT Raipur</title>
+					<meta name='description' content='Technocracy official NIT Raipur' />
+					<meta
+						name='keywords'
+						content='technocracy,tc,raipur,nit,nit raipur,aavartan,tech,tech-fest,chhattisgarh,cg'
+					/>
+				</Helmet>
 			</BrowserRouter>
-			
-	  <Footer/>
-	  <ScrollToTop
+
+			<Footer />
+			<ScrollToTop
 				smooth
 				style={{
 					borderRadius: '100%',
@@ -77,10 +77,10 @@ const App = () => {
 					bottom: "55px",
 				}}
 				component={<ScrollUp />}
-				/>
-    </div>
-    );
-  };
-  
+			/>
+		</div>
+	);
+};
+
 
 export default App;

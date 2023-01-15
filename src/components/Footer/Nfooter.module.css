@@ -70,13 +70,17 @@ ul{
 	font-weight: 300;
 	display: block;
 	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
 }
 
 .footercol ul li a:hover{
 	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
+	background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	padding-left: 8px;
+	/* padding-left: 8px; */
+	transform: translateX(8px);
 }
 .footercol .fsociallinks a{
 	display: inline-block;
@@ -164,11 +168,13 @@ ul{
 	padding: 0 1rem 0 0;
 	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .linkss2{
 	background: -webkit-linear-gradient(#2FA4FF, #00FFDD);
   -webkit-background-clip: text;
+background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

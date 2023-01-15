@@ -1,11 +1,11 @@
 
-import TechTeamsec from './Techteamsec';
+import TechTeamsec from './techteamsec';
 
 
 function TechTeamsMain() {
     return (
         <div id="tech-team">
-         <TechTeamsec/>
+            <TechTeamsec />
         </div>
     )
 }

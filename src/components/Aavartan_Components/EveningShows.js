@@ -57,28 +57,28 @@ export default function EveningShow() {
         
       >
         <SwiperSlide>
-          <img src={es1} />
+          <img src={es1} alt='text' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={es2} />
+          <img src={es2} alt='text' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={es3} />
+          <img src={es3} alt='text' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={es4} />
+          <img src={es4} alt='text' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={es5} />
+          <img src={es5} alt='text' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={es6} />
+          <img src={es6} alt='text' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={es7} />
+          <img src={es7}  alt='text'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={es8} />
+          <img src={es8} alt='text' />
         </SwiperSlide>
       </Swiper>
     </div>

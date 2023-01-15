@@ -17,7 +17,7 @@ import MECH from '../../assets/ProblemSt/Mech.pdf';
 import META from '../../assets/ProblemSt/Meta.pdf';
 import Mining from '../../assets/ProblemSt/Mining.pdf';
 
-import circle from '../../assets/svgs/circle2.svg'
+// import circle from '../../assets/svgs/circle2.svg'
 
 const ProblemSt = () => {
   return (

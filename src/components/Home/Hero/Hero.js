@@ -5,7 +5,7 @@ import videoBg from "../../../images/spaceship.webm";
 import styles from './Hero.css';
 
 const Hero = () => {
-	const ringsRef = useRef(null);
+	// const ringsRef = useRef(null);
 
 	useEffect(() => {
 	});
@@ -14,18 +14,18 @@ const Hero = () => {
 		<div id='hero' className={styles.heroWrapper}>
 			<div className={styles.videoWrapper}>
 				<div className={styles.particleWrapperLeft}>
-					
+
 					<div className='videodiv'>
-					
+
 
 						<video src={videoBg} autoPlay loop muted />
 					</div>
 					<div className='textcontent'>
-					
-						<a href=""><button className="button-49" role="button">Vigyaan</button></a>
-						<p>The Student Technical Committee of NIT Raipur </p>
+
+						<a href="/aavartan"><button className="button-49">Vigyaan</button></a>
+						<p>The student Technical Committee of NIT Raipur </p>
 						<h2>Team Technocracy</h2>
-					
+
 					</div>
 				</div>
 			</div>

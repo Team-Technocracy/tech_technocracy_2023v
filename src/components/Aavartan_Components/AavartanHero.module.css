@@ -4,10 +4,10 @@
     height: 100vh;
     overflow: hidden;
 }
-.ahvideo{
+/* .ahvideo{
     margin-top: -80px;
-    /* height: 100vh; */
-}
+    height: 100vh;
+} */
 .ahcentered {
     position: absolute;
     top: 30%;

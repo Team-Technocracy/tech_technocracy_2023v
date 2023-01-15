@@ -8,7 +8,7 @@ import Piyush_Kumar from "../../../images/TechTeam/Piyush_Kumar.jpg";
 import Somil_Puri from "../../../images/TechTeam/Somil_Puri.jpg";
 import Ankit_Kumar_Lakra from "../../../images/TechTeam/Ankit_Kumar_Lakra.jpg";
 
-import Rishav_Gandhi from "../../../images/TechTeam/rishav-gandhi.jpg";
+import Rishav_Gandhi from "../../../images/TechTeam/rishav-gandhi.jpeg";
 
 import Premchand_Maddikuntla from '../../../images/TechTeam/Premchand_Maddikuntla.jpg'
 

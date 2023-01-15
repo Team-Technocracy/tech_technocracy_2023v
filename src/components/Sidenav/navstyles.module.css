@@ -50,20 +50,20 @@
     border: 3px solid var(--primary-color);
     background: transparent;
     transition: background 0.2s;
-    /* box-shadow: 1px 1px 5px var(--primary-color); */
   }
   
   .navlink span {
     display: inline-block;
   }
   
-
+  
   .navitem:hover{
     transform: rotateZ(0deg);
   }
-
+  
   .navitem:hover .navlink {
     background: var(--primary-color);
+    box-shadow: 1px 1px 5px var(--primary-color);
   }
   
   /* .navlink_after {

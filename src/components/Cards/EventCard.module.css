@@ -54,6 +54,8 @@
     align-items: center;
     line-height: 24px;
     text-align: center !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 .eventcardline{
@@ -63,9 +65,17 @@
     font-weight: lighter;
 }
 
+.eventdetails{
+    width: 100%;
+    /* height: calc(100% - 270px); */
+    border-radius: 0px 0px 5px 5px;
+    backdrop-filter: blur(5px) saturate(100%);
+}
+
 .eventcardcarddetails{
     margin: 1rem 0;
     color: rgb(220, 220, 220);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* color: black; */
 }
 

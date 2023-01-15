@@ -7,11 +7,8 @@ import Vibhuti_Chandrakar from "../../../images/TechTeam/Vibhuti_Chandrakar.jpg"
 import Piyush_Kumar from "../../../images/TechTeam/Piyush_Kumar.jpg";
 import Somil_Puri from "../../../images/TechTeam/Somil_Puri.jpg";
 import Ankit_Kumar_Lakra from "../../../images/TechTeam/Ankit_Kumar_Lakra.jpg";
-<<<<<<< HEAD
 import Rishav_Gandhi from "../../../images/TechTeam/rishav-gandhi.jpg";
-=======
 import Premchand_Maddikuntla from '../../../images/TechTeam/Premchand_Maddikuntla.jpg'
->>>>>>> ccfd09987fb38a98428dcbf37f202f010556ce65
 
 export const techteamList = [
   {

@@ -68,7 +68,7 @@
 	flex-wrap: wrap;
 	flex-direction: column-reverse;
 	justify-content: flex-start;
-	align-items: start;
+	align-items: flex-start;
 	color: white;
 	padding-left: 7rem;
 	padding-bottom: 3rem;

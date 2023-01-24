@@ -51,7 +51,7 @@ function NFooter (){
 								<a href="https://www.instagram.com/nitrr.aavartan/?hl=en" target='_blank' rel='noreferrer'><InstagramIcon style={{ color: "#2FA4FF", fontSize: "35px" }} /></a>
 								<a href="https://in.linkedin.com/company/aavartan" target='_blank' rel='noreferrer'><LinkedInIcon style={{ color: "#2FA4FF", fontSize: "35px" }} /></a>
 							</div>
-							<div className={styles.techteamlink}> <Link to="/tech-team">Made with <span className={styles.techanchor}  >Magic</span> by Tech Team</Link> </div>
+							{/* <div className={styles.techteamlink}> <Link to="/tech-team">Made with <span className={styles.techanchor}  >Magic</span> by Tech Team</Link> </div> */}
 						
 						</div>
 					</div>

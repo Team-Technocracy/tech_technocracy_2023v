@@ -4,7 +4,7 @@
 // import Journey from './components/Journey/Timeline';
 // import Sponsors from './components/Sponsors/Spons';
 // import Team from './components/Team/team';
-// import Footer from './components/Footer/NFooter';
+import Footer from './components/Footer/NFooter';
 import HomePage from './components/MainPage';
 import Aavartan from './components/AavartanNew';
 // import TechTeam from './components/Team/TechTeam/techteamsec';
@@ -15,6 +15,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import ScrollUp from './components/ScrollUp';
 import SideNav from './components/Sidenav/SideNav';
 import TechTeamSec from './components/Team/TechTeam/TechTeamMain';
+import Acko from './components/utils/Acko';
 
 
 
@@ -64,9 +65,10 @@ const App = () => {
 						content='technocracy,tc,raipur,nit,nit raipur,aavartan,tech,tech-fest,chhattisgarh,cg'
 					/>
 				</Helmet>
-			</BrowserRouter>
+			
 
-			{/* <Footer /> */}
+			<Footer />
+			<Acko />
 			<ScrollToTop
 				smooth
 				style={{
@@ -78,6 +80,7 @@ const App = () => {
 				}}
 				component={<ScrollUp />}
 			/>
+			</BrowserRouter>
 		</div>
 	);
 };

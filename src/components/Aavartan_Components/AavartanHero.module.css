@@ -1,37 +1,90 @@
 .ahcontainer{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  height: 100%;
+	position: relative;
+	overflow: hidden;
 }
-/* .ahvideo{
-    margin-top: -80px;
-    height: 100vh;
-} */
-.ahcentered {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 10rem;
-    color: white;
+.ahcontainer video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	height: 100vh;
+}
+.videoWrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	background: black;
+}
+.particleWrapper,
+.particleWrapperLeft {
+	width: 100%;
+	height: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+.textcontent {
+	position: absolute;
+	height: 100%;
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 12%;
+  padding-bottom: 10%;
+  justify-items: center;
+  align-items: flex-start;
+}
+.textcontent h2 {
+  font-size: 100px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 5px 5px  #cc0f39, -5px -5px cyan;
+	color: white;
+	letter-spacing: 3px;
     /* text-align: center; */
     font-family: modern-warfare;
 }
 
-.ahabout{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    font-size: 18px;
-    transform: translate(-20%, -50%);
-    color: whitesmoke;
-    text-align: center;
-    padding: 10rem 0;
+.textcontent p {
+  font-size: 1rem;
+  color: whitesmoke;
+  /* text-align: center; */
 }
-
-
-
+@media screen and (max-width: 769px){
+  .textcontent {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .textcontent h2 {
+    font-size: 50px;
+  }
+  
+  .textcontent p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 426px){
+  .textcontent {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .textcontent h2 {
+    font-size: 2.8rem;
+  }
+  
+  .textcontent p {
+    font-size: 0.6rem;
+  }
+}
 .button49,
 .button49:after {
   width: 13rem;
@@ -49,19 +102,17 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin-top: 15px;
   /* box-shadow: 3px -3px 5px 2px black; */
 }
 
-@media(width<900px){
+/* @media(width<900px){
     .button49,
 .button49:after{
     top:85%;
 }
-}
+} */
 
 .button49:after {
     --slice-0: inset(50% 50% 50% 50%);
@@ -88,7 +139,7 @@
     animation-timing-function: steps(2, end);
   }
 
-  @media(width<900px){
+  /* @media(width<900px){
     .ahcentered{
         font-size:2.5rem;
         top: 15%;
@@ -105,7 +156,7 @@
         width: 18rem;
         font-size: 1rem;
     }
-}
+} */
 
   @keyframes glitch {
     0% {

@@ -4,11 +4,12 @@ import TechTeamCard from "./techteam/techteamcard.jsx";
 import styles from "./techteamsec.module.css";
 import {techteamList} from "./techteamList";
 import FavoriteSharpIcon from '@material-ui/icons/FavoriteRounded';
+import SideNav from "../../utils/Header/Headers.jsx";
 const TechTeamSec = () => {
     return <div className={styles.techteamsec}>
 		<div className={styles.technav}>
-
-		<div className={styles.headertech}>Our Tech Team</div>
+<SideNav name="Our Tech Team"/>
+		{/* <div className={styles.headertech}>Our Tech Team</div> */}
 		</div>
         <div className={styles.container}>
         {techteamList.map((item) => {

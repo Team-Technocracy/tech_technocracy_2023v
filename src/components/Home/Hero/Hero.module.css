@@ -101,7 +101,16 @@
 	font-size: clamp(6vw, 25px, 100px);
 	font-weight: bold;
 	text-transform: uppercase;
-	text-shadow: 5px 5px  #cc0f39, -5px -5px cyan;
+	text-shadow: 0.5px 0.5px #cc0f39,-0.5px -0.5px cyan,
+				1px 1px #cc0f39, -1px -1px cyan,
+				1.5px 1.5px #cc0f39, -1.5px -1.5px cyan,
+				2px 2px #cc0f39, -2px -2px cyan,
+				2.5px 2.5px #cc0f39, -2.5px -2.5px cyan,
+				3px 3px #cc0f39, -3px -3px cyan,
+				3.5px 3.5px #cc0f39, -3.5px -3.5px cyan,
+				4px 4px #cc0f39, -4px -4px cyan,
+				4.5px 4.5px #cc0f39, -4.5px -4.5px cyan,
+				5px 5px #cc0f39, -5px -5px cyan;
 	color: white;
 	letter-spacing: 3px;
 }

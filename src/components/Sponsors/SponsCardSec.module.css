@@ -14,8 +14,8 @@
 }
 
 .main {
-
-  width: 30vw;
+  width: 85%;
+  max-width: 420px;
   margin: 5vh auto;
   overflow: auto;
   background: white;

@@ -23,13 +23,15 @@
     border-radius: 10px;
     background-color: white;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   
   .sub {
     position: absolute;
-    bottom: 0.5rem;
-    right: 1rem;
+    top: 0.3rem;
     text-decoration: underline;
+    font-weight: 700;
   }
   @media screen and (max-width: 1350px) {
     .titlecontainer {

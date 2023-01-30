@@ -71,6 +71,7 @@
     backdrop-filter: blur(30px);
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    height: 100vh;
 }
 
 .heading {

@@ -18,6 +18,7 @@ import TechTeamSec from './components/Team/TechTeam/TechTeamMain';
 import Acko from './components/utils/Acko';
 import Event from './components/Aavartan_Components/Event'
 import Register from './components/Forms/Registration/Registration';
+import EventPage from './components/EventPage';
 
 
 
@@ -56,6 +57,7 @@ const App = () => {
 					{/* </Routes> */}
 					{/* <Routes> */}
 					<Route exact path='/aavartan' element={<Aavartan />} />
+					<Route exact path='/event' element={<EventPage/>}/>
 					<Route exact path='/tech-team' element={<TechTeamSec />} />
 					<Route exact path='/events' element={<Event />} />
 					<Route exact path='/register/:id' element={<Register />} />

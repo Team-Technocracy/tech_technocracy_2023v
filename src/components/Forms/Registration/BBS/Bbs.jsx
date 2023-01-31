@@ -1,8 +1,7 @@
-// this component will remove 
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
-import styles from "../Registration/styles.module.css";
+import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
@@ -16,7 +15,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Registration() {
+function Bbs() {
 
 	const { id } = useParams();
 	// data of event
@@ -86,8 +85,9 @@ function Registration() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>{data.name}</h3>
-							<p className={styles.event_description}> {data.desc}
+							<h3 className={styles.event_title}>BEG BORROW STEAL</h3>
+							<p className={styles.event_description}> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+
 							</p>
 						</div>
 					</div>
@@ -95,7 +95,7 @@ function Registration() {
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
 						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
+						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" , whatsapp_number:"",year: "",branch:"" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 									<Grid item xs={12} >
@@ -105,7 +105,20 @@ function Registration() {
 											id="team_name"
 											name="team_name"
 											label="Team Name"
-											variant="standard"
+											variant="outlined"
+											autoFocus
+											autoComplete='off'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
+									<Grid item xs={12} >
+										<TextField
+											required
+											fullWidth
+											id="team_leader_name"
+											name="team_leader_name"
+											label="Team Leader Name"
+											variant="outlined"
 											autoFocus
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
@@ -115,11 +128,12 @@ function Registration() {
 										<TextField
 											required
 											fullWidth
-											id="team_leader_name"
-											name="team_leader_name"
-											label="Team Leader Name"
-											variant="standard"
-											autoComplete='off'
+											type="email"
+											id="team_leader_email"
+											name="team_leader_email"
+											label="Team Leader Email Id"
+											variant="outlined"
+											autoComplete='none'
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
@@ -127,11 +141,23 @@ function Registration() {
 										<TextField
 											required
 											fullWidth
-											id="team_leader_mail"
-											name="team_leader_mail"
-											label="Team Leader Email id"
-											variant="standard"
-											autoComplete='off'
+											id="team_leader_number"
+											name="team_leader_number"
+											label="Mobile Number (Team Leader)"
+											variant="outlined"
+											autoComplete='none'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
+											required
+											fullWidth
+											id="whatsapp_number"
+											name="whatsapp_number"
+											label="WhatsApp Number (Team Leader)"
+											variant="outlined"
+											autoComplete='none'
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
@@ -141,13 +167,36 @@ function Registration() {
 											fullWidth
 											id="college_name"
 											name="college_name"
-											label="College"
-											variant="standard"
+											label="College (Team Leader)"
+											variant="outlined"
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-
+									<Grid item xs={12}>
+										<TextField
+											required
+											fullWidth
+											id="year"
+											name="year"
+											label="Year of Study (Team Leader)"
+											variant="outlined"
+											autoComplete='off'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
+											required
+											fullWidth
+											id="branch"
+											name="branch"
+											label="Branch (Team Leader)"
+											variant="outlined"
+											autoComplete='off'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
 									<p className={styles.team_details}>Team Member Details</p>
 									{count.map((i) => {
 										return (
@@ -161,7 +210,7 @@ function Registration() {
 																id="full_name_1"
 																label="Full Name"
 																autoFocus
-																variant="standard"
+																variant="outlined"
 																autoComplete='none'
 																onKeyUp={(e) => handle(e)}
 															/>
@@ -175,7 +224,7 @@ function Registration() {
 																label="Mobile Number"
 																type="text"
 																required
-																variant="standard"
+																variant="outlined"
 																autoComplete='none'
 																onKeyUp={(e) => handle(e)}
 															/>
@@ -186,7 +235,7 @@ function Registration() {
 										)
 									})}
 								</Grid>
-								<input type="button" value="Register" className={styles.registration_button} onClick={submit} />
+								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
 						</Formik>
 
@@ -197,4 +246,4 @@ function Registration() {
 		</ThemeProvider>
 	);
 }
-export default Registration;
+export default Bbs;

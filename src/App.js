@@ -59,7 +59,6 @@ const App = () => {
 					<Route exact path='/aavartan' element={<Aavartan />} />
 					<Route exact path='/event' element={<EventPage/>}/>
 					<Route exact path='/tech-team' element={<TechTeamSec />} />
-					<Route exact path='/events' element={<Event />} />
 					<Route exact path='/register/:id' element={<Register />} />
 					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 				</Routes>

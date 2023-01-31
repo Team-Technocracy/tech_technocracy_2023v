@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './EventCard.module.css'
+import {Link} from 'react-router-dom';
 
-const EventCard = ({ img, title, date, time, details }) => {
+const EventCard = ({id, img, title, date, time, details }) => {
+    const url = "/register/" + id;
     return (
         <>
             <div className={styles.eventcardcard}>
@@ -22,7 +24,9 @@ const EventCard = ({ img, title, date, time, details }) => {
                         Time : {time}
                     </div>
                     <div className={styles.aavartanbutton}>
+                        <Link to={url}>
                         <button>Register</button>
+                        </Link>
                     </div>
                 </div>
             </div>

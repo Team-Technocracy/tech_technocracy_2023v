@@ -22,8 +22,10 @@
 
 .eventcardcard{
     /* background-color:rgb(58, 145, 222); */
-    padding: 0.5rem;
+    padding: 0rem;
+    margin: 2rem 1rem;
     font-family: 'Poppins', sans-serif; 
+    width: 340px;
 }
 
 .aavartanbutton button{
@@ -56,6 +58,7 @@
     text-align: center !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
+    color: white;
 }
 
 .eventcardline{
@@ -69,6 +72,7 @@
     width: 100%;
     /* height: calc(100% - 270px); */
     border-radius: 0px 0px 5px 5px;
+    padding: 0 0.5rem;
     backdrop-filter: blur(5px) saturate(100%);
 }
 
@@ -77,17 +81,21 @@
     color: rgb(220, 220, 220);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* color: black; */
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .eventcardimage{
     transition: all 0.2s ease-in-out;
-    height: 300px;
+    /* height: 300px; */
+    width: 100%;
 }
 
 @media(width<900px){
-    .eventcardimage{
+    /* .eventcardimage{
         height: 200px;
-    }
+    } */
     .aavartanbutton button{
         padding: 0.4rem 1rem;
         font-size: 15px;

@@ -1,115 +1,29 @@
-@font-face{
-    font-family: valorax;
-    src: url(../../assets/fonts/Valorax-lg25V.otf) format("opentype");
-}
-
-.event {
-    padding-top: 2rem;
-    padding-bottom: 2rem;   
-    color: white;
-    /* color: black; */
-    font-family: 'Poppins'; 
-}
-
-.eventbody{
-    padding: 5rem 10rem;
+.parent{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.eventtitle{
-    font-family: modern-warfare;
-    font-weight: 0;
-    font-size: 55px;
-    line-height: 82px;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 4rem;
-}
-/* .eventtitle::before{
-    content: '';
-	position: absolute;
-	bottom: 830px;
-	background-color: #e91e63;
-	height: 3px;
-	box-sizing: border-box;
-	width: 70px;
-	transition: all 0.3s ease;
-}
-.eventtitle:hover::before{
-    width: 280px;
+    flex-wrap: wrap;
 } */
 
-.eventevents{
+.eventcontainer{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.gridrow{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    justify-content: space-around;
 }
-
-.eventeventscontainer{
-    display: flex;
-    flex-direction: row;
-    width: max-content;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-    gap: 3rem; 
+.eventtitle{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: modern-warfare;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
 }
-
-.eventeventscontainer::-webkit-scrollbar {
-    display: none;
-}
-
-.eventslider{
-    padding-top: 2rem;    
-    width: 100%;
-    margin: 0 10rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* color: black; */
-}
-
-.eventsliderleft{
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-}
-
-.eventsliderright{
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-}
-
-.eventsliderleft:hover{
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-}
-
-.eventsliderright:hover{
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-}
-
-
-@media(width<900px){
-    .cardhidden{
-        display: none;
-    }
-    .eventbody{
-        padding: 1.2rem !important;
-    }
+@media(width<300px){
     .eventtitle{
-        font-size: 40px;
-    }
-    .eventtitle::before{
-        bottom: 690px;
-        width: 0;
-    }
-    .eventtitle:hover::before{
-        width: 0;
+        font-size: 45px;
     }
 }

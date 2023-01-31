@@ -8,7 +8,7 @@
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,11 +71,12 @@
     backdrop-filter: blur(30px);
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
-    height: 100vh;
+    height: 100%;
 }
 
 .heading {
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: 'Poppins';
     color: #fff;

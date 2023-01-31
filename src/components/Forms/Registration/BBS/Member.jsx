@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Registration/styles.module.css";
+import styles from "../Styles/styles.module.css";
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 
 const Member = ({name, phone}) => {
@@ -14,7 +14,7 @@ const Member = ({name, phone}) => {
 							id="full_name_1"
 							label="Full Name"
 							autoFocus
-							variant="standard"
+							variant="outlined"
 							autoComplete='none'
 						/>
 					</Grid>
@@ -27,7 +27,7 @@ const Member = ({name, phone}) => {
 							label="Mobile Number"
 							type="text"
 							required
-							variant="standard"
+							variant="outlined"
 							autoComplete='none'
 						/>
 					</Grid>

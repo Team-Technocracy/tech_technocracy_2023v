@@ -186,7 +186,7 @@ function Registration() {
 										)
 									})}
 								</Grid>
-								<input type="button" value="Register" className={styles.registration_button} onClick={submit} />
+								<button type="button"  className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
 						</Formik>
 

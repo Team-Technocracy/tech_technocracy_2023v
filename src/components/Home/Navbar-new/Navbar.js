@@ -15,8 +15,7 @@ function Navbar() {
                     <ul id="navbar" className={toggler?"#navbar active":"navbar"}>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/aavartan">AAVARTAN</Link></li>
-                        <li><Link to="/login">LOGIN</Link></li>
-                        <li><Link to="/signup">SIGNUP</Link></li>
+                        <li><Link to="/event">EVENTS</Link></li>
                         <li><a href="/#journey">JOURNEY</a></li>
                         <li><a href="/#spons">SPONSORS</a></li>
                         <li><a href="/#team">TEAM</a></li>

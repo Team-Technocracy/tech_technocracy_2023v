@@ -51,8 +51,9 @@
 }
 
 .textcontent p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: whitesmoke;
+  padding: 1rem 0;
   /* text-align: center; */
 }
 @media screen and (max-width: 769px){
@@ -67,7 +68,8 @@
   }
   
   .textcontent p {
-    font-size: 0.8rem;
+    padding: 0.4rem 0;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 426px){
@@ -82,7 +84,8 @@
   }
   
   .textcontent p {
-    font-size: 0.6rem;
+    padding: 0.8rem 0;
+    font-size: 12px;
   }
 }
 .button49,

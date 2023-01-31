@@ -11,6 +11,10 @@ const navList = [
     text: "Aavartan"
   },
   {
+    to: "/event",
+    text: "Events"
+  },
+  {
     to: "/#journey",
     text: "Journey"
   },

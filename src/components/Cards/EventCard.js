@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './EventCard.module.css'
-import { Link } from 'react-router-dom';
-import Register from '../Forms/Registration/Registration';
+import {Link} from 'react-router-dom';
 
-
-const EventCard = ({ id, img, title, date, time, details }) => {
+const EventCard = ({id, img, title, date, time, details }) => {
     const url = "/register/" + id;
     return (
         <>
@@ -27,7 +25,7 @@ const EventCard = ({ id, img, title, date, time, details }) => {
                     </div>
                     <div className={styles.aavartanbutton}>
                         <Link to={url}>
-                            <button> Register</button>
+                        <button>Register</button>
                         </Link>
                     </div>
                 </div>

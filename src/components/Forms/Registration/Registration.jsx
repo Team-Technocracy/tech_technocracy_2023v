@@ -7,7 +7,7 @@ import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
 import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
-import Cookies from 'js-cookie';
+// import Cookies from 'js-cookie';
 
 const darkTheme = createTheme({
 	palette: {
@@ -18,6 +18,7 @@ const darkTheme = createTheme({
 function Registration() {
 
 	const { id } = useParams();
+	// data of event
 	const data = {
 		name: "",
 		desc: "",
@@ -26,7 +27,6 @@ function Registration() {
 	}
 
 	events.map((event) => {
-		// console.log(typeof event.id);
 		if (String(event.id) === id) {
 			data.name = event.title;
 			data.desc = event.details;
@@ -34,13 +34,6 @@ function Registration() {
 			data.teamMin = event.teamMin;
 		}
 	});
-
-	console.log(data);
-
-	// const fields = [];
-	// for (let i = 1; i < data.teamSize; i++) {
-	// 	fields.push(<Member name={"name" + String(i)} phone={"phone" + String(i)} />);
-	// }
 
 	const count = [];
 	for (let i = 1; i < data.teamSize; i++) {
@@ -51,9 +44,9 @@ function Registration() {
 	const [form, set] = useState({
 		"event": data.name,
 		"team_name": "",
-		"team_leader_name": Cookies.get('name'),
-		"team_leader_mail": Cookies.get('mail'),
-		"college_name": Cookies.get('college'),
+		"team_leader_name": "",
+		"team_leader_mail": "",
+		"college_name": "",
 	});
 
 	function handle(e) {
@@ -126,9 +119,7 @@ function Registration() {
 											label="Team Leader Name"
 											variant="standard"
 											autoComplete='off'
-											value={Cookies.get('name')}
-											// onKeyUp={(e) => handle(e)}
-											disabled
+											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 									<Grid item xs={12}>
@@ -140,9 +131,7 @@ function Registration() {
 											label="Team Leader Email id"
 											variant="standard"
 											autoComplete='off'
-											value={Cookies.get('mail')}
-											disabled
-											// onKeyUp={(e) => handle(e)}
+											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 									<Grid item xs={12}>
@@ -154,9 +143,7 @@ function Registration() {
 											label="College"
 											variant="standard"
 											autoComplete='off'
-											value={Cookies.get('college')}
-											disabled
-											// onKeyUp={(e) => handle(e)}
+											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 

@@ -16,6 +16,7 @@ import ScrollUp from './components/ScrollUp';
 import SideNav from './components/Sidenav/SideNav';
 import TechTeamSec from './components/Team/TechTeam/TechTeamMain';
 import Acko from './components/utils/Acko';
+import EventPage from './components/EventPage';
 
 
 
@@ -54,6 +55,7 @@ const App = () => {
 					{/* </Routes> */}
 					{/* <Routes> */}
 					<Route exact path='/aavartan' element={<Aavartan />} />
+					<Route exact path='/event' element={<EventPage/>}/>
 					<Route exact path='/tech-team' element={<TechTeamSec />} />
 					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 				</Routes>

@@ -2,17 +2,15 @@ import React from "react";
 import styles from "../Registration/styles.module.css";
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 
-
-const Member = () => {
+const Member = ({name, phone}) => {
 	return (
 		<div>
 			<div className={`${styles.common} ${styles.name_1}`}>
 				<div>
 					<Grid item xs={12}>
 						<TextField
-							name="full_name_1"
+							name={name}
 							required
-
 							id="full_name_1"
 							label="Full Name"
 							autoFocus
@@ -24,23 +22,10 @@ const Member = () => {
 				<div>
 					<Grid marginLeft={1} item xs={12}>
 						<TextField
-							id="email_1"
-							label="Email"
-							type="email"
-
-							required
-							variant="standard"
-							autoComplete='none'
-						/>
-					</Grid>
-				</div>
-				<div>
-					<Grid marginLeft={1} item xs={12}>
-						<TextField
+							name={phone}
 							id="number_1"
 							label="Mobile Number"
 							type="text"
-
 							required
 							variant="standard"
 							autoComplete='none'

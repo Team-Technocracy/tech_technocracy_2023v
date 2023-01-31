@@ -7,7 +7,7 @@ import { TextField } from "@mui/material";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
-
+import Cookies from 'universal-cookie';
 
 function Login() {
 
@@ -44,6 +44,11 @@ function Login() {
 						toast("Error occurred", { type: "error" });
 					}
 					else if (res.data.email === form['email']) {
+						const cookies = new Cookies();
+						cookies.set('name', res.data.name);
+						cookies.set('mail', String(res.data.email));
+						cookies.set('phone', res.data.phone);
+						cookies.set('college', res.data.college);
 						window.location.href = "/events";
 						toast("Logged in", { type: "success" });
 					}

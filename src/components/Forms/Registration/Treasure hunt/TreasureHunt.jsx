@@ -1,11 +1,11 @@
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
-import styles from "../Registration/styles.module.css";
+import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+// import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
 
@@ -26,14 +26,14 @@ function Registration() {
 		teamMin: 0
 	}
 
-	events.map((event) => {
-		if (String(event.id) === id) {
-			data.name = event.title;
-			data.desc = event.details;
-			data.teamSize = event.teamSize;
-			data.teamMin = event.teamMin;
-		}
-	});
+	// events.map((event) => {
+	// 	if (String(event.id) === id) {
+	// 		data.name = event.title;
+	// 		data.desc = event.details;
+	// 		data.teamSize = event.teamSize;
+	// 		data.teamMin = event.teamMin;
+	// 	}
+	// });
 
 	const count = [];
 	for (let i = 1; i < data.teamSize; i++) {
@@ -42,11 +42,19 @@ function Registration() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
+		"event": "Treasure Hunt",
 		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"leader_name": "",
+		"leader_mail": "",
+		"leader_whatsapp": "",
+		"leader_college": "",
+		"leader_number": "",
+		"leader_branch": "",
+		"yos": "",
+		"mem2": "",
+		"mem3": "",
+		"mem4": "",
+		"mem5": ""
 	});
 
 	function handle(e) {
@@ -58,7 +66,7 @@ function Registration() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -85,8 +93,8 @@ function Registration() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>{data.name}</h3>
-							<p className={styles.event_description}> {data.desc}
+							<h3 className={styles.event_title}>TREASURE HUNT</h3>
+							<p className={styles.event_description}> “Find the blackbox lost in space-time by decoding cryptic signals
 							</p>
 						</div>
 					</div>
@@ -97,7 +105,7 @@ function Registration() {
 						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
-								<Grid item xs={12} >
+									<Grid item xs={12} >
 										<TextField
 											margin="normal"
 											required
@@ -109,7 +117,19 @@ function Registration() {
 
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
-
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
+											margin="normal"
+											required
+											fullWidth
+											id="team_leader_name"
+											name="leader_name"
+											label="Team Leader Name"
+											variant="outlined"
+											autoComplete='off'
+											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 									<Grid item xs={12} >
@@ -118,8 +138,8 @@ function Registration() {
 											required
 											fullWidth
 											id="email"
-											label="Email Address"
-											name="email"
+											label="Leader's Email Address"
+											name="leader_mail"
 											autoComplete="email"
 											variant="outlined"
 											autoFocus
@@ -133,8 +153,8 @@ function Registration() {
 											required
 											fullWidth
 											id="whatsapp_no"
-											name="whatsapp_no"
-											label="WhatsApp No"
+											name="leader_whatsapp"
+											label="Leader's WhatsApp No"
 											variant="outlined"
 
 											autoComplete='off'
@@ -148,35 +168,23 @@ function Registration() {
 											required
 											fullWidth
 											id="college_name"
-											name="college_name"
-											label="College Name"
+											name="leader_college"
+											label="Leader's College Name"
 											variant="outlined"
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									
-								
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											required
-											fullWidth
-											id="team_leader_name"
-											name="team_leader_name"
-											label="Team Leader Name"
-											variant="outlined"
-											autoComplete='off'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
+
+
+
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
 											required
 											fullWidth
 											id="team_leader_number"
-											name="team_leader_number"
+											name="leader_number"
 											label="Team Leader Contact no"
 											variant="outlined"
 											autoComplete='off'
@@ -191,7 +199,7 @@ function Registration() {
 											required
 											fullWidth
 											id="branch"
-											name="branch"
+											name="leader_branch"
 											label="Branch"
 											variant="outlined"
 											autoComplete='off'
@@ -204,7 +212,7 @@ function Registration() {
 											required
 											fullWidth
 											id="year"
-											name="year"
+											name="yos"
 											label="Year"
 											variant="outlined"
 											autoComplete='off'
@@ -214,7 +222,7 @@ function Registration() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name={"name2"}
+											name="mem2"
 											id="name2"
 											label="Team Member Name 2"
 											type="text"
@@ -228,7 +236,7 @@ function Registration() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name={"name3"}
+											name="mem3"
 											id="name3"
 											label="Team Member Name 3"
 											type="text"
@@ -242,7 +250,7 @@ function Registration() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name={"name4"}
+											name="mem4"
 											id="name4"
 											label="Team Member Name 4"
 											type="text"
@@ -253,64 +261,22 @@ function Registration() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-
-									{/* {count.map((i) => {
-										return (
-											<div>
-												<div className={`${styles.common} ${styles.name_1}`}>
-													<div>
-														<Grid spacing={2} item xs={10}>
-															<TextField
-															margin="normal"
-																name={"phone" + i}
-																id="number_1"
-																label="Contact no"
-																type="text"
-																required
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-													<div>
-														<Grid item xs={10}>
-															<TextField
-															margin="normal"
-																name={"branch" + i}
-																required
-																id="member_branch"
-																label="Branch"
-																type="text"
-																
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-													<div>
-														<Grid item xs={10}>
-															<TextField
-															margin="normal"
-																name={"member_year" + i}
-																required
-																id="member_year"
-																label="Year"
-																type="text"
-																
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-												</div>
-											</div>
-										)
-									})} */}
+									<Grid item xs={12}>
+										<TextField
+											margin="normal"
+											name="mem5"
+											id="name5"
+											label="Team Member Name 5"
+											type="text"
+											required
+											fullWidth
+											variant="outlined"
+											autoComplete='none'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
 								</Grid>
-								<button type="button"  className={styles.registration_button} onClick={submit} >Register</button>
+								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
 						</Formik>
 

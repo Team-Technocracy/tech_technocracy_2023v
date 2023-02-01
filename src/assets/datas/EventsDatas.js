@@ -60,7 +60,7 @@ const events = [
     {
         id: 5,
         title: "CodeTag",
-        details: "Get yourself prepared to scrutinize, perceive, and decode the problem statement from images. Make no provision to compete with the finest intellects of coding. ",
+        details: "Get yourself prepared to scrutinize, perceive, and decode the problem statement from images. Make no provision to compete with the finest intellects of coding.",
         date: "05-02-23",
         time: "9 A.M.",
         img: file15,

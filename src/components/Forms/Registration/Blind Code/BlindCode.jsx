@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
+import Navbar from '../../../Home/Navbar-new/Navbar'
 import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
@@ -84,6 +85,8 @@ function BlindCode() {
 	}
 
 	return (
+		<>
+		<Navbar />
 		<ThemeProvider className={styles} theme={darkTheme}>	
 			<div className={styles.container}>
 
@@ -229,6 +232,7 @@ function BlindCode() {
 
 			</div>
 		</ThemeProvider>
+		</>
 	);
 }
 export default BlindCode;

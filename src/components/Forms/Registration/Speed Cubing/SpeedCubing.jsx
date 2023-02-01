@@ -2,6 +2,7 @@ import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
 import styles from "../Styles/styles.module.css";
+import Navbar from '../../../Home/Navbar-new/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
@@ -81,6 +82,8 @@ function SpeedCubing() {
 	}
 
 	return (
+		<>
+		<Navbar />
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
 
@@ -205,6 +208,7 @@ Can you find your way out of the storm and be the fastest to win the speedcubing
 
 			</div>
 		</ThemeProvider>
+		</>
 	);
 }
 export default SpeedCubing;

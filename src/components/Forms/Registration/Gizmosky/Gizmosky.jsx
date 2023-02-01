@@ -114,12 +114,11 @@ function Gizmosky() {
 								<Grid container spacing={2}>
 									<Grid item xs={12} >
 										<TextField
-										margin="normal"
 											required
 											fullWidth
 											id="team_name"
 											name="name"
-											label="Team Name"
+											label="Name"
 											variant="outlined"
 											autoFocus
 											autoComplete='off'
@@ -128,11 +127,10 @@ function Gizmosky() {
 									</Grid>
 									<Grid item xs={12}>
 										<TextField
-										margin="normal"
 											required
 											fullWidth
 											type="email"
-											id="team_leader_email"
+											id="team_leader_name"
 											name="mail"
 											label="Email Id"
 											variant="outlined"
@@ -143,9 +141,8 @@ function Gizmosky() {
 									<Grid item xs={12}>
 										<TextField
 											required
-											margin="normal"
 											fullWidth
-											id="team_leader_number"
+											id="team_leader_mail"
 											name="phone"
 											label="Mobile Number"
 											variant="outlined"
@@ -153,10 +150,20 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									
 									<Grid item xs={12}>
 										<TextField
-										margin="normal"
+											required
+											fullWidth
+											id="whatsapp_number"
+											name="whatsapp"
+											label="WhatsApp Number"
+											variant="outlined"
+											autoComplete='none'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
 											required
 											fullWidth
 											id="college_name"
@@ -167,10 +174,20 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									
 									<Grid item xs={12}>
 										<TextField
-										margin="normal"
+											required
+											fullWidth
+											id="year"
+											name="yos"
+											label="Year of Study"
+											variant="outlined"
+											autoComplete='off'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
 											required
 											fullWidth
 											id="branch"
@@ -181,48 +198,42 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem2"
-											id="name2"
-											label="Team Member Name 2"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem3"
-											id="name3"
-											label="Team Member Name 3"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem4"
-											id="name4"
-											label="Team Member Name 4"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
+									{count.map((i) => {
+										return (
+											<div>
+												<div className={`${styles.common} ${styles.name_1}`}>
+													<div>
+														<Grid item xs={12}>
+															<TextField
+																name={"name" + i}
+																required
+																id="full_name_1"
+																label="Full Name"
+																autoFocus
+																variant="outlined"
+																autoComplete='none'
+																onKeyUp={(e) => handle(e)}
+															/>
+														</Grid>
+													</div>
+													<div>
+														<Grid marginLeft={1} item xs={12}>
+															<TextField
+																name={"phone" + i}
+																id="number_1"
+																label="Mobile Number"
+																type="text"
+																required
+																variant="outlined"
+																autoComplete='none'
+																onKeyUp={(e) => handle(e)}
+															/>
+														</Grid>
+													</div>
+												</div>
+											</div>
+										)
+									})}
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>

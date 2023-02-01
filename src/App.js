@@ -63,7 +63,7 @@ const App = () => {
 					<Route exact path='/events' element={<EventPage/>}/>
 					<Route exact path='/tech-team' element={<TechTeamSec />} />
 					<Route exact path='/register/blindcoding' element={<BlindCode />} />
-					<Route exact path='/register/bow' element={<Bow />} />
+					<Route exact path='/register/bestoutofwaste' element={<Bow />} />
 					<Route exact path='/register/codetag' element={<Registration />} />
 					<Route exact path='/register/hydrolift' element={<Gizmosky />} />
 					<Route exact path='/register/shipwreck' element={<Shipwreck />} />

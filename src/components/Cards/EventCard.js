@@ -3,7 +3,7 @@ import styles from './EventCard.module.css'
 import {Link} from 'react-router-dom';
 
 const EventCard = ({id, img, title, date, time, details }) => {
-    const url = "/register/" + title;
+    const url = "/register/" + title.replaceAll(' ','');
     return (
         <>
             <div className={styles.eventcardcard}>

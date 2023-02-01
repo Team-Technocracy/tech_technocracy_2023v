@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #1e2464, #090a1f);
+}
+
+.description {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+
+}
+
+.description .event_title {
+
+    /* margin-top: 2rem;
+    margin-left: 11rem; */
+    color: #fff;
+    text-align: center;
+}
+
+.description .event_description {
+
+    /* margin-top: 0.3rem;
+    margin-left: 2rem; */
+    color: #fff;
+}
+
+.description .event_image {
+    bottom: 94%;
+    left: 42%;
+    height: 8.5vh;
+    width: 6vw;
+    border-radius: 0.3rem;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rebeccapurple;
+}
+
+
+.registration {
+    width: 600px;
+    min-height: 300px;
+    
+}
+
+.registration_wrapper {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+.label {
+    position: absolute;
+    left: 1rem;
+    color: gray;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.inputbox {
+    padding: 1rem 1rem 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 80%;
+}
+
+.common {
+    display: flex;
+} 
+
+.name_1 {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.name_2 {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.name_3 {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+} 
+
+.label_team_name,
+.label_team_leader_name,
+.label_full_name_1,
+.label_college {
+    margin-left: 50px;
+    font-size: 19px;
+}
+
+.label_number_1 {
+    margin-left: 290px;
+    font-size: 19px;
+}
+
+.team_details {
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/* .full_name_1,
+.number_1 {
+    width: 190px;
+}
+
+.number_1 {
+    margin-left: 50px;
+} */
+
+.star {
+    color: red;
+}
+
+.college {
+    margin-top: 15px;
+}
+
+
+.team_leader_name,
+.retype_password {
+    margin-top: 15px;
+}
+
+.show_button,
+.hide_button {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.add {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+
+}
+
+.registration_button {
+    display: block;
+    position: relative;
+    color: #19aae6;
+    background: #ffffff;
+    font-family: inherit;
+    padding: 7px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    width: 40%;
+    cursor: pointer;
+}
+
+.registration_button:before {
+    content: "";
+    position: absolute;
+    background: #19aae6;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.registration_button:hover {
+    color: #ffffff;
+}
+
+.registration_button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.7s;
+}
+
+.registration_button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.registration_button:active:before {
+    background: #3a0ca3;
+    transition: 0s;
+}
+
+@media screen and (max-width:810px) {
+    .registration{
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .registration{
+        margin-top: 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .description{
+        margin-top: 2rem;
+        width: 100%;
+        position: relative;
+        
+    }
+}

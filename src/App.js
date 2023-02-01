@@ -16,9 +16,15 @@ import ScrollUp from './components/ScrollUp';
 import SideNav from './components/Sidenav/SideNav';
 import TechTeamSec from './components/Team/TechTeam/TechTeamMain';
 import Acko from './components/utils/Acko';
+import Event from './components/Aavartan_Components/Event'
+// import Register from './components/Forms/Registration/Registration';
+import EventPage from './components/EventPage';
+import Registration from './components/Forms/Registration/Code Tag/Registration';
+import BlindCode from './components/Forms/Registration/Blind Code/BlindCode';
+import Bow from './components/Forms/Registration/BOW/Bow';
+import Gizmosky from './components/Forms/Registration/Gizmosky/Gizmosky';
+import Shipwreck from './components/Forms/Registration/Shipwreck/Shipwreck';
 
-import Event from './components/Aavartan_Components/Event';
-import Register from './components/Forms/Registration/Registration';
 
 const App = () => {
 	const [isDesktop, setIsDesktop] = useState(false);
@@ -54,11 +60,13 @@ const App = () => {
 					{/* </Routes> */}
 					{/* <Routes> */}
 					<Route exact path='/aavartan' element={<Aavartan />} />
+					<Route exact path='/events' element={<EventPage/>}/>
 					<Route exact path='/tech-team' element={<TechTeamSec />} />
-
-					<Route exact path='/events' element={<Event />} />
-					<Route exact path='/register/:id' element={<Register />} />
-
+					<Route exact path='/register/blindcoding' element={<BlindCode />} />
+					<Route exact path='/register/bow' element={<Bow />} />
+					<Route exact path='/register/codetag' element={<Registration />} />
+					<Route exact path='/register/hydrolift' element={<Gizmosky />} />
+					<Route exact path='/register/shipwreck' element={<Shipwreck />} />
 					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 				</Routes>
 				<Helmet>

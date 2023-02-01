@@ -15,8 +15,6 @@ import file14 from '../images/eventImages/file14.webp' //Animatrix
 import file15 from '../images/eventImages/file15.webp' //Code Tag
 import file16 from '../images/eventImages/file16.webp' //Scavenger Hunt
 import file17 from '../images/eventImages/file17.webp' //Robotrec
-// import file18 from '../images/eventImages/file18.webp'
-// import file19 from '../images/eventImages/file19.webp'
 import file20 from '../images/eventImages/file20.webp'
 
 const events = [
@@ -151,6 +149,7 @@ const events = [
         id:14, 
         title: "Beg Borrow Steal",
         details:"Beg! Borrow! Steal! Whatever it takes, succeed at all costs! Come on down to this epic activity and have a truly memorable experience.",
+        date: "04-02-23",
         time:"3 P.M.",
         img: file3,
         // teamSize:
@@ -159,6 +158,7 @@ const events = [
         id: 15,
         title: "Open Mic",
         details:'“Just give me a mic, and I will rock it”, is often what we think in our confident minds. Now get a chance to showcase your talent and skills, through the power of a mic, and your words! ',
+        date: "05-02-23",
         time: "9 A.M.",
         img: file8,
         teamSize:1,
@@ -167,6 +167,7 @@ const events = [
         id:16,
         title: "Click 'O'Vartan",
         details:'"A photograph is worth a thousand words." Capture the moment and it shall become undead. Hold your cameras tight! and get ready to capture the entire event in your lens. May the best Capture win!',
+        date: "04-02-23",
         time:"Whole fest",
         img: file10,
         // teamSize:,
@@ -175,7 +176,8 @@ const events = [
         id:17,
         title:"Technomic Quotient",
         details:'Participate in this entertaining yet educational event to show off your mastery of trivia. Do you have what it takes to be one of the "Remainders" of the Technomic “Quotients” ?',
-        time:"",
+        date: "05-02-23",
+        // time:"",
         img: file11,
         // teamSize:,
     },
@@ -183,6 +185,7 @@ const events = [
         id:20,
         title:"Jenga",
         details:'Do you have what it takes to stand at the top() of the tower ? If yes then grace us with your presence at the Jenga event and push() all your rivals down to win it all! ',
+        date: "04-02-23",
         time:"9:30 A.M.",
         img:file20,
         // teamSize:,

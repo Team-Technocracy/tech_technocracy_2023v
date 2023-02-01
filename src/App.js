@@ -22,6 +22,7 @@ import EventPage from './components/EventPage';
 import Registration from './components/Forms/Registration/Code Tag/CodeTag';
 import BlindCode from './components/Forms/Registration/Blind Code/BlindCode';
 import Bow from './components/Forms/Registration/BOW/Bow';
+import Bbs from './components/Forms/Registration/BBS/Bbs';
 import Gizmosky from './components/Forms/Registration/Gizmosky/Gizmosky';
 import Shipwreck from './components/Forms/Registration/Shipwreck/Shipwreck';
 import ScavengerHunt from './components/Forms/Registration/Scavenger hunt/ScavengerHunt';
@@ -73,6 +74,7 @@ const App = () => {
 					<Route exact path='/tech-team' element={<TechTeamSec />} />
 					<Route exact path='/register/blindcoding' element={<BlindCode />} />
 					<Route exact path='/register/bestoutofwaste' element={<Bow />} />
+					<Route exact path='/register/BegBorrowSteal' element={<Bbs />} />
 					<Route exact path='/register/codetag' element={<Registration />} />
 					<Route exact path='/register/hydrolift' element={<Gizmosky />} />
 					<Route exact path='/register/shipwreck' element={<Shipwreck />} />

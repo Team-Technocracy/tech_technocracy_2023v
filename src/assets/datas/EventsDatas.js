@@ -1,20 +1,23 @@
 import file1 from '../images/eventImages/file1.webp'
 import file2 from '../images/eventImages/file2.webp'
-import file3 from '../images/eventImages/file17.webp'
+import file3 from '../images/eventImages/file3.webp'
 import file4 from '../images/eventImages/file4.webp'
 import file5 from '../images/eventImages/file5.webp'
 import file6 from '../images/eventImages/file6.webp'
 import file7 from '../images/eventImages/file7.webp'
-import file8 from '../images/eventImages/file15.webp'
+import file8 from '../images/eventImages/file8.webp'
 import file9 from '../images/eventImages/file9.webp'
-import file10 from '../images/eventImages/file14.webp'
-import file11 from '../images/eventImages/file16.webp'
+import file10 from '../images/eventImages/file10.webp'
+import file11 from '../images/eventImages/file11.webp'
 import file12 from '../images/eventImages/file12.webp'
 import file13 from '../images/eventImages/file13.webp'
 import file14 from '../images/eventImages/file14.webp' //Animatrix
 import file15 from '../images/eventImages/file15.webp' //Code Tag
 import file16 from '../images/eventImages/file16.webp' //Scavenger Hunt
 import file17 from '../images/eventImages/file17.webp' //Robotrec
+// import file18 from '../images/eventImages/file18.webp'
+// import file19 from '../images/eventImages/file19.webp'
+import file20 from '../images/eventImages/file20.webp'
 
 const events = [
     {
@@ -144,6 +147,46 @@ const events = [
         img: file4,
         teamSize: 1
     },
+    {
+        id:14, 
+        title: "Beg Borrow Steal",
+        details:"Beg! Borrow! Steal! Whatever it takes, succeed at all costs! Come on down to this epic activity and have a truly memorable experience.",
+        time:"3 P.M.",
+        img: file3,
+        // teamSize:
+    },
+    {
+        id: 15,
+        title: "Open Mic",
+        details:'“Just give me a mic, and I will rock it”, is often what we think in our confident minds. Now get a chance to showcase your talent and skills, through the power of a mic, and your words! ',
+        time: "9 A.M.",
+        img: file8,
+        teamSize:1,
+    },
+    {
+        id:16,
+        title: "Click 'O'Vartan",
+        details:'"A photograph is worth a thousand words." Capture the moment and it shall become undead. Hold your cameras tight! and get ready to capture the entire event in your lens. May the best Capture win!',
+        time:"Whole fest",
+        img: file10,
+        // teamSize:,
+    },
+    {
+        id:17,
+        title:"Technomic Quotient",
+        details:'Participate in this entertaining yet educational event to show off your mastery of trivia. Do you have what it takes to be one of the "Remainders" of the Technomic “Quotients” ?',
+        time:"",
+        img: file11,
+        // teamSize:,
+    },
+    {
+        id:20,
+        title:"Jenga",
+        details:'Do you have what it takes to stand at the top() of the tower ? If yes then grace us with your presence at the Jenga event and push() all your rivals down to win it all! ',
+        time:"9:30 A.M.",
+        img:file20,
+        // teamSize:,
+    }
 ];
 
 export default events;

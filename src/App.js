@@ -80,6 +80,7 @@ const App = () => {
 					<Route exact path='/register/shipwreck' element={<Shipwreck />} />
 					<Route exact path='/register/scavengerhunt' element={<ScavengerHunt />} />
 					<Route exact path='/register/treasurehunt' element={<TreasureHunt />} />
+					
 					<Route exact path='/register/animatrix' element={<Animatrix />} />
 					<Route exact path='/register/circuitrix' element={<Circuitrix />} />
 					<Route exact path='/register/robotrek' element={<Robotrek />} />

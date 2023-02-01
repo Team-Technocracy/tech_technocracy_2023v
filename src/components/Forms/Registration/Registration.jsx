@@ -1,3 +1,4 @@
+// this component will remove 
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
@@ -7,7 +8,7 @@ import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
 import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
-import Cookies from 'js-cookie';
+// import Cookies from 'js-cookie';
 
 const darkTheme = createTheme({
 	palette: {
@@ -119,9 +120,7 @@ function Registration() {
 											label="Team Leader Name"
 											variant="standard"
 											autoComplete='off'
-											value={Cookies.get('name')}
-											// onKeyUp={(e) => handle(e)}
-											disabled
+											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 									<Grid item xs={12}>
@@ -133,9 +132,7 @@ function Registration() {
 											label="Team Leader Email id"
 											variant="standard"
 											autoComplete='off'
-											value={Cookies.get('mail')}
-											disabled
-											// onKeyUp={(e) => handle(e)}
+											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 									<Grid item xs={12}>
@@ -147,9 +144,7 @@ function Registration() {
 											label="College"
 											variant="standard"
 											autoComplete='off'
-											value={Cookies.get('college')}
-											disabled
-											// onKeyUp={(e) => handle(e)}
+											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 
@@ -191,7 +186,7 @@ function Registration() {
 										)
 									})}
 								</Grid>
-								<input type="button" value="Register" className={styles.registration_button} onClick={submit} />
+								<button type="button"  className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
 						</Formik>
 

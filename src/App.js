@@ -26,6 +26,9 @@ import Gizmosky from './components/Forms/Registration/Gizmosky/Gizmosky';
 import Shipwreck from './components/Forms/Registration/Shipwreck/Shipwreck';
 import ScavengerHunt from './components/Forms/Registration/Scavenger hunt/ScavengerHunt';
 import TreasureHunt from './components/Forms/Registration/Treasure hunt/TreasureHunt';
+import Animatrix from './components/Forms/Registration/Animatrix/Animatrix';
+import Circuitrix from './components/Forms/Registration/Circuitrix/Circuitrix';
+import Robotrek from './components/Forms/Registration/Robotrek/Robotrek';
 
 
 const App = () => {
@@ -71,6 +74,9 @@ const App = () => {
 					<Route exact path='/register/shipwreck' element={<Shipwreck />} />
 					<Route exact path='/register/scavengerhunt' element={<ScavengerHunt />} />
 					<Route exact path='/register/treasurehunt' element={<TreasureHunt />} />
+					<Route exact path='/register/animatrix' element={<Animatrix />} />
+					<Route exact path='/register/circuitrix' element={<Circuitrix />} />
+					<Route exact path='/register/robotrek' element={<Robotrek />} />
 					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 				</Routes>
 				<Helmet>

@@ -165,7 +165,7 @@ const events = [
     },
     {
         id:16,
-        title: "Click 'O'Vartan",
+        title: "Click O Vartan",
         details:'"A photograph is worth a thousand words." Capture the moment and it shall become undead. Hold your cameras tight! and get ready to capture the entire event in your lens. May the best Capture win!',
         date: "04-02-23",
         time:"Whole fest",

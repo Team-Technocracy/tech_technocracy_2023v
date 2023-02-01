@@ -1,11 +1,13 @@
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
-import styles from "../Registration/styles.module.css";
+// import styles from "../Registration/styles.module.css";
+import styles from "../Styles/styles.module.css";
+
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+// import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
 
@@ -26,14 +28,14 @@ function Registration() {
 		teamMin: 0
 	}
 
-	events.map((event) => {
-		if (String(event.id) === id) {
-			data.name = event.title;
-			data.desc = event.details;
-			data.teamSize = event.teamSize;
-			data.teamMin = event.teamMin;
-		}
-	});
+	// events.map((event) => {
+	// 	if (String(event.id) === id) {
+	// 		data.name = event.title;
+	// 		data.desc = event.details;
+	// 		data.teamSize = event.teamSize;
+	// 		data.teamMin = event.teamMin;
+	// 	}
+	// });
 
 	const count = [];
 	for (let i = 1; i < data.teamSize; i++) {

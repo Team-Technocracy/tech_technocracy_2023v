@@ -5,7 +5,7 @@ import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+// import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
 
@@ -26,14 +26,14 @@ function Shipwreck() {
 		teamMin: 0
 	}
 
-	events.map((event) => {
-		if (String(event.id) === id) {
-			data.name = event.title;
-			data.desc = event.details;
-			data.teamSize = event.teamSize;
-			data.teamMin = event.teamMin;
-		}
-	});
+	// events.map((event) => {
+	// 	if (String(event.id) === id) {
+	// 		data.name = event.title;
+	// 		data.desc = event.details;
+	// 		data.teamSize = event.teamSize;
+	// 		data.teamMin = event.teamMin;
+	// 	}
+	// });
 
 	const count = [];
 	for (let i = 1; i < data.teamSize; i++) {
@@ -42,11 +42,14 @@ function Shipwreck() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
-		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"event": "Shipwreck",
+		"name": "",
+		"mail": "",
+		"phone": "",
+		"whatsapp": "",
+		"college": "",
+		"yos": "",
+		"branch": "",
 	});
 
 	function handle(e) {
@@ -58,7 +61,7 @@ function Shipwreck() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
+		axios.post(`http://localhost:8000/shipwreck/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -103,7 +106,7 @@ function Shipwreck() {
 											required
 											fullWidth
 											id="team_name"
-											name="team_name"
+											name="name"
 											label="Name"
 											variant="outlined"
 											autoFocus
@@ -117,7 +120,7 @@ function Shipwreck() {
 											fullWidth
 											type="email"
 											id="team_leader_name"
-											name="team_leader_name"
+											name="mail"
 											label="Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -129,7 +132,7 @@ function Shipwreck() {
 											required
 											fullWidth
 											id="team_leader_mail"
-											name="team_leader_mail"
+											name="phone"
 											label="Mobile Number"
 											variant="outlined"
 											autoComplete='none'
@@ -141,7 +144,7 @@ function Shipwreck() {
 											required
 											fullWidth
 											id="whatsapp_number"
-											name="whatsapp_number"
+											name="whatsapp"
 											label="WhatsApp Number"
 											variant="outlined"
 											autoComplete='none'
@@ -153,7 +156,7 @@ function Shipwreck() {
 											required
 											fullWidth
 											id="college_name"
-											name="college_name"
+											name="college"
 											label="College"
 											variant="outlined"
 											autoComplete='off'
@@ -165,7 +168,7 @@ function Shipwreck() {
 											required
 											fullWidth
 											id="year"
-											name="year"
+											name="yos"
 											label="Year of Study"
 											variant="outlined"
 											autoComplete='off'
@@ -184,42 +187,6 @@ function Shipwreck() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									{count.map((i) => {
-										return (
-											<div>
-												<div className={`${styles.common} ${styles.name_1}`}>
-													<div>
-														<Grid item xs={12}>
-															<TextField
-																name={"name" + i}
-																required
-																id="full_name_1"
-																label="Full Name"
-																autoFocus
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-													<div>
-														<Grid marginLeft={1} item xs={12}>
-															<TextField
-																name={"phone" + i}
-																id="number_1"
-																label="Mobile Number"
-																type="text"
-																required
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-												</div>
-											</div>
-										)
-									})}
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>

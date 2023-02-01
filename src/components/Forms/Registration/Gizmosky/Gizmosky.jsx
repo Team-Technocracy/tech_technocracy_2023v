@@ -5,7 +5,7 @@ import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+// import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
 
@@ -26,14 +26,14 @@ function Gizmosky() {
 		teamMin: 0
 	}
 
-	events.map((event) => {
-		if (String(event.id) === id) {
-			data.name = event.title;
-			data.desc = event.details;
-			data.teamSize = event.teamSize;
-			data.teamMin = event.teamMin;
-		}
-	});
+	// events.map((event) => {
+	// 	if (String(event.id) === id) {
+	// 		data.name = event.title;
+	// 		data.desc = event.details;
+	// 		data.teamSize = event.teamSize;
+	// 		data.teamMin = event.teamMin;
+	// 	}
+	// });
 
 	const count = [];
 	for (let i = 1; i < data.teamSize; i++) {
@@ -42,11 +42,14 @@ function Gizmosky() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
-		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"event": "Hydrolift",
+		"name": "",
+		"mail": "",
+		"phone": "",
+		"whatsapp": "",
+		"college": "",
+		"yos": "",
+		"branch": "",
 	});
 
 	function handle(e) {
@@ -58,7 +61,7 @@ function Gizmosky() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
+		axios.post(`http://localhost:8000/hydrolift/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -102,7 +105,7 @@ function Gizmosky() {
 											required
 											fullWidth
 											id="team_name"
-											name="team_name"
+											name="name"
 											label="Name"
 											variant="outlined"
 											autoFocus
@@ -116,7 +119,7 @@ function Gizmosky() {
 											fullWidth
 											type="email"
 											id="team_leader_name"
-											name="team_leader_name"
+											name="mail"
 											label="Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -128,7 +131,7 @@ function Gizmosky() {
 											required
 											fullWidth
 											id="team_leader_mail"
-											name="team_leader_mail"
+											name="phone"
 											label="Mobile Number"
 											variant="outlined"
 											autoComplete='none'
@@ -140,7 +143,7 @@ function Gizmosky() {
 											required
 											fullWidth
 											id="whatsapp_number"
-											name="whatsapp_number"
+											name="whatsapp"
 											label="WhatsApp Number"
 											variant="outlined"
 											autoComplete='none'
@@ -152,7 +155,7 @@ function Gizmosky() {
 											required
 											fullWidth
 											id="college_name"
-											name="college_name"
+											name="college"
 											label="College"
 											variant="outlined"
 											autoComplete='off'
@@ -164,7 +167,7 @@ function Gizmosky() {
 											required
 											fullWidth
 											id="year"
-											name="year"
+											name="yos"
 											label="Year of Study"
 											variant="outlined"
 											autoComplete='off'

@@ -29,7 +29,7 @@ const events = [
     },
     {
         id: 2,
-        title: "Best out of waste",
+        title: "bow",
         details: "“Recycle it all, No matter how small! “ with this intent unveil your creativity, artistry, proficiency and dexterity, spawning marvelous adornments from discarded scrap. ",
         date: "04-02-23",
         time: "11 A.M.",
@@ -39,7 +39,7 @@ const events = [
     },
     {
         id: 3,
-        title: "Blind Coding",
+        title: "blindCoding",
         details: " Even without sight, there is still a vision. Hold on tight for this electrifying coding escapade to appraise your skills, logic, and limits.",
         date: "04-02-23",
         time: "9 A.M.",

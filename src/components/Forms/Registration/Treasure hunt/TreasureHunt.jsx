@@ -1,12 +1,14 @@
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
-import styles from "../Registration/styles.module.css";
+import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+import events from '../../../../assets/datas/EventsDatas'
 import axios from "axios";
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 // import Cookies from 'js-cookie';
 
 const darkTheme = createTheme({
@@ -15,7 +17,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Registration() {
+function TreasureHunt() {
 
 	const { id } = useParams();
 	// data of event
@@ -82,6 +84,9 @@ function Registration() {
 			<div className={styles.container}>
 
 				<Container>
+				<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
@@ -434,4 +439,4 @@ function Registration() {
 		</ThemeProvider>
 	);
 }
-export default Registration;
+export default TreasureHunt;

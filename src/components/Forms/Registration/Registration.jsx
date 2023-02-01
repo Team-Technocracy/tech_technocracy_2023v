@@ -8,6 +8,8 @@ import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
 import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 // import Cookies from 'js-cookie';
 
 const darkTheme = createTheme({
@@ -82,6 +84,9 @@ function Registration() {
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
 				<Container>
+					<div className={styles.goback}>
+						<NavLink to=""><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>

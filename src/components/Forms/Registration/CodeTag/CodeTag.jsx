@@ -1,13 +1,17 @@
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
-import styles from "../Registration/styles.module.css";
+// import styles from "../Registration/styles.module.css";
+import styles from "../Styles/styles.module.css";
+
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+// import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 
 const darkTheme = createTheme({
 	palette: {
@@ -15,7 +19,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Registration() {
+function CodeTag() {
 
 	const { id } = useParams();
 	// data of event
@@ -26,14 +30,14 @@ function Registration() {
 		teamMin: 0
 	}
 
-	events.map((event) => {
-		if (String(event.id) === id) {
-			data.name = event.title;
-			data.desc = event.details;
-			data.teamSize = event.teamSize;
-			data.teamMin = event.teamMin;
-		}
-	});
+	// events.map((event) => {
+	// 	if (String(event.id) === id) {
+	// 		data.name = event.title;
+	// 		data.desc = event.details;
+	// 		data.teamSize = event.teamSize;
+	// 		data.teamMin = event.teamMin;
+	// 	}
+	// });
 
 	const count = [];
 	for (let i = 1; i < data.teamSize; i++) {
@@ -82,6 +86,9 @@ function Registration() {
 			<div className={styles.container}>
 
 				<Container>
+					<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
@@ -205,54 +212,13 @@ function Registration() {
 											fullWidth
 											id="year"
 											name="year"
-											label="Year"
+											label="Year of Study"
 											variant="outlined"
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name={"name2"}
-											id="name2"
-											label="Team Member Name 2"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name={"name3"}
-											id="name3"
-											label="Team Member Name 3"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name={"name4"}
-											id="name4"
-											label="Team Member Name 4"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
+									
 
 									{/* {count.map((i) => {
 										return (
@@ -321,4 +287,4 @@ function Registration() {
 		</ThemeProvider>
 	);
 }
-export default Registration;
+export default CodeTag;

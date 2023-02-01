@@ -11,6 +11,10 @@ import file10 from '../images/eventImages/file.webp'
 import file11 from '../images/eventImages/file.webp'
 import file12 from '../images/eventImages/file12.webp'
 import file13 from '../images/eventImages/file13.webp'
+import file14 from '../images/eventImages/file14.webp' //Animatrix
+import file15 from '../images/eventImages/file15.webp' //Code Tag
+import file16 from '../images/eventImages/file16.webp' //Scavenger Hunt
+import file17 from '../images/eventImages/file17.webp' //Robotrec
 
 const events = [
     {
@@ -19,7 +23,7 @@ const events = [
         details: "Bring your imagination to life. Animate your ideas and let them come alive in our competition. Unleash the power of animation and join us! Your creativity knows no bounds.",
         date: "04-02-23",
         time: "3 P.M.",
-        img: file10,
+        img: file14,
         teamSize: 1,
         teamMin: 1
     },
@@ -59,7 +63,7 @@ const events = [
         details: "Get yourself prepared to scrutinize, perceive, and decode the problem statement from images. Make no provision to compete with the finest intellects of coding. ",
         date: "05-02-23",
         time: "9 A.M.",
-        img: file8,
+        img: file15,
         teamSize: 3,
         teamMin: 3
     },
@@ -89,7 +93,7 @@ const events = [
         details: "Slow and steady wins the race”, but is it true for the robots as well? Find out in this extraordinary racing event where the self made robot cars will compete to accomplish the race. ",
         date: "04-02-23",
         time: "3 P.M.",
-        img: file3,
+        img: file17,
         teamSize: 3
     },
     {
@@ -98,7 +102,7 @@ const events = [
         details: "A box with no hinges, key or lid, yet has a golden treasure hidden in it. Solve this riddle, and you may be the one to uncover the exceptional treasure within.",
         date: "05-02-23",
         time: "2 P.M.",
-        img: file11,
+        img: file16,
         teamSize: 4,
         teamMin: 4
     },

@@ -207,3 +207,24 @@
       transform: translate(0);
     }
   }
+
+  .aavartantheme{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .aavartantheme img{
+    width: 60%;
+  }
+
+  @media(width<600px){
+    .aavartantheme img{
+      width: 90%;
+    }
+  }
+
+  .themesection{
+    background-image: linear-gradient(to right, #1e2464, #090a1f);
+    padding: 3rem 0;
+  }

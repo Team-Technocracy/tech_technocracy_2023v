@@ -94,9 +94,24 @@ function BlindCode() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>BLIND CODE</h3>
-							<p className={styles.event_description}> Even without sight, there is still a vision. Hold on tight for this electrifying coding escapade to appraise your skills, logic, and limits.
+							<h3 className={styles.event_title}>BLIND CODING</h3>
+							<p className={styles.event_description}>Even without sight, there is still a vision. Hold on tight for this electrifying coding escapade to appraise your skills, logic, and limits.</p>
+							{/* <p className={styles.event_more}>This Is A Team Competition In Which Your Team Competes By Designing a Bottle Rocket With The Material Provided Using Mechanical Engineering Concepts To Drive It To The Longest Distance Possible.</p> */}
+							<p className={styles.event_materials}>
+								<b>RULES : </b>
+								<ul>
+									<li>- Participants will be provided with 1 coding question. They will have to solve the question and type the solution without looking at the screen (monitors will be off).</li>
+									<li>- There will be a time limit of half an hour.</li>
+									<li>- Participants can use any programming language (eg: C++, JAVA, python etc).</li>
+									<li>- The winner will be the first contestant that solves the problem with least error</li>
+								</ul>
 							</p>
+							{/* <p className={styles.event_team}><b>TEAM : </b>3 Members</p> */}
+							{/* <p className={styles.event_procedure}><b>PROCEDURE : </b>Your team will be given 3 chances to test your model and the longest distance will be registered as your score.</p> */}
+							<p className={styles.event_location}><b>LOCATION : </b>CSE Lab 2</p>
+							<p className={styles.event_time}><b>TIME : </b>9:30 AM- 12 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Chirag Singhal, Harsh</p>
 						</div>
 					</div>
 				</Container>

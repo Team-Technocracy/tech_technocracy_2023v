@@ -5,7 +5,7 @@ import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+import events from '../../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
 import { NavLink } from "react-router-dom";
@@ -91,9 +91,26 @@ function Bbs() {
 						{/* <div className={styles.event_image}></div> */}
 						<div>
 							<h3 className={styles.event_title}>BEG BORROW STEAL</h3>
-							<p className={styles.event_description}> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
-
+							<p className={styles.event_description}>Beg! Borrow! Steal! Whatever it takes, succeed at all costs! Come on down to this epic activity and have a truly memorable experience.</p>
+							<p className={styles.event_description}>In Beg Borrow Steal Participants will be given chits which will contain name of any objects, picture or name of any senior/any person. The participant will have to bring the objects either by begging it to someone or by borrowing it from someone or by stealing it, in case of a picture of any person, the participant will have to find the person and take a picture with him (all the team members should be present in the picture) without letting him know about the task and come with the picture to us and show us, the participant completing the task first will be the winner.</p>
+							<p className={styles.event_materials}>
+								<b>RULES : </b>
+								<ul>
+									<li>- A team should contain exact 3 members in the game.</li> <br /><br />
+									<li>- Beg Borrow Steal contain 3 rounds. <br /> 
+        In 1st round at a time 10 teams will be going for completing their task. <br />
+         In 2nd round the 5 teams completing their task first will be eligible for this round. <br />
+         In 3rd round team completing his task first will be the winner. In case of the tie in this round the teams will be given a new task.</li> <br /><br />
+									<li>- The participants will be given time of 30 minutes to complete the given task in each round.</li> <br /><br />
+									<li>- If the team brings any object of their own they will be disqualified. </li> <br /><br />
+									<li>- If participant is found doing in-disciplinary act or foul play, the organizers have the right to disqualify the team immediately (in-disciplinary does not contain forcefully stealing/snatching here this is allowed but should not hurt anyone).</li> <br /><br />
+									<li>- During the event the team members are not allowed to use their mobile phones so they will have to submit their phones to the organizers present there to avoid any type of cheating. A member from Technocracy should be provided to the participating team to avoid any foul play.</li> <br /><br />
+								</ul>
 							</p>
+							<p className={styles.event_location}><b>LOCATION : </b>Central Garden</p>
+							<p className={styles.event_time}><b>TIME : </b>3 PM- 6 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Mansi , Priyanshu</p>
 						</div>
 					</div>
 				</Container>

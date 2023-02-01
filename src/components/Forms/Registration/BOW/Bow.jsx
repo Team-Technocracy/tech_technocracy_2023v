@@ -62,7 +62,7 @@ function Bow() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend.vercel.app/bow/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/bow/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");

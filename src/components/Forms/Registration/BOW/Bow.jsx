@@ -98,8 +98,43 @@ function Bow() {
 						{/* <div className={styles.event_image}></div> */}
 						<div>
 							<h3 className={styles.event_title}>BEST OUT OF WASTE</h3>
-							<p className={styles.event_description}> “Recycle it all, No matter how small! “ with this intent unveil your creativity, artistry, proficiency and dexterity, spawning marvelous adornments from discarded scrap.
+							<p className={styles.event_description}>“Recycle it all, No matter how small! “ with this intent unveil your creativity, artistry, proficiency and dexterity, spawning marvelous adornments from discarded scrap. </p>
+							<p className={styles.event_more}><b>DESCRIPTION: </b>Instead of dumping  waste items in landfills, a variety of inventive and creative ideas may be combined to create something new and meaningful. This event aims to promote such unique ideas and showcase them. Participants are allowed to participate in any art/craft form that appeals to them, use waste and discarded things for the art/craft, and make the best out of waste. This competition is open to all.</p>
+							<p className={styles.event_materials}>
+								<b>RULES : </b>
+								<ul>
+									<li>- First 30 entries will be considered. However the committee reserves the right of any increment in number if desired.</li>
+									<li>- A team should consist of 2 or 3 members. Individual participation is also allowed.</li>
+									<li>- The participants have to make the working model in the said duration only.</li>
+									<li>- ONLY waste material should be used. However, stationary items like Fevicol, Scissors, Stapler, Tape etc. are allowed.</li>
+									<li>- Some of the required waste material can be provided to the team. Though, the participants need to bring their own Waste Material. But use of partial, whole or readymade models and any other unfair means will directly lead to disqualification.</li>
+									<li>- Each member of the team must contain the identity card of his/her respected institute.</li>
+								</ul>
 							</p>
+							<p className={styles.event_materials}>
+								<b>JUDGING CRITERIA : </b>
+								<ul>
+									<li>- Eco-Friendly: Minimum harm to the atmosphere.</li>
+									<li>- Theme/ Design: Ability to develop & present in the form of an object.</li>
+									<li>- Waste material used: Optimum use of waste material.</li>
+									<li>- Presentation: Detail of the materials used and proper functional explanation of the design.</li>
+									<li>- Utility: For a sustainable co-existing ecosystem.</li>
+									<li>- Each member of the team must contain the identity card of his/her respected institute.</li>
+								</ul>
+							</p>
+							<p className={styles.event_materials}>
+								<b>EVENT JUSTIFICATION : </b>
+								<ul>
+									<li>- To highlight the importance of 3R’s i.e. REDUCE, RECYCLE & REUSE for a better future. </li>
+									<li>- Innovative thinking</li>
+								</ul>
+							</p>
+							{/* <p className={styles.event_team}><b>Requirements: </b>○ waste products, Number of members - 2, Volunteers – 4-5</p> */}
+							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p>
+							<p className={styles.event_location}><b>LOCATION : </b>Left Garden</p>
+							<p className={styles.event_time}><b>TIME : </b>11 AM- 1 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Nakshatra , Shreya</p>
 						</div>
 					</div>
 				</Container>

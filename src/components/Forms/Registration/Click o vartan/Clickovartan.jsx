@@ -96,8 +96,8 @@ function Clickovartan() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>Valorant Tournament</h3>
-							<p className={styles.event_description}> Buckle Up! As easy as this event may seem ,the harder it is in actuality. Can you last everyone out in this 5v5 face-off ?
+							<h3 className={styles.event_title}>Click 'O' Vartan</h3>
+							<p className={styles.event_description}> "A photograph is worth a thousand words." Capture the moment and it shall become undead. Hold your cameras tight! and get ready to capture the entire event in your lens. May the best Capture win!
 							</p>
 						</div>
 					</div>

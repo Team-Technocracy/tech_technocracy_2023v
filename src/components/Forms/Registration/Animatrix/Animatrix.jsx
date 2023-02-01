@@ -11,6 +11,7 @@ import axios from "axios";
 // import Cookies from 'js-cookie';
 import { NavLink } from "react-router-dom";
 import img from '../../../../assets/images/leftArrow.png'
+import Navbar from '../../../Home/Navbar-new/Navbar'
 
 const darkTheme = createTheme({
 	palette: {
@@ -84,6 +85,7 @@ function Animatrix() {
 		<>
 		<Navbar />
 		<ThemeProvider className={styles} theme={darkTheme}>
+			
 			<div className={styles.container}>
 
 				<Container>
@@ -93,9 +95,34 @@ function Animatrix() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>{data.name}</h3>
-							<p className={styles.event_description}> {data.desc}
+							<h3 className={styles.event_title}>ANIMATRIX</h3>
+							<p className={styles.event_description}>Bring your imagination to life. Animate your ideas and let them come alive in our competition. Unleash the power of animation and join us! Your creativity knows no bounds.</p>
+							<p className={styles.event_more}><b>DESCRIPTION: </b>Animated video making competition. </p>
+							<p className={styles.event_materials}>
+								<b>RULES : </b>
+								<ul>
+									<li>- The participants will be provided a theme on which they will have to make a 30 second animation within the allotted time. </li>
+									<li>- To avoid plagiarism, each contestant will be given a unique object that they will have to use inside their animation.</li>
+									<li>- The participants will have to bring their own laptop/device for making the animation. </li>
+									<li>- The animation will be judged on the basis of originality and detailing. </li>
+									{/* <li>- Some of the required waste material can be provided to the team. Though, the participants need to bring their own Waste Material. But use of partial, whole or readymade models and any other unfair means will directly lead to disqualification.</li> */}
+									{/* <li>- Each member of the team must contain the identity card of his/her respected institute.</li> */}
+								</ul>
 							</p>
+							<p className={styles.event_materials}>
+								<b>EVENT JUSTIFICATION : </b>
+								<ul>
+									<li>- Tech skills</li>
+									<li>- Creative Thinking</li>
+									<li>- Presence of mind</li>
+								</ul>
+							</p>
+							{/* <p className={styles.event_team}><b>Requirements: </b>○ waste products, Number of members - 2, Volunteers – 4-5</p> */}
+							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers and Goodies</p>
+							<p className={styles.event_location}><b>LOCATION : </b>S4</p>
+							<p className={styles.event_time}><b>TIME : </b>3 PM- 5 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Suraj , Shivani</p>
 						</div>
 					</div>
 				</Container>

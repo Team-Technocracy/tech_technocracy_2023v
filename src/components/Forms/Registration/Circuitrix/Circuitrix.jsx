@@ -93,9 +93,43 @@ function Circuitrix() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>{data.name}</h3>
-							<p className={styles.event_description}> {data.desc}
+							<h3 className={styles.event_title}>CIRCUITRIX</h3>
+							<p className={styles.event_description}>A circuit-related game that will pique your interest. Get ready to step into the circuit realm.</p>
+							<p>
+							"Unleashing the Electronics Prodigy Within" <br /><br />
+
+								CIRCUITRIX, an electrifying event that tests the very basics of electronics! This is a unique opportunity to showcase your skills in designing and implementing electronic circuits, and to put your knowledge to the test. <br /><br />
+
+								"Brush up on your concepts and get ready to unleash your designing skills in the 'CIRCUITRIX' battlefield" <br /><br />
+
+								The competition consists of two rounds, each designed to challenge your skills and knowledge in different ways. Let's take a look at each round in detail. <br /><br />
+
+								<b>First Round: Aptitude Test</b> <br />
+
+								"The first round tests the speed and precision of the participants in the basics of digital and analog knowledge." <br /><br />
+
+								This is a rapid-fire round, so be prepared to think quickly and accurately. <br /><br />
+
+								Teams of three participants will compete in a test of speed and precision in the first round.
+								The participants who win this round will be teamed up with two other participants to form a team of three. These teams will then proceed to the second round <br /> <br />
+
+								<b>Second Round: Treasure Hunt</b> <br />
+
+								The second round is a treasure hunt-style competition where participants must find different components hidden all over the campus. To do this, they will need to solve circuit questions and use the components to assemble working circuits. <br /> <br />
+
+								"Solve circuit questions, find hidden components, and make it work in the second round" <br /> <br />
+
+								This round is designed to test both your technical knowledge and your ability to work effectively as a team. The winner of this round will be determined based on performance, so be sure to bring your best game. <br /> <br />
+
+								"Join the fight and let your expertise in electronics speak for itself." <br /> <br />
+
+								CIRCUITRIX is an exciting event that provides an opportunity to showcase your skills and knowledge of electronics. So, brush up on your concepts, bring your A-game, and join the battle for electronics supremacy. The final winner will be decided based on performance, so let your electronics skills do the talking.
+
 							</p>
+							<p className={styles.event_location}><b>LOCATION : </b>G4</p>
+							<p className={styles.event_time}><b>TIME : </b>10 - 11 AM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Durgesh, Chirag Gajbhiye</p>
 						</div>
 					</div>
 				</Container>

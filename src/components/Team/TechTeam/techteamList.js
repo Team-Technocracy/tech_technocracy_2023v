@@ -108,7 +108,7 @@ export const techteamList = [
     id: 12,
     name: "Ankit Kumar Lakra",
     imgUrl: Ankit_Kumar_Lakra,
-    linkedinUrl: "https://www.linkedin.com/in/ankit-lakra-5b195a1b3",
+    linkedinUrl: "https://www.linkedin.com/in/ankitklakra/",
     instaUrl: "#",
     desi: "Executive"
   },

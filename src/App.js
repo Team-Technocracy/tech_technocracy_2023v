@@ -84,7 +84,7 @@ const App = () => {
 					<Route exact path='/register/openmic' element={<OpenMic />} />
 					<Route exact path='/register/speedcubing' element={<SpeedCubing />} />
 					<Route exact path='/register/valotournament' element={<Valorant />} />
-					<Route exact path='/register/clickovartan' element={<Clickovartan />} />
+					<Route exact path='/register/ClickOVartan' element={<Clickovartan />} />
 					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 				</Routes>
 				<Helmet>

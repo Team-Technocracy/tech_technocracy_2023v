@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 import Cookies from 'js-cookie';
+import { ToastContainer } from "react-toastify";
 
 const darkTheme = createTheme({
 	palette: {
@@ -80,7 +81,7 @@ function Registration() {
 	return (
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
-
+				<ToastContainer />
 				<Container>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
@@ -191,7 +192,7 @@ function Registration() {
 										)
 									})}
 								</Grid>
-								<input type="button" value="Register" className={styles.registration_button} onClick={submit} />
+								<button type="button" className={styles.registration_button} onClick={submit}>Register</button>
 							</form>
 						</Formik>
 

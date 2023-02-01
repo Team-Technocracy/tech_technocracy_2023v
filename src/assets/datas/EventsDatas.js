@@ -18,7 +18,7 @@ const events = [
         date: "28-02-23",
         time: "2 P.M.",
         img: file1,
-        teamSize: 0,
+        teamSize: 1,
         condition: ''
     },
     {

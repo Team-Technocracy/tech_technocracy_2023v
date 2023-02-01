@@ -56,8 +56,8 @@ function TreasureHunt() {
 		"yos": "",
 		"mem2": "",
 		"mem3": "",
-		"mem4": "",
-		"mem5": ""
+		"mem4": ""
+		// "mem5": ""
 	});
 
 	function handle(e) {
@@ -275,7 +275,7 @@ function TreasureHunt() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<Grid item xs={12}>
+									{/* <Grid item xs={12}>
 										<TextField
 											margin="normal"
 											name="mem5"
@@ -288,7 +288,7 @@ function TreasureHunt() {
 											autoComplete='none'
 											onKeyUp={(e) => handle(e)}
 										/>
-									</Grid>
+									</Grid> */}
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>

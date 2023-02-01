@@ -29,6 +29,10 @@ import TreasureHunt from './components/Forms/Registration/Treasure hunt/Treasure
 import Animatrix from './components/Forms/Registration/Animatrix/Animatrix';
 import Circuitrix from './components/Forms/Registration/Circuitrix/Circuitrix';
 import Robotrek from './components/Forms/Registration/Robotrek/Robotrek';
+import OpenMic from './components/Forms/Registration/OpenMic/OpenMic';
+import SpeedCubing from './components/Forms/Registration/Speed Cubing/SpeedCubing';
+import Valorant from './components/Forms/Registration/Valorant/Valorant';
+import Clickovartan from './components/Forms/Registration/Click o vartan/Clickovartan';
 
 
 const App = () => {
@@ -77,6 +81,10 @@ const App = () => {
 					<Route exact path='/register/animatrix' element={<Animatrix />} />
 					<Route exact path='/register/circuitrix' element={<Circuitrix />} />
 					<Route exact path='/register/robotrek' element={<Robotrek />} />
+					<Route exact path='/register/openmic' element={<OpenMic />} />
+					<Route exact path='/register/speedcubing' element={<SpeedCubing />} />
+					<Route exact path='/register/valotournament' element={<Valorant />} />
+					<Route exact path='/register/clickovartan' element={<Clickovartan />} />
 					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 				</Routes>
 				<Helmet>

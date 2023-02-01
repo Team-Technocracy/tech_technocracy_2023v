@@ -15,7 +15,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Gizmosky() {
+function OpenMic() {
 
 	const { id } = useParams();
 	// data of event
@@ -42,7 +42,7 @@ function Gizmosky() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": "Hydrolift",
+		"event": "Open Mic",
 		"name": "",
 		"mail": "",
 		"phone": "",
@@ -88,8 +88,9 @@ function Gizmosky() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>HYDROLIFT</h3>
-							<p className={styles.event_description}> Experience the extraordinary at our one-of-a-kind event.This is that one time in life that pressure's good for you .Apply that pressure on the correct area and may the force be with you.
+							<h3 className={styles.event_title}>Open Mic</h3>
+							<p className={styles.event_description}>  “Just give me a mic, and I’ll rock it”, is often what we think in our confident minds.
+								Now get a chance to showcase your talent and skills, through the power of a mic, and your words!
 							</p>
 						</div>
 					</div>
@@ -97,68 +98,42 @@ function Gizmosky() {
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
 						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" , whatsapp_number:"",year: "",branch:"" }}>
+						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "", whatsapp_number: "", year: "", branch: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
+
 									<Grid item xs={12} >
 										<TextField
-										margin="normal"
+											margin="normal"
 											required
 											fullWidth
-											id="team_name"
-											name="name"
-											label="Team Name"
+											id="email"
+											label="Email Address"
+											name="email"
+											autoComplete="email"
 											variant="outlined"
 											autoFocus
-											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
+
 										/>
 									</Grid>
-									<Grid item xs={12}>
+									<Grid item xs={12} >
 										<TextField
-										margin="normal"
-											required
-											fullWidth
-											type="email"
-											id="team_leader_email"
-											name="mail"
-											label="Email Id"
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											required
 											margin="normal"
-											fullWidth
-											id="team_leader_number"
-											name="phone"
-											label="Mobile Number"
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									
-									<Grid item xs={12}>
-										<TextField
-										margin="normal"
 											required
 											fullWidth
-											id="college_name"
-											name="college"
-											label="College"
+											id="name"
+											name="name"
+											label="Name"
 											variant="outlined"
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
+
 										/>
 									</Grid>
-									
 									<Grid item xs={12}>
 										<TextField
-										margin="normal"
+											margin="normal"
 											required
 											fullWidth
 											id="branch"
@@ -169,48 +144,47 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<Grid item xs={12}>
+									<Grid item xs={12} >
 										<TextField
 											margin="normal"
-											name="mem2"
-											id="name2"
-											label="Team Member Name 2"
-											type="text"
 											required
 											fullWidth
+											id="phone_no"
+											name="phone_no"
+											label="	Phone No"
 											variant="outlined"
-											autoComplete='none'
+											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
+
 										/>
 									</Grid>
-									<Grid item xs={12}>
+									<Grid item xs={12} >
 										<TextField
 											margin="normal"
-											name="mem3"
-											id="name3"
-											label="Team Member Name 3"
-											type="text"
 											required
 											fullWidth
+											id="whatsapp_no"
+											name="whatsapp_no"
+											label="WhatsApp No"
 											variant="outlined"
-											autoComplete='none'
+											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
+
 										/>
 									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem4"
-											id="name4"
-											label="Team Member Name 4"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
+									<Grid item xs={12} >
+									<TextField
+										id="perform"
+										label="What do you want to perform ?"
+										multiline
+										rows={4}
+										defaultValue=""
+										margin="normal"
+										required
+										fullWidth
+									/>
 									</Grid>
+
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
@@ -223,4 +197,4 @@ function Gizmosky() {
 		</ThemeProvider>
 	);
 }
-export default Gizmosky;
+export default OpenMic;

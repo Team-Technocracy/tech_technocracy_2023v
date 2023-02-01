@@ -15,7 +15,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Gizmosky() {
+function SpeedCubing() {
 
 	const { id } = useParams();
 	// data of event
@@ -42,7 +42,7 @@ function Gizmosky() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": "Hydrolift",
+		"event": "Speed Cubing",
 		"name": "",
 		"mail": "",
 		"phone": "",
@@ -88,8 +88,9 @@ function Gizmosky() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>HYDROLIFT</h3>
-							<p className={styles.event_description}> Experience the extraordinary at our one-of-a-kind event.This is that one time in life that pressure's good for you .Apply that pressure on the correct area and may the force be with you.
+							<h3 className={styles.event_title}>Speed Cubing</h3>
+							<p className={styles.event_description}> "Time is a storm in which we are all lost." 
+Can you find your way out of the storm and be the fastest to win the speedcubing competition ?
 							</p>
 						</div>
 					</div>
@@ -105,9 +106,9 @@ function Gizmosky() {
 										margin="normal"
 											required
 											fullWidth
-											id="team_name"
+											id="name"
 											name="name"
-											label="Team Name"
+											label="Name"
 											variant="outlined"
 											autoFocus
 											autoComplete='off'
@@ -120,8 +121,8 @@ function Gizmosky() {
 											required
 											fullWidth
 											type="email"
-											id="team_leader_email"
-											name="mail"
+											id="email"
+											name="email"
 											label="Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -130,10 +131,10 @@ function Gizmosky() {
 									</Grid>
 									<Grid item xs={12}>
 										<TextField
+										margin="normal"
 											required
-											margin="normal"
 											fullWidth
-											id="team_leader_number"
+											id="team_leader_mail"
 											name="phone"
 											label="Mobile Number"
 											variant="outlined"
@@ -141,7 +142,19 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									
+									<Grid item xs={12}>
+										<TextField
+										margin="normal"
+											required
+											fullWidth
+											id="whatsapp_number"
+											name="whatsapp"
+											label="WhatsApp Number"
+											variant="outlined"
+											autoComplete='none'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
 									<Grid item xs={12}>
 										<TextField
 										margin="normal"
@@ -155,7 +168,19 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									
+									<Grid item xs={12}>
+										<TextField
+										margin="normal"
+											required
+											fullWidth
+											id="year"
+											name="yos"
+											label="Year of Study"
+											variant="outlined"
+											autoComplete='off'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
 									<Grid item xs={12}>
 										<TextField
 										margin="normal"
@@ -169,48 +194,7 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem2"
-											id="name2"
-											label="Team Member Name 2"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem3"
-											id="name3"
-											label="Team Member Name 3"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem4"
-											id="name4"
-											label="Team Member Name 4"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
+								
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
@@ -223,4 +207,4 @@ function Gizmosky() {
 		</ThemeProvider>
 	);
 }
-export default Gizmosky;
+export default SpeedCubing;

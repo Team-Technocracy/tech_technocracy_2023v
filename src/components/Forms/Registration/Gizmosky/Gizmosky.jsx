@@ -61,7 +61,7 @@ function Gizmosky() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/hydrolift/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/hydrolift/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");

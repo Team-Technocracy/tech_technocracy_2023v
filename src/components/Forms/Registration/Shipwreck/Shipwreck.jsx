@@ -61,7 +61,7 @@ function Shipwreck() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/shipwreck/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/shipwreck/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");

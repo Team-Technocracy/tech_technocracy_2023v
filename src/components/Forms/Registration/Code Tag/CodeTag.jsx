@@ -2,6 +2,7 @@ import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
 import styles from "../Styles/styles.module.css";
+import Navbar from '../../../Home/Navbar-new/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
@@ -86,6 +87,8 @@ function CodeTag() {
 	}
 
 	return (
+		<>
+		<Navbar />
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
 
@@ -260,6 +263,7 @@ function CodeTag() {
 
 			</div>
 		</ThemeProvider>
+		</>
 	);
 }
 export default CodeTag;

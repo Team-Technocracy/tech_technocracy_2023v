@@ -3,6 +3,7 @@ import { Formik } from "formik";
 import { useState } from "react";
 import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Navbar from '../../../Home/Navbar-new/Navbar'
 import { Container, TextField, Grid, useThemeProps } from "@mui/material";
 import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
@@ -88,6 +89,8 @@ function TreasureHunt() {
 	}
 
 	return (
+		<>
+		<Navbar />
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
 
@@ -296,6 +299,7 @@ function TreasureHunt() {
 
 			</div>
 		</ThemeProvider>
+		</>
 	);
 }
 export default TreasureHunt;

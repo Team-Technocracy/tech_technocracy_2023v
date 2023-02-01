@@ -249,7 +249,7 @@
     .container{
         flex-direction: column;
         height: 100%;
-        padding: 0;
+        padding: 4rem 0rem;
     }
     .registration{
         margin-top: 2rem;

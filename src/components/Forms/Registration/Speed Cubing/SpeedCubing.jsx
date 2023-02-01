@@ -8,8 +8,6 @@ import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
-import { NavLink } from "react-router-dom";
-import img from '../../../../assets/images/leftArrow.png'
 
 const darkTheme = createTheme({
 	palette: {
@@ -17,7 +15,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Gizmosky() {
+function SpeedCubing() {
 
 	const { id } = useParams();
 	// data of event
@@ -44,7 +42,7 @@ function Gizmosky() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": "Hydrolift",
+		"event": "Speed Cubing",
 		"name": "",
 		"mail": "",
 		"phone": "",
@@ -87,22 +85,13 @@ function Gizmosky() {
 			<div className={styles.container}>
 
 				<Container>
-				<div className={styles.goback}>
-						<NavLink to="/events"><img src={img} alt="" /></NavLink>
-					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>HYDROLIFT</h3>
-							<p className={styles.event_description}>Experience The Extraordinary At Our One-Of-A-Kind Event. This Is That One Time In Life That Pressure's Good For You. Apply That Pressure On The Correct Area And May The Force Be With You.</p>
-							<p className={styles.event_more}>This Is A Team Competition In Which Your Team Competes By Designing a Bottle Rocket With The Material Provided Using Mechanical Engineering Concepts To Drive It To The Longest Distance Possible.</p>
-							<p className={styles.event_materials}><b>MATERIALS PROVIDED : </b>2 ltr Bottle, Tyre Tube Valve, Feviquick, Air Pump, Water, Tape, Scissors, M-Seal</p>
-							<p className={styles.event_team}><b>TEAM : </b>3-4 Members</p>
-							<p className={styles.event_procedure}><b>PROCEDURE : </b>Your team will be given 3 chances to test your model and the longest distance will be registered as your score.</p>
-							<p className={styles.event_location}><b>LOCATION : </b>Football Ground</p>
-							<p className={styles.event_time}><b>TIME : </b>2 PM- 5 PM</p>
-							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Viplow - , Shreeyansh Sharma - </p>
+							<h3 className={styles.event_title}>Speed Cubing</h3>
+							<p className={styles.event_description}> "Time is a storm in which we are all lost." 
+Can you find your way out of the storm and be the fastest to win the speedcubing competition ?
+							</p>
 						</div>
 					</div>
 				</Container>
@@ -117,9 +106,9 @@ function Gizmosky() {
 										margin="normal"
 											required
 											fullWidth
-											id="team_name"
+											id="name"
 											name="name"
-											label="Team Name"
+											label="Name"
 											variant="outlined"
 											autoFocus
 											autoComplete='off'
@@ -132,8 +121,8 @@ function Gizmosky() {
 											required
 											fullWidth
 											type="email"
-											id="team_leader_email"
-											name="mail"
+											id="email"
+											name="email"
 											label="Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -142,10 +131,10 @@ function Gizmosky() {
 									</Grid>
 									<Grid item xs={12}>
 										<TextField
+										margin="normal"
 											required
-											margin="normal"
 											fullWidth
-											id="team_leader_number"
+											id="team_leader_mail"
 											name="phone"
 											label="Mobile Number"
 											variant="outlined"
@@ -153,7 +142,19 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									
+									<Grid item xs={12}>
+										<TextField
+										margin="normal"
+											required
+											fullWidth
+											id="whatsapp_number"
+											name="whatsapp"
+											label="WhatsApp Number"
+											variant="outlined"
+											autoComplete='none'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
 									<Grid item xs={12}>
 										<TextField
 										margin="normal"
@@ -167,7 +168,19 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									
+									<Grid item xs={12}>
+										<TextField
+										margin="normal"
+											required
+											fullWidth
+											id="year"
+											name="yos"
+											label="Year of Study"
+											variant="outlined"
+											autoComplete='off'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
 									<Grid item xs={12}>
 										<TextField
 										margin="normal"
@@ -181,48 +194,7 @@ function Gizmosky() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem2"
-											id="name2"
-											label="Team Member Name 2"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem3"
-											id="name3"
-											label="Team Member Name 3"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											name="mem4"
-											id="name4"
-											label="Team Member Name 4"
-											type="text"
-											required
-											fullWidth
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
+								
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
@@ -235,4 +207,4 @@ function Gizmosky() {
 		</ThemeProvider>
 	);
 }
-export default Gizmosky;
+export default SpeedCubing;

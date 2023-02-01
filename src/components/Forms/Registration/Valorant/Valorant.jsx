@@ -8,8 +8,6 @@ import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
-import { NavLink } from "react-router-dom";
-import img from '../../../../assets/images/leftArrow.png'
 
 const darkTheme = createTheme({
 	palette: {
@@ -17,7 +15,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Gizmosky() {
+function Valorant() {
 
 	const { id } = useParams();
 	// data of event
@@ -44,14 +42,19 @@ function Gizmosky() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": "Hydrolift",
-		"name": "",
-		"mail": "",
-		"phone": "",
-		"whatsapp": "",
-		"college": "",
+		"event": "Treasure Hunt",
+		"team_name": "",
+		"leader_name": "",
+		"leader_mail": "",
+		"leader_whatsapp": "",
+		"leader_college": "",
+		"leader_number": "",
+		"leader_branch": "",
 		"yos": "",
-		"branch": "",
+		"mem2": "",
+		"mem3": "",
+		"mem4": "",
+		"mem5": ""
 	});
 
 	function handle(e) {
@@ -63,7 +66,7 @@ function Gizmosky() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/hydrolift/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -87,106 +90,86 @@ function Gizmosky() {
 			<div className={styles.container}>
 
 				<Container>
-				<div className={styles.goback}>
-						<NavLink to="/events"><img src={img} alt="" /></NavLink>
-					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>HYDROLIFT</h3>
-							<p className={styles.event_description}>Experience The Extraordinary At Our One-Of-A-Kind Event. This Is That One Time In Life That Pressure's Good For You. Apply That Pressure On The Correct Area And May The Force Be With You.</p>
-							<p className={styles.event_more}>This Is A Team Competition In Which Your Team Competes By Designing a Bottle Rocket With The Material Provided Using Mechanical Engineering Concepts To Drive It To The Longest Distance Possible.</p>
-							<p className={styles.event_materials}><b>MATERIALS PROVIDED : </b>2 ltr Bottle, Tyre Tube Valve, Feviquick, Air Pump, Water, Tape, Scissors, M-Seal</p>
-							<p className={styles.event_team}><b>TEAM : </b>3-4 Members</p>
-							<p className={styles.event_procedure}><b>PROCEDURE : </b>Your team will be given 3 chances to test your model and the longest distance will be registered as your score.</p>
-							<p className={styles.event_location}><b>LOCATION : </b>Football Ground</p>
-							<p className={styles.event_time}><b>TIME : </b>2 PM- 5 PM</p>
-							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Viplow - , Shreeyansh Sharma - </p>
+							<h3 className={styles.event_title}>Valorant Tournament</h3>
+							<p className={styles.event_description}> Buckle Up! As easy as this event may seem ,the harder it is in actuality. Can you last everyone out in this 5v5 face-off ?
+							</p>
 						</div>
 					</div>
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
 						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" , whatsapp_number:"",year: "",branch:"" }}>
+						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
+								<Grid item xs={12} >
+										<TextField
+											margin="normal"
+											required
+											fullWidth
+											id="email"
+											label="Email Address"
+											name="email"
+											autoComplete="email"
+											variant="outlined"
+											autoFocus
+											onKeyUp={(e) => handle(e)}
+
+										/>
+									</Grid>
 									<Grid item xs={12} >
 										<TextField
-										margin="normal"
+											margin="normal"
 											required
 											fullWidth
 											id="team_name"
-											name="name"
+											name="team_name"
 											label="Team Name"
 											variant="outlined"
-											autoFocus
+
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 									<Grid item xs={12}>
 										<TextField
-										margin="normal"
-											required
-											fullWidth
-											type="email"
-											id="team_leader_email"
-											name="mail"
-											label="Email Id"
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											required
 											margin="normal"
-											fullWidth
-											id="team_leader_number"
-											name="phone"
-											label="Mobile Number"
-											variant="outlined"
-											autoComplete='none'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									
-									<Grid item xs={12}>
-										<TextField
-										margin="normal"
 											required
 											fullWidth
-											id="college_name"
-											name="college"
-											label="College"
+											id="team_leader_name"
+											name="leader_name"
+											label="Team Leader Name, Valo username & rank"
 											variant="outlined"
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
 									
-									<Grid item xs={12}>
+									<Grid item xs={12} >
 										<TextField
-										margin="normal"
+											margin="normal"
 											required
 											fullWidth
-											id="branch"
-											name="branch"
-											label="Branch"
+											id="whatsapp_no"
+											name="leader_whatsapp"
+											label="Leader's WhatsApp No"
 											variant="outlined"
+
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
+
 										/>
 									</Grid>
+									
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
 											name="mem2"
 											id="name2"
-											label="Team Member Name 2"
+											label="Team Member Name 2, Valo username & rank"
 											type="text"
 											required
 											fullWidth
@@ -200,7 +183,7 @@ function Gizmosky() {
 											margin="normal"
 											name="mem3"
 											id="name3"
-											label="Team Member Name 3"
+											label="Team Member Name 3, Valo username & rank"
 											type="text"
 											required
 											fullWidth
@@ -214,7 +197,21 @@ function Gizmosky() {
 											margin="normal"
 											name="mem4"
 											id="name4"
-											label="Team Member Name 4"
+											label="Team Member Name 4, Valo username & rank"
+											type="text"
+											required
+											fullWidth
+											variant="outlined"
+											autoComplete='none'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
+											margin="normal"
+											name="mem5"
+											id="name5"
+											label="Team Member Name 5, Valo username & rank"
 											type="text"
 											required
 											fullWidth
@@ -235,4 +232,4 @@ function Gizmosky() {
 		</ThemeProvider>
 	);
 }
-export default Gizmosky;
+export default Valorant;

@@ -8,6 +8,8 @@ import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 
 const darkTheme = createTheme({
 	palette: {
@@ -85,12 +87,22 @@ function Gizmosky() {
 			<div className={styles.container}>
 
 				<Container>
+				<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
 							<h3 className={styles.event_title}>HYDROLIFT</h3>
-							<p className={styles.event_description}> Experience the extraordinary at our one-of-a-kind event.This is that one time in life that pressure's good for you .Apply that pressure on the correct area and may the force be with you.
-							</p>
+							<p className={styles.event_description}>Experience The Extraordinary At Our One-Of-A-Kind Event. This Is That One Time In Life That Pressure's Good For You. Apply That Pressure On The Correct Area And May The Force Be With You.</p>
+							<p className={styles.event_more}>This Is A Team Competition In Which Your Team Competes By Designing a Bottle Rocket With The Material Provided Using Mechanical Engineering Concepts To Drive It To The Longest Distance Possible.</p>
+							<p className={styles.event_materials}><b>MATERIALS PROVIDED : </b>2 ltr Bottle, Tyre Tube Valve, Feviquick, Air Pump, Water, Tape, Scissors, M-Seal</p>
+							<p className={styles.event_team}><b>TEAM : </b>3-4 Members</p>
+							<p className={styles.event_procedure}><b>PROCEDURE : </b>Your team will be given 3 chances to test your model and the longest distance will be registered as your score.</p>
+							<p className={styles.event_location}><b>LOCATION : </b>Football Ground</p>
+							<p className={styles.event_time}><b>TIME : </b>2 PM- 5 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Viplow - , Shreeyansh Sharma - </p>
 						</div>
 					</div>
 				</Container>

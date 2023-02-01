@@ -70,16 +70,16 @@ const events = [
         teamSize: 3,
         teamMin: 3
     },
-    {
-        id: 6,
-        title: "ECOPOLIS",
-        details: "Plan! Execute! Deliver! in that order. Join us at the city planning event. Put your wit to work and design an urban planning layout of an upcoming city for a chance to get exciting rewards.",
-        date: "04-02-23",
-        time: "2 P.M.",
-        img: file12,
-        teamSize: 3,
-        teamMin: 1
-    },
+    // {
+    //     id: 6,
+    //     title: "ECOPOLIS",
+    //     details: "Plan! Execute! Deliver! in that order. Join us at the city planning event. Put your wit to work and design an urban planning layout of an upcoming city for a chance to get exciting rewards.",
+    //     date: "04-02-23",
+    //     time: "2 P.M.",
+    //     img: file12,
+    //     teamSize: 3,
+    //     teamMin: 1
+    // },
     {
         id: 7,
         title: "Hydrolift",
@@ -130,7 +130,7 @@ const events = [
 
     {
         id: 12,
-        title: "Valorant Tournament",
+        title: "Valo Tournament",
         details: "Buckle Up! As easy as this event may seem ,the harder it is in actuality. Can you last everyone out in this 5v5 face-off ? ",
         date: "05-02-23",
         time: "9 A.M.",

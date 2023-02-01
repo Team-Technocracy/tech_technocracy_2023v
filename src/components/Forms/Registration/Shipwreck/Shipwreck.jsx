@@ -8,6 +8,8 @@ import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 
 const darkTheme = createTheme({
 	palette: {
@@ -85,13 +87,33 @@ function Shipwreck() {
 			<div className={styles.container}>
 
 				<Container>
+				<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
 							<h3 className={styles.event_title}>SHIPWRECK</h3>
-							<p className={styles.event_description}> A fun-driving event where one has to portray the personality of an eminent person, and save oneself from a sinking ship, beating out others.
-
+							<p className={styles.event_description}>A fun-driving event where one has to portray the personality of an eminent person, and save oneself from a sinking ship, beating out others.</p>
+							<p className={styles.event_more}>You are given the role of Superman/ Justin Bieber/ Narendra Modi etc. The ship is sinking, and the captain has only one Life-Jacket left. You are on the ship with other famous celebrities/ fictional characters/ hypothetical characters. Sink into the given character and try to escape from the sinking ship by using your impressive, convincing skills and prove that you deserve the only Life-jacket. Make yourself appear prominent and better than any other person/thing on board to win the Life jacket and eventually win the event. The participants are judged on content, humour, cogent arguments, valid points and audience response.</p>
+							<p className={styles.event_materials}>
+								<b>RULES : </b>
+								<ul>
+									<li>- Game would be played in slots, with 10-15 people in a group. Ship leader would be a team member/volunteer.</li>
+									<li>- Every participant would be getting their character on lottery basis from the bowl filled with pre decided characters.</li>
+									<li>- A total of 10 min mimicry or performance would be timed.</li>
+									<li>- After 10 min whoever successfully gets the life jacket from captain of the ship wins/ if character demands your acting will play the vital role for judgement so not necessarily jacket is the only factor.</li>
+									<li>- No physical harm should be brought to the captain as well as fellow I participants(shipmates).</li>
+									<li>- A set area of 5-10m radius would be considered as ship.</li>
+									<li>- Ship captain may bring an orderly acting schedule in case chaos occurs.</li>
+								</ul>
 							</p>
+							<p className={styles.event_team}><b>Requirements: </b>5 team members 1ship captain, 2outer judges and 2-3 members for maintaining the crowd.</p>
+							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p>
+							<p className={styles.event_location}><b>LOCATION : </b>In front of Central Garden</p>
+							<p className={styles.event_time}><b>TIME : </b>11 AM- 1 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Nakshatra, Vaibhav Jangid</p>
 						</div>
 					</div>
 				</Container>

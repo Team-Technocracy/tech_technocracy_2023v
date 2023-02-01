@@ -11,7 +11,6 @@ import axios from "axios";
 // import Cookies from 'js-cookie';
 import { NavLink } from "react-router-dom";
 import img from '../../../../assets/images/leftArrow.png'
-import Navbar from '../../../Home/Navbar-new/Navbar'
 
 const darkTheme = createTheme({
 	palette: {
@@ -46,11 +45,14 @@ function Animatrix() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
-		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"event": "Animatrix",
+		"name": "",
+		"mail": "",
+		"phone": "",
+		"whatsapp": "",
+		"college": "",
+		"yos": "",
+		"branch": "",
 	});
 
 	function handle(e) {
@@ -62,7 +64,7 @@ function Animatrix() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/animatrix/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -153,7 +155,7 @@ function Animatrix() {
 											fullWidth
 											id="email"
 											label="Email Address"
-											name="email"
+											name="mail"
 											autoComplete="email"
 											variant="outlined"
 											autoFocus
@@ -167,7 +169,7 @@ function Animatrix() {
 											required
 											fullWidth
 											id="phone_no"
-											name="phone_no"
+											name="phone"
 											label="	Phone No"
 											variant="outlined"
 											autoComplete='off'
@@ -181,7 +183,7 @@ function Animatrix() {
 											required
 											fullWidth
 											id="whatsapp_no"
-											name="whatsapp_no"
+											name="whatsapp"
 											label="WhatsApp No"
 											variant="outlined"
 											autoComplete='off'
@@ -195,7 +197,7 @@ function Animatrix() {
 											required
 											fullWidth
 											id="college_name"
-											name="college_name"
+											name="college"
 											label="College Name"
 											variant="outlined"
 											autoComplete='off'
@@ -208,7 +210,7 @@ function Animatrix() {
 											required
 											fullWidth
 											id="year"
-											name="year"
+											name="yos"
 											label="Year of Study"
 											variant="outlined"
 											autoComplete='off'

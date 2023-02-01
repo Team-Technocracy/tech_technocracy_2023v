@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@
 
 .container {
     height: 100%;
+    padding: 2rem 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +30,7 @@
     backdrop-filter: blur(30px);
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
-
+    color: white;
 }
 
 .description .event_title {
@@ -39,11 +41,9 @@
     text-align: center;
 }
 
-.description .event_description {
-
-    /* margin-top: 0.3rem;
-    margin-left: 2rem; */
-    color: #fff;
+.description div p {
+    margin-top: 2rem;
+    font-family: Kanit;
 }
 
 .description .event_image {
@@ -236,7 +236,7 @@
     transition: 0s;
 }
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:1200px) {
     .registration{
         width: 100%;
     }
@@ -245,10 +245,11 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
     .container{
         flex-direction: column;
         height: 100%;
+        padding: 0;
     }
     .registration{
         margin-top: 2rem;
@@ -261,4 +262,11 @@
         position: relative;
         
     }
+}
+
+.goback{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100000;
 }

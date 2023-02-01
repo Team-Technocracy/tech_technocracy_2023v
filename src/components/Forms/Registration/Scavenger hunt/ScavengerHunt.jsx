@@ -8,6 +8,8 @@ import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 
 const darkTheme = createTheme({
 	palette: {
@@ -15,7 +17,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Registration() {
+function ScavengerHunt() {
 
 	const { id } = useParams();
 	// data of event
@@ -89,12 +91,68 @@ function Registration() {
 			<div className={styles.container}>
 
 				<Container>
+				<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
 							<h3 className={styles.event_title}>SCAVENGER HUNT</h3>
-							<p className={styles.event_description}> “A box with no hinges, key or lid, yet has a golden treasure hidden in it. Solve this riddle, and you may be the one to uncover the exceptional treasure within.
+							<p className={styles.event_description}>"A Box With No Hinges, Key or Lid, Yet Has a Golden Treasure Hidden In It. Solve This Riddle, And You May Be The One To Uncover The Exceptional Treasure Within."</p>
+							<p className={styles.event_more}>A scavenger hunt is a game in which the organizers prepare a list defining specific items, which the participants seek to gather or complete all items on the list, usually without purchasing them.</p>
+							<p className={styles.event_materials}>
+								<b>RULES : </b>
+								<ul>
+									<li>- Two stages will be there. First will be a quiz (only by team captain). The 2nd stage will be a Scavenger Hunt.</li>
+									<li>- Top 12 teams will be shortlisted for Scavenger Hunt.</li>
+									<li>- 4 members with at least 1 girl and 1 boy are necessary in a team.</li>
+								</ul>
 							</p>
+							<p className={styles.event_materials}>
+								<b>STAGE 1 : QUIZ</b>
+								<ul>
+									<li>- 15 minutes quiz on google forms.</li>
+									<li>- Max 45 questions (based on topics of technology)</li>
+									<li>- Selection criteria: Max marks/questions.</li>
+									<li>- Tie breaker: Based on time submission.</li>
+								</ul>
+							</p>
+							<p className={styles.event_materials}>
+								<b>STAGE 2 : SCAVENGER HUNT</b>
+								<p><b>Round 1</b></p>
+								<ul>
+									<li>- 4 batches will be divided, 3 teams in each batch.</li>
+									<li>- Team captains will select chits for the items they have to find and location will be provided.</li>
+									<li>- If a team find their item before time, then they can help other teams of their own batch after submitting the item to nearest volunteer.</li>
+									<li>- Points will be given on total number of items searched by a batch.</li>
+									<li>- Tie breaker: Based on time.</li>
+									<li>- Two batches will qualify for 2nd round.</li>
+								</ul>
+								<p><b>Round 2</b></p>
+								<ul>
+									<li>- 2 batches will compete with same rules/conditions.</li>
+									<li>- One batch will qualify for 3rd round.</li>
+								</ul>
+								<p><b>Round 3</b></p>
+								<ul>
+									<li>- Rules for final round will be disclose on the day of event.</li>
+								</ul>
+								<p><b>NOTE: </b>If any uncertainty or confusion occurs during event then managing committee will take the decision.</p>
+								<p>If any team doesn’t report on given time duration, then points will be deducted or incase disqualified.</p>
+							</p>
+							<p className={styles.event_materials}>
+								<b>TIMINGS :</b>
+								<ul>
+									<li>QUIZ: 15 MINUTES</li>
+									<li>ROUND 1: 20 MINUTES</li>
+									<li>ROUND 2: 15 MINUTES</li>
+									<li>ROUND 3: 25 MINUTES</li>
+								</ul>
+							</p>
+							<p className={styles.event_location}><b>LOCATION : </b>Start With Central Garden Then Whole Campus</p>
+							<p className={styles.event_time}><b>TIME : </b>2 PM- 5 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Aparna , Suchit</p>
 						</div>
 					</div>
 				</Container>
@@ -272,4 +330,4 @@ function Registration() {
 		</ThemeProvider>
 	);
 }
-export default Registration;
+export default ScavengerHunt;

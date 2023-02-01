@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 .eventcardevents{
     display: flex;
     justify-content: center;
@@ -87,11 +89,16 @@
 .eventcardcarddetails{
     margin-top: 1rem;
     color: rgb(220, 220, 220);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     /* color: black; */
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Kanit', sans-serif;
+    /* letter-spacing: 1px; */
+    line-height: 1.2rem;
+    text-align: justify;
+    font-size: 16px;
 }
 
 .eventcardimage{

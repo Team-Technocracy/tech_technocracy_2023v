@@ -127,7 +127,7 @@ function Circuitrix() {
 
 							</p>
 							<p className={styles.event_location}><b>LOCATION : </b>G4</p>
-							<p className={styles.event_time}><b>TIME : </b>10 - 11 AM</p>
+							<p className={styles.event_time}><b>TIME : </b> 12:30 PM - 2:30 PM </p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
 							<p className={styles.event_time}><b>CONTACT : </b>Durgesh, Chirag Gajbhiye</p>
 						</div>

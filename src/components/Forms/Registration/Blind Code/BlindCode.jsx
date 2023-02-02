@@ -112,7 +112,7 @@ function BlindCode() {
 							{/* <p className={styles.event_team}><b>TEAM : </b>3 Members</p> */}
 							{/* <p className={styles.event_procedure}><b>PROCEDURE : </b>Your team will be given 3 chances to test your model and the longest distance will be registered as your score.</p> */}
 							<p className={styles.event_location}><b>LOCATION : </b>CSE Lab 2</p>
-							<p className={styles.event_time}><b>TIME : </b>9:30 AM- 12 PM</p>
+							<p className={styles.event_time}><b>TIME : </b>2:30 PM- 5 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
 							<p className={styles.event_time}><b>CONTACT : </b>Chirag Singhal, Harsh</p>
 						</div>

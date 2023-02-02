@@ -106,7 +106,7 @@ function TreasureHunt() {
 							<p className={styles.event_materials}><b>RULES : </b><br />1. A team should have a minimum 1 girl participant. <br />2. There will be 1 round , in this 1 round only we will have various rallies. In each rally 1 winner will be there .<br />3. 1 rally will have 5 teams and they will compete among themselves and 1 team will be the winner.<br />4. We will have a maximum of 50 groups in our event .</p>
 							<p className={styles.event_team}><b>TEAM : </b>5 Members</p>
 							<p className={styles.event_procedure}><b>PROCEDURE : </b>Your Teams will be provided with multiple clues one after the another and they have to compete with other teams to complete the task asap to get the next clue .</p>
-							<p className={styles.event_location}><b>LOCATION : </b>Round 1 : G41 ,Round 2 : Central Garden </p>
+							<p className={styles.event_location}><b>LOCATION : </b> Amul Parlour </p>
 							<p className={styles.event_time}><b>TIME : </b>12 PM- 4 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
 							<p className={styles.event_time}><b>CONTACT : </b>Akshat - , Shreeyansh Sharma </p>

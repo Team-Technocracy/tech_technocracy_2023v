@@ -22,7 +22,7 @@ const Event = () => {
                 <EventHero/>
                 <div className={styles.gridrow}>
                 {events.map((event) => (
-                                <EventCard id={event.id} img={event.img} title={event.title} date={event.date} time={event.time} venue={event.venue} details={event.details} />
+                                <EventCard id={event.id} img={event.img} title={event.title} date={event.date} time={event.time} venue={event.venue} details={event.details} regis={event.regis}/>
                             ))}
                 </div>
             </div>

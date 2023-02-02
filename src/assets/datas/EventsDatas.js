@@ -48,7 +48,7 @@ const events = [
         teamSize: 1,
         teamMin: 1,
         venue:"S4 Classroom",
-        register:1
+        regis:1
     },
     {
         id: 2,
@@ -60,7 +60,7 @@ const events = [
         teamSize: 3,
         teamMin: 2,
         venue:"Left Garden",
-        register:1
+        regis:1
     },
     {
         id: 3,
@@ -72,7 +72,7 @@ const events = [
         teamSize: 1,
         teamMin: 1,
         venue:"CSE Lab 2",
-        register:1
+        regis:1
     },
     {
         id: 4,
@@ -84,7 +84,7 @@ const events = [
         teamSize: 0,
         condition: '',
         venue:"G4 Lecture Hall",
-        register:1
+        regis:1
     },
     {
         id: 5,
@@ -96,7 +96,7 @@ const events = [
         teamSize: 3,
         teamMin: 3,
         venue:"Lab",
-        register:1
+        regis:1
     },
     {
         id: 6,
@@ -108,7 +108,7 @@ const events = [
         teamSize: 3,
         teamMin: 1,
         venue:"Studio 3, 4 (Architecture Building)",
-        register:1
+        regis:1
     },
     {
         id: 7,
@@ -120,7 +120,7 @@ const events = [
         teamSize: 3,
         teamMin: 2,
         venue:"Football Ground",
-        register:1
+        regis:1
     },
     {
         id: 8,
@@ -131,7 +131,7 @@ const events = [
         img: file11,
         teamSize: 3,
         venue:"Basketball Ground",
-        register:1
+        regis:1
     },
     {
         id: 9,
@@ -143,7 +143,7 @@ const events = [
         teamSize: 4,
         teamMin: 4,
         venue:"Stage 1 : G4 , Stage 2 : Central Garden to whole Campus",
-        register:1
+        regis:1
     },
     {
         id: 10,
@@ -154,18 +154,18 @@ const events = [
         img: file13,
         teamSize: 5,
         venue:"In front of Central Garden",
-        register:1
+        regis:1
     },
     {
         id: 11,
         title: "Treasure Hunt",
         details: "Find the blackbox lost in space-time by decoding cryptic signals",
         date: "04-02-23",
-        time: "12 P.M. - 4P.M.",
+        time: "12 P.M. - 4 P.M.",
         img: file16,
         teamSize: 5,
         venue:"Amul Parlour",
-        register:1
+        regis:1
     },
 
     {
@@ -178,18 +178,18 @@ const events = [
         teamSize: 5,
         teamMin: 5,
         venue:"CCC Lab 1",
-        register:1
+        regis:1
     },
     {
         id: 13,
         title: "VR Show",
         details: " Get yourself ready for a thrilling chance to explore the world of Virtual Reality through VR headsets recreating the images in our mind.",
         date: "04-02-23",
-        time: "12P.M. - 4P.M.",
+        time: "12 P.M. - 4 P.M.",
         img: file19,
         teamSize: 1,
         venue: "Foundry Lab",
-        register:0
+        regis:0
     },
     {
         id:14, 
@@ -199,7 +199,7 @@ const events = [
         time:"3 P.M. - 6 P.M.",
         img: file2,
         venue:"Central Garden",
-        register:1
+        regis:1
         // teamSize:
     },
     {
@@ -211,7 +211,7 @@ const events = [
         img: file10,
         teamSize:1,
         venue:"Amul Parlour",
-        register:1
+        regis:1
     },
     {
         id:16,
@@ -221,7 +221,7 @@ const events = [
         time:"Whole fest",
         img: file6,
         venue:"Whole Campus",
-        register:1
+        regis:1
         // teamSize:,
     },
     {
@@ -231,7 +231,7 @@ const events = [
         date: "05-02-23",
         // time:"",
         img: file15,
-        register:0
+        regis:0
         // teamSize:,
     },
     {
@@ -242,7 +242,7 @@ const events = [
         time:"4 P.M. - 6 P.M.",
         img:file9,
         venue:"Left Garden",
-        register:0
+        regis:0
         // teamSize:,
     },
     {
@@ -253,7 +253,7 @@ const events = [
         time:"1 P.M. - 2 P.M.",
         img:file14,
         venue:"Left Garden",
-        register:1
+        regis:1
         // teamSize:,
     }
 ];

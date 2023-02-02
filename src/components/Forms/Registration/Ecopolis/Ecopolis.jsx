@@ -4,13 +4,14 @@ import { useState } from "react";
 import styles from "../Styles/styles.module.css";
 import Navbar from '../../../Home/Navbar-new/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Container, TextField, Grid, useThemeProps } from "@mui/material";
+import { Container, TextField, Grid, useThemeProps, Alert } from "@mui/material";
 import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
 import { NavLink } from "react-router-dom";
 import img from '../../../../assets/images/leftArrow.png'
+import useFullPageLoader from '../../../utils/useFullPageLoader';
 
 const darkTheme = createTheme({
 	palette: {
@@ -19,7 +20,11 @@ const darkTheme = createTheme({
 });
 
 function CodeTag() {
-
+	const [loader,showLoader,hideLoader]= useFullPageLoader();
+	const [alert0, setErrorAlert] = useState(false);
+	const [alert1, setAlert] = useState(false);
+    const [alertContent0, setErrorAlertContent] = useState('');
+	const [alertContent1, setSuccessAlertContent] = useState('');
 	const { id } = useParams();
 	// data of event
 	const data = {
@@ -65,17 +70,30 @@ function CodeTag() {
 	}
 
 	function submit() {
-		console.log(form);
-		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/ecopolis/${JSON.stringify(form)}`)
-			.then(res => {
-				if (res.data === 0) {
-					alert("Error occurred");
-				}
-				else if (res.data === 1) {
-					alert("Team registered successfully");
-				}
-			})
+		showLoader();
+		if (form.event !== ""&&form.team_name !== ""&&form.leader_name !== ""&&form.leader_mail !== ""&&form.leader_number !== "" && form.leader_whatsapp !== ""&&form.leader_college !== ""&&form.yos !== ""&&form.leader_branch !== ""&&form.mem3 !== ""&&form.mem2 !== "") {
+			console.log(form);
+			axios.post(`https://aavartan-backend-production.up.railway.app/ecopolis/${JSON.stringify(form)}`)
+				.then(res => {
+					if (res.data === 0) {
+						hideLoader();
+						setErrorAlertContent('Error occurred');
+						setErrorAlert(true);
+						setAlert(false);
+					}
+					else if (res.data === 1) {
+						hideLoader();
+						setSuccessAlertContent('Registered successfully');
+						setAlert(true);
+						setErrorAlert(false);
+					}
+				})
+		}else{
+			hideLoader();
+			setErrorAlertContent('Fill the required details!!!');
+			setErrorAlert(true);
+			setAlert(false);
+		}
 	}
 
 	const [attri, setAttri] = useState(false);
@@ -114,6 +132,32 @@ function CodeTag() {
                             victory!
                             #imagine #improve #implement
 							</p>
+							<p><b>Description :</b>It is a city planning event. The purpose of this
+competition is choosing the best architectural and urban planning
+concept (master plan) of a new city.</p>
+							<p>
+								<b>Rules : </b>
+								<ul>
+									<li>Team of 2-3 members will be allowed to participate.</li>
+									<li>A time limit of 150 mins will be there for the whole
+competition.</li>
+									<li>Not more than 25 teams will be allowed for this event.</li>
+									<li>Participants should bring their own requirements like T scales,. Etc. Only sheets will be provided there.</li>
+								</ul>
+								<b>Event Justification :</b>
+								<ul>
+									<li>Core Knowledge - Arch. , Civil</li>
+									<li>Planning skills</li>
+									<li>Optimize & critical thinking (Design Thinking)</li>
+									<li>Far-distant thinking</li>
+									<li>Teamwork</li>
+									<li>Research</li>
+								</ul>
+							</p>
+							<p className={styles.event_location}><b>LOCATION : </b>Studio 3,4 (Architecture Building)</p>
+							<p className={styles.event_time}><b>TIME : </b>2 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Paila Likhitha - 9441745587</p>
 							{/* <p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p> */}
 							{/* <p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p> */}
 							{/* <p className={styles.event_location}><b>LOCATION : </b>CCC or Lab</p> */}
@@ -270,6 +314,11 @@ function CodeTag() {
 										/>
 									</Grid>
 								</Grid>
+								<br></br>
+								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
+								   <br></br>
+								   {alert1 ? <Alert variant="outlined" severity='success'>{alertContent1}</Alert> : <></> }
+								   <br></br>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
 						</Formik>
@@ -279,6 +328,7 @@ function CodeTag() {
 
 			</div>
 		</ThemeProvider>
+		{loader}
 		</>
 	);
 }

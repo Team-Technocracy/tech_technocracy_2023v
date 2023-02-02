@@ -4,13 +4,14 @@ import { useState } from "react";
 import styles from "../Styles/styles.module.css";
 import Navbar from '../../../Home/Navbar-new/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Container, TextField, Grid, useThemeProps } from "@mui/material";
+import { Container, TextField, Grid, useThemeProps, Alert } from "@mui/material";
 import { useParams } from "react-router-dom";
 import events from '../../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
 import { NavLink } from "react-router-dom";
 import img from '../../../../assets/images/leftArrow.png'
+import useFullPageLoader from '../../../utils/useFullPageLoader';
 
 const darkTheme = createTheme({
 	palette: {
@@ -19,6 +20,12 @@ const darkTheme = createTheme({
 });
 
 function Animatrix() {
+
+	const [loader,showLoader,hideLoader]= useFullPageLoader();
+	const [alert0, setErrorAlert] = useState(false);
+	const [alert1, setAlert] = useState(false);
+    const [alertContent0, setErrorAlertContent] = useState('');
+	const [alertContent1, setSuccessAlertContent] = useState('');
 
 	const { id } = useParams();
 	// data of event
@@ -62,17 +69,30 @@ function Animatrix() {
 	}
 
 	function submit() {
-		console.log(form);
-		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/animatrix/${JSON.stringify(form)}`)
-			.then(res => {
-				if (res.data === 0) {
-					alert("Error occurred");
-				}
-				else if (res.data === 1) {
-					alert("Team registered successfully");
-				}
-			})
+		showLoader();
+		if (form.name !== ""&&form.branch !== "" && form.college !== ""&&form.event !== ""&&form.mail !== "" && form.phone !== ""&&form.whatsapp !== ""&&form.yos !== "" ) {
+			console.log(form);
+			axios.post(`https://aavartan-backend-production.up.railway.app/animatrix/${JSON.stringify(form)}`)
+				.then(res => {
+					if (res.data === 0) {
+						hideLoader();
+						setErrorAlertContent('Error occurred');
+						setErrorAlert(true);
+						setAlert(false);
+					}
+					else if (res.data === 1) {
+						hideLoader();
+						setSuccessAlertContent('Registered successfully');
+						setAlert(true);
+						setErrorAlert(false);
+					}
+				})
+		}else{
+			hideLoader();
+			setErrorAlertContent('Fill the required details!!!');
+			setErrorAlert(true);
+			setAlert(false);
+		}
 	}
 
 	const [attri, setAttri] = useState(false);
@@ -85,153 +105,153 @@ function Animatrix() {
 
 	return (
 		<>
-		<Navbar />
-		<ThemeProvider className={styles} theme={darkTheme}>
-			
-			<div className={styles.container}>
+			<Navbar />
+			<ThemeProvider className={styles} theme={darkTheme}>
 
-				<Container>
-				<div className={styles.goback}>
-						<NavLink to="/events"><img src={img} alt="" /></NavLink>
-					</div>
-					<div className={styles.description}>
-						{/* <div className={styles.event_image}></div> */}
-						<div>
-							<h3 className={styles.event_title}>ANIMATRIX</h3>
-							<p className={styles.event_description}>Bring your imagination to life. Animate your ideas and let them come alive in our competition. Unleash the power of animation and join us! Your creativity knows no bounds.</p>
-							<p className={styles.event_more}><b>DESCRIPTION: </b>Animated video making competition. </p>
-							<p className={styles.event_materials}>
-								<b>RULES : </b>
-								<ul>
-									<li>- The participants will be provided a theme on which they will have to make a 30 second animation within the allotted time. </li>
-									<li>- To avoid plagiarism, each contestant will be given a unique object that they will have to use inside their animation.</li>
-									<li>- The participants will have to bring their own laptop/device for making the animation. </li>
-									<li>- The animation will be judged on the basis of originality and detailing. </li>
-									{/* <li>- Some of the required waste material can be provided to the team. Though, the participants need to bring their own Waste Material. But use of partial, whole or readymade models and any other unfair means will directly lead to disqualification.</li> */}
-									{/* <li>- Each member of the team must contain the identity card of his/her respected institute.</li> */}
-								</ul>
-							</p>
-							<p className={styles.event_materials}>
-								<b>EVENT JUSTIFICATION : </b>
-								<ul>
-									<li>- Tech skills</li>
-									<li>- Creative Thinking</li>
-									<li>- Presence of mind</li>
-								</ul>
-							</p>
-							{/* <p className={styles.event_team}><b>Requirements: </b>○ waste products, Number of members - 2, Volunteers – 4-5</p> */}
-							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers and Goodies</p>
-							<p className={styles.event_location}><b>LOCATION : </b>S4</p>
-							<p className={styles.event_time}><b>TIME : </b>3 PM- 5 PM</p>
-							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Suraj , Shivani</p>
+				<div className={styles.container}>
+
+					<Container>
+						<div className={styles.goback}>
+							<NavLink to="/events"><img src={img} alt="" /></NavLink>
 						</div>
-					</div>
-				</Container>
-				<Container>
-					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
-							<form className={styles.form} >
-								<Grid container spacing={2}>
-								<Grid item xs={12} >
-										<TextField
-										autoFocus
-											margin="normal"
-											required
-											fullWidth
-											id="name"
-											name="name"
-											label="Name"
-											variant="outlined"
-											autoComplete='off'
-											onKeyUp={(e) => handle(e)}
+						<div className={styles.description}>
+							{/* <div className={styles.event_image}></div> */}
+							<div>
+								<h3 className={styles.event_title}>ANIMATRIX</h3>
+								<p className={styles.event_description}>Bring your imagination to life. Animate your ideas and let them come alive in our competition. Unleash the power of animation and join us! Your creativity knows no bounds.</p>
+								<p className={styles.event_more}><b>DESCRIPTION: </b>Animated video making competition. </p>
+								<p className={styles.event_materials}>
+									<b>RULES : </b>
+									<ul>
+										<li>- The participants will be provided a theme on which they will have to make a 30 second animation within the allotted time. </li>
+										<li>- To avoid plagiarism, each contestant will be given a unique object that they will have to use inside their animation.</li>
+										<li>- The participants will have to bring their own laptop/device for making the animation. </li>
+										<li>- The animation will be judged on the basis of originality and detailing. </li>
+										{/* <li>- Some of the required waste material can be provided to the team. Though, the participants need to bring their own Waste Material. But use of partial, whole or readymade models and any other unfair means will directly lead to disqualification.</li> */}
+										{/* <li>- Each member of the team must contain the identity card of his/her respected institute.</li> */}
+									</ul>
+								</p>
+								<p className={styles.event_materials}>
+									<b>EVENT JUSTIFICATION : </b>
+									<ul>
+										<li>- Tech skills</li>
+										<li>- Creative Thinking</li>
+										<li>- Presence of mind</li>
+									</ul>
+								</p>
+								{/* <p className={styles.event_team}><b>Requirements: </b>○ waste products, Number of members - 2, Volunteers – 4-5</p> */}
+								<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers and Goodies</p>
+								<p className={styles.event_location}><b>LOCATION : </b>S4</p>
+								<p className={styles.event_time}><b>TIME : </b>3 PM- 5 PM</p>
+								<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+								<p className={styles.event_time}><b>CONTACT : </b>Suraj , Shivani</p>
+							</div>
+						</div>
+					</Container>
+					<Container>
+						<div className={`${styles.registration} ${styles.registration_wrapper}`}>
+							<h2 className={styles.heading}>Registration Form</h2>
+							<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
+								<form className={styles.form} >
+									<Grid container spacing={2}>
+										<Grid item xs={12} >
+											<TextField
+												autoFocus
+												margin="normal"
+												required
+												fullWidth
+												id="name"
+												name="name"
+												label="Name"
+												variant="outlined"
+												autoComplete='off'
+												onKeyUp={(e) => handle(e)}
 
-										/>
-									</Grid>
-									<Grid item xs={12} >
-										<TextField
-											margin="normal"
-											required
-											fullWidth
-											id="email"
-											label="Email Address"
-											name="mail"
-											autoComplete="email"
-											variant="outlined"
-											
-											onKeyUp={(e) => handle(e)}
+											/>
+										</Grid>
+										<Grid item xs={12} >
+											<TextField
+												margin="normal"
+												required
+												fullWidth
+												id="email"
+												label="Email Address"
+												name="mail"
+												autoComplete="email"
+												variant="outlined"
 
-										/>
-									</Grid>
-									<Grid item xs={12} >
-										<TextField
-											margin="normal"
-											required
-											fullWidth
-											id="phone_no"
-											name="phone"
-											label="	Phone No"
-											variant="outlined"
-											autoComplete='off'
-											onKeyUp={(e) => handle(e)}
+												onKeyUp={(e) => handle(e)}
 
-										/>
-									</Grid>
-									<Grid item xs={12} >
-										<TextField
-											margin="normal"
-											required
-											fullWidth
-											id="whatsapp_no"
-											name="whatsapp"
-											label="WhatsApp No"
-											variant="outlined"
-											autoComplete='off'
-											onKeyUp={(e) => handle(e)}
+											/>
+										</Grid>
+										<Grid item xs={12} >
+											<TextField
+												margin="normal"
+												required
+												fullWidth
+												id="phone_no"
+												name="phone"
+												label="	Phone No"
+												variant="outlined"
+												autoComplete='off'
+												onKeyUp={(e) => handle(e)}
 
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											required
-											fullWidth
-											id="college_name"
-											name="college"
-											label="College Name"
-											variant="outlined"
-											autoComplete='off'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											required
-											fullWidth
-											id="year"
-											name="yos"
-											label="Year of Study"
-											variant="outlined"
-											autoComplete='off'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									<Grid item xs={12}>
-										<TextField
-											margin="normal"
-											required
-											fullWidth
-											id="branch"
-											name="branch"
-											label="Branch"
-											variant="outlined"
-											autoComplete='off'
-											onKeyUp={(e) => handle(e)}
-										/>
-									</Grid>
-									{/* {count.map((i) => {
+											/>
+										</Grid>
+										<Grid item xs={12} >
+											<TextField
+												margin="normal"
+												required
+												fullWidth
+												id="whatsapp_no"
+												name="whatsapp"
+												label="WhatsApp No"
+												variant="outlined"
+												autoComplete='off'
+												onKeyUp={(e) => handle(e)}
+
+											/>
+										</Grid>
+										<Grid item xs={12}>
+											<TextField
+												margin="normal"
+												required
+												fullWidth
+												id="college_name"
+												name="college"
+												label="College Name"
+												variant="outlined"
+												autoComplete='off'
+												onKeyUp={(e) => handle(e)}
+											/>
+										</Grid>
+										<Grid item xs={12}>
+											<TextField
+												margin="normal"
+												required
+												fullWidth
+												id="year"
+												name="yos"
+												label="Year of Study"
+												variant="outlined"
+												autoComplete='off'
+												onKeyUp={(e) => handle(e)}
+											/>
+										</Grid>
+										<Grid item xs={12}>
+											<TextField
+												margin="normal"
+												required
+												fullWidth
+												id="branch"
+												name="branch"
+												label="Branch"
+												variant="outlined"
+												autoComplete='off'
+												onKeyUp={(e) => handle(e)}
+											/>
+										</Grid>
+										{/* {count.map((i) => {
 										return (
 											<div>
 												<div className={`${styles.common} ${styles.name_1}`}>
@@ -286,16 +306,26 @@ function Animatrix() {
 											</div>
 										)
 									})} */}
-								</Grid>
-								<button type="button"  className={styles.registration_button} onClick={submit} >Register</button>
-							</form>
-						</Formik>
+									</Grid>
+								
+								   <br></br>
+								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
+								   <br></br>
+								   {alert1 ? <Alert variant="outlined" severity='success'>{alertContent1}</Alert> : <></> }
+								   <br></br>
 
-					</div>
-				</Container>
-
-			</div>
-		</ThemeProvider>
+									<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
+								</form>
+								
+							</Formik>
+						
+						</div>
+					</Container>
+					
+				</div>
+			
+			</ThemeProvider>
+			{loader}
 		</>
 	);
 }

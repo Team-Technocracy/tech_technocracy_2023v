@@ -53,7 +53,7 @@ const events = [
         title: "Best Out of Waste",
         details: "“Recycle it all, No matter how small! “ with this intent unveil your creativity, artistry, proficiency and dexterity, spawning marvelous adornments from discarded scrap. ",
         date: "04-02-23",
-        time: "11 A.M.",
+        time: "12 P.M.",
         img: file3,
         teamSize: 3,
         teamMin: 2
@@ -63,7 +63,7 @@ const events = [
         title: "Blind Coding",
         details: " Even without sight, there is still a vision. Hold on tight for this electrifying coding escapade to appraise your skills, logic, and limits.",
         date: "04-02-23",
-        time: "9 A.M.",
+        time: "2:30 P.M.",
         img: file4,
         teamSize: 1,
         teamMin: 1
@@ -73,7 +73,7 @@ const events = [
         title: "Circuitrix",
         details: " A circuit-related game that will pique your interest. Get ready to step into the circuit realm.",
         date: "04-02-23",
-        time: "10 A.M.",
+        time: "1 P.M.",
         img: file5,
         teamSize: 0,
         condition: ''
@@ -113,7 +113,7 @@ const events = [
         title: "Robotrek",
         details: "Slow and steady wins the race”, but is it true for the robots as well? Find out in this extraordinary racing event where the self made robot cars will compete to accomplish the race. ",
         date: "04-02-23",
-        time: "3 P.M.",
+        time: "2 P.M.",
         img: file11,
         teamSize: 3
     },
@@ -206,7 +206,7 @@ const events = [
         title:"Jenga",
         details:'Do you have what it takes to stand at the top() of the tower ? If yes then grace us with your presence at the Jenga event and push() all your rivals down to win it all! ',
         date: "04-02-23",
-        time:"9:30 A.M.",
+        time:"4 P.M.",
         img:file9,
         // teamSize:,
     },

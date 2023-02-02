@@ -133,7 +133,7 @@ function Clickovartan() {
 
 			console.log(form);
 
-			axios.post(`http://localhost:8000/clickovartan/${JSON.stringify(form)}`)
+			axios.post(`https://aavartan-backend-production.up.railway.app/clickovartan/${JSON.stringify(form)}`)
 				.then(res => {
 					if (res.data === 0) {
 						alert("Error occurred");

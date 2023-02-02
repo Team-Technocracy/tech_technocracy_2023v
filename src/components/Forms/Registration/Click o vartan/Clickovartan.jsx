@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "../Styles/styles.module.css";
 import Navbar from '../../../Home/Navbar-new/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Container, TextField, Grid, useThemeProps } from "@mui/material";
+import { Container, TextField, Grid, useThemeProps, Alert } from "@mui/material";
 import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
@@ -13,7 +13,7 @@ import { Button } from "@material-ui/core";
 import { Web3Storage } from "web3.storage";
 import { NavLink } from "react-router-dom";
 import img from '../../../../assets/images/leftArrow.png'
-
+import useFullPageLoader from '../../../utils/useFullPageLoader';
 const apiToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGREZjk0RDI4MjJiMkE2MjlEYWFmYkM5ZDg0OTdDMTdmNTBCMDYzMGQiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NzQwNTIzNTg1NTYsIm5hbWUiOiJ2aWd5YW4ifQ.JtNwmaiFc3CEBte5wO5-OF50nrXRbo3w8YIzXY6ZJWc"
 const client = new Web3Storage({ token: apiToken });
 
@@ -24,7 +24,11 @@ const darkTheme = createTheme({
 });
 
 function Clickovartan() {
-
+	const [loader,showLoader,hideLoader]= useFullPageLoader();
+	const [alert0, setErrorAlert] = useState(false);
+	const [alert1, setAlert] = useState(false);
+    const [alertContent0, setErrorAlertContent] = useState('');
+	const [alertContent1, setSuccessAlertContent] = useState('');
 	// const handleFile = (e) => {
 	// 	let images = e.target.files;
 	// 	var i;
@@ -90,11 +94,8 @@ function Clickovartan() {
 
 
 	async function submit() {
-		if (form['mail'] === "" || form['phone'] === "" || form["name"] === "") {
-			alert("Please enter your personal details");
-		}
-		else {
-			alert("Please wait...Don't refresh the page");
+		showLoader();
+		if (form.event !== ""&&form.name !== ""&&form.mail !== ""&&form.phone !== "" && form.whatsapp !== ""&&form.college !== ""&&form.yos !== ""&&form.branch !== "") {
 			const file1 = document.getElementById("file1").files[0];
 			var fileInput = document.getElementById("file1");
 
@@ -135,12 +136,24 @@ function Clickovartan() {
 			axios.post(`https://aavartan-backend-production.up.railway.app/clickovartan/${JSON.stringify(form)}`)
 				.then(res => {
 					if (res.data === 0) {
-						alert("Error occurred");
+						hideLoader();
+						setErrorAlertContent('Error occurred');
+						setErrorAlert(true);
+						setAlert(false);
 					}
 					else if (res.data === 1) {
-						alert("Team registered successfully");
+						hideLoader();
+						setSuccessAlertContent('Registered successfully');
+						setAlert(true);
+						setErrorAlert(false);
 					}
 				})
+		}
+		else {
+			hideLoader();
+			setErrorAlertContent('Fill the required details!!!');
+			setErrorAlert(true);
+			setAlert(false);
 		}
 	}
 
@@ -373,6 +386,11 @@ function Clickovartan() {
 											<span>File name format: your_name3</span>
 										</Grid>
 									</Grid>
+									<br></br>
+								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
+								   <br></br>
+								   {alert1 ? <Alert variant="outlined" severity='success'>{alertContent1}</Alert> : <></> }
+								   <br></br>
 									<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 								</form>
 							</Formik>
@@ -382,6 +400,7 @@ function Clickovartan() {
 
 				</div>
 			</ThemeProvider>
+			{loader}
 		</>
 	);
 }

@@ -115,10 +115,10 @@ function CodeTag() {
                             #imagine #improve #implement
 							</p>
 							{/* <p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p> */}
-							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p>
-							<p className={styles.event_location}><b>LOCATION : </b>CCC or Lab</p>
-							<p className={styles.event_time}><b>TIME : </b>9:30 AM- 11 AM</p>
-							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
+							{/* <p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p> */}
+							{/* <p className={styles.event_location}><b>LOCATION : </b>CCC or Lab</p> */}
+							{/* <p className={styles.event_time}><b>TIME : </b>9:30 AM- 11 AM</p> */}
+							{/* <p className={styles.event_time}><b>DATE : </b>05.02.2023</p> */}
 							<p className={styles.event_time}><b>CONTACT : </b>Amaan - 9754277594, Likhita - 9441745578</p>
 						</div>
 					</div>

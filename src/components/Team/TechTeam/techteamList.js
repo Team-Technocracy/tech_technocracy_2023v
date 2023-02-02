@@ -2,7 +2,7 @@ import Syam_Yadavalli from "../../../images/TechTeam/Syam_Yadavalli.jpg";
 import Harsh_Ranjan_Sinha from "../../../images/TechTeam/Harsh_Ranjan_Sinha.jpg";
 import Shazma_Siddiqui from "../../../images/TechTeam/Shazma_Siddiqui.jpg";
 import Aniket_Kumar from "../../../images/TechTeam/Aniket_Kumar.jpg";
-// import Rahul_Singh from "../../../images/TechTeam/Rahul_Singh.jpg";
+import Rahul_Singh from "../../../images/TechTeam/Rahul_Singh.jpg";
 import Vibhuti_Chandrakar from "../../../images/TechTeam/Vibhuti_Chandrakar.jpg";
 import Piyush_Kumar from "../../../images/TechTeam/Piyush_Kumar.jpg";
 import Somil_Puri from "../../../images/TechTeam/Somil_Puri.jpg";
@@ -64,14 +64,14 @@ export const techteamList = [
     instaUrl: "#",
     desi: "Executive"
   },
-  // {
-  //   id: 7,
-  //   name: "Rahul Singh",
-  //   imgUrl: Rahul_Singh,
-  //   linkedinUrl: "https://www.linkedin.com/in/rahulsingh19390",
-  //   instaUrl: "#",
-  //   desi:"Executive"
-  // },
+  {
+    id: 7,
+    name: "Rahul Singh",
+    imgUrl: Rahul_Singh,
+    linkedinUrl: "https://www.linkedin.com/in/rahulsingh19390",
+    instaUrl: "#",
+    desi:"Executive"
+  },
   {
     id: 8,
     name: "Vibhuti Chandrakar",

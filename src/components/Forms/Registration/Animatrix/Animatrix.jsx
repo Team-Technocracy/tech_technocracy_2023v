@@ -11,7 +11,6 @@ import axios from "axios";
 // import Cookies from 'js-cookie';
 import { NavLink } from "react-router-dom";
 import img from '../../../../assets/images/leftArrow.png'
-import Navbar from '../../../Home/Navbar-new/Navbar'
 
 const darkTheme = createTheme({
 	palette: {

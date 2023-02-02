@@ -32,7 +32,7 @@ const QR_FINDER = () => {
       setToggler(false);
     } else {
       axios
-        .get("https://sheetdb.io/api/v1/8608zjm5xwblq")
+        .get("https://sheetdb.io/api/v1/gwifantqnel4w")
         .then((res) => {
           let details;
           res.data.forEach((element, ind) => {
@@ -45,7 +45,7 @@ const QR_FINDER = () => {
           } else {
             console.log(details);
             axios
-              .patch(`https://sheetdb.io/api/v1/8608zjm5xwblq/Code/${code}`, {
+              .patch(`https://sheetdb.io/api/v1/gwifantqnel4w/Code/${code}`, {
                 Name: name,
               })
               .then((res) =>

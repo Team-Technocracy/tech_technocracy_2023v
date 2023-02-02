@@ -61,19 +61,19 @@ function VRShow() {
 		set(newData)
 	}
 
-	function submit() {
-		console.log(form);
-		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/animatrix/${JSON.stringify(form)}`)
-			.then(res => {
-				if (res.data === 0) {
-					alert("Error occurred");
-				}
-				else if (res.data === 1) {
-					alert("Team registered successfully");
-				}
-			})
-	}
+	// function submit() {
+	// 	console.log(form);
+	// 	alert("Please wait...Don't refresh the page");
+	// 	axios.post(`https://aavartan-backend-production.up.railway.app/animatrix/${JSON.stringify(form)}`)
+	// 		.then(res => {
+	// 			if (res.data === 0) {
+	// 				alert("Error occurred");
+	// 			}
+	// 			else if (res.data === 1) {
+	// 				alert("Team registered successfully");
+	// 			}
+	// 		})
+	// }
 
 	const [attri, setAttri] = useState(false);
 	const [toggle, setToggle] = useState(false);

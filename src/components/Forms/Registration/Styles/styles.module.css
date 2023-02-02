@@ -270,3 +270,8 @@
     left: 10px;
     z-index: 100000;
 }
+.uploadbtn{
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

@@ -13,7 +13,7 @@ const Member = ({name, phone}) => {
 							required
 							id="full_name_1"
 							label="Full Name"
-							autoFocus
+							
 							variant="outlined"
 							autoComplete='none'
 						/>

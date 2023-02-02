@@ -160,7 +160,7 @@ DATE : 3rd feb </b></p>
 											name="leader_mail"
 											autoComplete="email"
 											variant="outlined"
-											autoFocus
+											
 											onKeyUp={(e) => handle(e)}
 
 										/>

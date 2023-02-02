@@ -4,6 +4,7 @@
   flex-direction: column;
   padding-top: 10vh;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .heading {

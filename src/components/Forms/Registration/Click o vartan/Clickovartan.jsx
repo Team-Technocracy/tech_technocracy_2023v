@@ -91,9 +91,6 @@ function Clickovartan() {
 		if (form['mail'] === "" || form['phone'] === "" || form["name"] === "") {
 			alert("Please enter your personal details");
 		}
-		else if (form['hash1'] === "" || form['name1'] === "" || form['hash2'] === "" || form['name2'] === "" || form['hash3'] === "" || form["name3"] === "") {
-			alert("Please upload all 3 images");
-		}
 		else {
 			alert("Please wait...Don't refresh the page");
 			const file1 = document.getElementById("file1").files[0];

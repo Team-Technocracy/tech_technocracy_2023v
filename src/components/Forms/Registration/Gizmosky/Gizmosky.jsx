@@ -123,7 +123,7 @@ function Gizmosky() {
 											name="name"
 											label="Name"
 											variant="outlined"
-											autoFocus
+											
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
@@ -212,7 +212,7 @@ function Gizmosky() {
 																required
 																id="full_name_1"
 																label="Full Name"
-																autoFocus
+																
 																variant="outlined"
 																autoComplete='none'
 																onKeyUp={(e) => handle(e)}

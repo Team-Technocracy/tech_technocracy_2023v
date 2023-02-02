@@ -135,7 +135,7 @@ function Bbs() {
 											name="team_name"
 											label="Team Name"
 											variant="outlined"
-											autoFocus
+											
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
@@ -148,7 +148,7 @@ function Bbs() {
 											name="leader_name"
 											label="Team Leader Name"
 											variant="outlined"
-											autoFocus
+											
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
@@ -238,7 +238,7 @@ function Bbs() {
 																required
 																id="full_name_1"
 																label="Full Name"
-																autoFocus
+																
 																variant="outlined"
 																autoComplete='none'
 																onKeyUp={(e) => handle(e)}

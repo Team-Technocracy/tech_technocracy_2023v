@@ -46,11 +46,10 @@ function OpenMic() {
 		"event": "Open Mic",
 		"name": "",
 		"mail": "",
-		"phone": "",
+		"performance": "",
 		"whatsapp": "",
 		"college": "",
-		"yos": "",
-		"branch": "",
+		"branch": ""
 	});
 
 	function handle(e) {
@@ -62,7 +61,7 @@ function OpenMic() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/hydrolift/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/openmic/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -112,7 +111,7 @@ function OpenMic() {
 											fullWidth
 											id="email"
 											label="Email Address"
-											name="email"
+											name="mail"
 											autoComplete="email"
 											variant="outlined"
 											autoFocus
@@ -153,7 +152,7 @@ function OpenMic() {
 											required
 											fullWidth
 											id="phone_no"
-											name="phone_no"
+											name="phone"
 											label="	Phone No"
 											variant="outlined"
 											autoComplete='off'
@@ -167,7 +166,7 @@ function OpenMic() {
 											required
 											fullWidth
 											id="whatsapp_no"
-											name="whatsapp_no"
+											name="whatsapp"
 											label="WhatsApp No"
 											variant="outlined"
 											autoComplete='off'
@@ -178,6 +177,7 @@ function OpenMic() {
 									<Grid item xs={12} >
 									<TextField
 										id="perform"
+										name="performance"
 										label="What do you want to perform ?"
 										multiline
 										rows={4}
@@ -185,6 +185,7 @@ function OpenMic() {
 										margin="normal"
 										required
 										fullWidth
+										onKeyUp={(e) => handle(e)}
 									/>
 									</Grid>
 

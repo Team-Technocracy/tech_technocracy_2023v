@@ -130,9 +130,9 @@ function Circuitrix() {
 
 							</p>
 							<p className={styles.event_location}><b>LOCATION : </b>G4</p>
-							<p className={styles.event_time}><b>TIME : </b>10 - 11 AM</p>
+							<p className={styles.event_time}><b>TIME : </b><br/>Day 1: 10 AM - 11 AM <br/>Day 2: 12 PM - 2:30 PM </p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Durgesh, Chirag Gajbhiye</p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Durgesh Verma: 9827731951 <br/>Chirag Gajbhiye: 9630817137</p>
 						</div>
 					</div>
 				</Container>

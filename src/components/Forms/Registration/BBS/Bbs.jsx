@@ -117,7 +117,7 @@ function Bbs() {
 							<p className={styles.event_location}><b>LOCATION : </b>Central Garden</p>
 							<p className={styles.event_time}><b>TIME : </b>3 PM- 6 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Mansi , Priyanshu</p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Mansi Kumari: 7999298531<br/> Priyanshu Agrahari: 9452316350</p>
 						</div>
 					</div>
 				</Container>

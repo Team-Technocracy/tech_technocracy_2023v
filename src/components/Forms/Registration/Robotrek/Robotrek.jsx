@@ -101,17 +101,17 @@ function Robotrek() {
 							<p className={styles.event_description}>“Slow and steady wins the race”, but is it true for the robots as well? Find out in this extraordinary racing event where the self made robot cars will compete to accomplish the race.</p>
 							<p className={styles.event_more}>Race is all about the need to be tested, the zeal to take risks, and the fortuity to be number one. 💯 But have you witnessed a race so different? Aavartan’22-23 along with Robotix club Nitrr brings you Robotrek, the one-of-a-kind robot racing event, where your own robots will compete in an exciting rivalry. A competition so sporty that can flip in the blink of an eye. So, charge up your zest and get ready with your fighters for a breathtaking competition!!</p>
 							<p className={styles.event_materials}>
-								<b>Event Details :  : </b>
+								<b>Event Details :</b>
 								<p>The event will be conducted in two phases :</p>
 								<p><b>1st Phase: </b>A half an hour quiz round for team leaders on 4th Feb at G4 from 11:00AM to 11:30PM.</p>
 								<p><b>2nd Phase:</b>Shortlisted teams will be provided a list of components, a few hours before the round which is scheduled from 2pm to 5pm, and they have to make a vehicle from that in the given time at the basketball court, after which the final race will be conducted. The top three fastest vehicles will be the winners.</p>
 							</p>
 							{/* <p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p> */}
 							{/* <p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p> */}
-							<p className={styles.event_location}><b>QUIZ : </b>11pm at G4</p>
-							<p className={styles.event_time}><b>VEHICLE MAKING : </b>2pm to 5pm at BasketBall court</p>
+							<p className={styles.event_location}><b>QUIZ : </b>12 PM - 12:30 PM at G4</p>
+							<p className={styles.event_time}><b>VEHICLE MAKING : </b>2 PM - 5 PM at BasketBall court</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Pramil</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Pramil Kesarwani: 8004559662</p>
 						</div>
 					</div>
 				</Container>

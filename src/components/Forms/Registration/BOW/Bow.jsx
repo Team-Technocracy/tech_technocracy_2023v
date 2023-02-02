@@ -132,9 +132,9 @@ function Bow() {
 							{/* <p className={styles.event_team}><b>Requirements: </b>○ waste products, Number of members - 2, Volunteers – 4-5</p> */}
 							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p>
 							<p className={styles.event_location}><b>LOCATION : </b>Left Garden</p>
-							<p className={styles.event_time}><b>TIME : </b>11 AM- 1 PM</p>
+							<p className={styles.event_time}><b>TIME : </b>12 PM - 2 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Nakshatra , Shreya</p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Nakshatra Singh: 9198005550 <br/> Shreya Borikar: 7879086001</p>
 						</div>
 					</div>
 				</Container>

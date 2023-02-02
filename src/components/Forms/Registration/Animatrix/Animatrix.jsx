@@ -136,6 +136,7 @@ function Animatrix() {
 								<Grid container spacing={2}>
 								<Grid item xs={12} >
 										<TextField
+										autoFocus
 											margin="normal"
 											required
 											fullWidth

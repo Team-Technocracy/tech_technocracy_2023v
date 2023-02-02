@@ -113,7 +113,7 @@ Can you find your way out of the storm and be the fastest to win the speedcubing
 											name="name"
 											label="Name"
 											variant="outlined"
-											
+											autoFocus
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>

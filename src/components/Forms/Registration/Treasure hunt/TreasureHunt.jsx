@@ -132,6 +132,7 @@ DATE : 3rd feb </b></p>
 											name="team_name"
 											label="Team Name"
 											variant="outlined"
+											autoFocus
 
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}

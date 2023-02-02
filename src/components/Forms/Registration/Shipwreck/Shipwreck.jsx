@@ -134,7 +134,7 @@ function Shipwreck() {
 											name="name"
 											label="Name"
 											variant="outlined"
-											
+											autoFocus
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>

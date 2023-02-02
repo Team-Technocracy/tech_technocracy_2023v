@@ -139,6 +139,7 @@ function CodeTag() {
 											name="team_name"
 											label="Team Name"
 											variant="outlined"
+											autoFocus
 
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}

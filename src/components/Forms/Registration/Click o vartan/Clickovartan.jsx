@@ -96,7 +96,7 @@ function Clickovartan() {
 
 				<Container>
 				<div className={styles.goback}>
-						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					
 					</div>
 						<div className={styles.description}>
 							{/* <div className={styles.event_image}></div> */}

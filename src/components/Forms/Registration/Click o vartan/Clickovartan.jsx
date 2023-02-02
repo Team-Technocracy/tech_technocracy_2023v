@@ -10,6 +10,10 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Button } from "@material-ui/core";
 // import Cookies from 'js-cookie';
+import { Web3Storage } from "web3.storage";
+
+const apiToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGREZjk0RDI4MjJiMkE2MjlEYWFmYkM5ZDg0OTdDMTdmNTBCMDYzMGQiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NzQwNTIzNTg1NTYsIm5hbWUiOiJ2aWd5YW4ifQ.JtNwmaiFc3CEBte5wO5-OF50nrXRbo3w8YIzXY6ZJWc"
+const client = new Web3Storage({ token: apiToken });
 
 const darkTheme = createTheme({
 	palette: {
@@ -19,22 +23,22 @@ const darkTheme = createTheme({
 
 function Clickovartan() {
 
-	const handleFile = (e) => {
-		let images = e.target.files;
-		var i;
-		for (i = 0; i < e.target.files.length; i => 3) {
-			this.state.targetFile.push(images[i].name);
-		}
-		this.setState({
-			selectedFile: this.state.targetFile
+	// const handleFile = (e) => {
+	// 	let images = e.target.files;
+	// 	var i;
+	// 	for (i = 0; i < e.target.files.length; i => 3) {
+	// 		this.state.targetFile.push(images[i].name);
+	// 	}
+	// 	this.setState({
+	// 		selectedFile: this.state.targetFile
 
-		})
-		if (Array.from(e.target.files).length > 3) {
-			e.preventDefault();
-			alert(`Cannot upload files more than ${3}`);
-			return;
-		}
-	}
+	// 	})
+	// 	if (Array.from(e.target.files).length > 3) {
+	// 		e.preventDefault();
+	// 		alert(`Cannot upload files more than ${3}`);
+	// 		return;
+	// 	}
+	// }
 	const { id } = useParams();
 	// data of event
 	const data = {
@@ -60,19 +64,20 @@ function Clickovartan() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": "Treasure Hunt",
-		"team_name": "",
-		"leader_name": "",
-		"leader_mail": "",
-		"leader_whatsapp": "",
-		"leader_college": "",
-		"leader_number": "",
-		"leader_branch": "",
+		"event": "ClickOVartan",
+		"mail": "",
+		"name": "",
+		"phone": "",
+		"whatsapp": "",
+		"college": "",
 		"yos": "",
-		"mem2": "",
-		"mem3": "",
-		"mem4": "",
-		"mem5": ""
+		"branch": "",
+		"hash1": "",
+		"hash2": "",
+		"hash3": "",
+		"name1": "",
+		"name2": "",
+		"name3": ""
 	});
 
 	function handle(e) {
@@ -82,18 +87,62 @@ function Clickovartan() {
 	}
 
 
-	function submit() {
-		console.log(form);
-		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
-			.then(res => {
-				if (res.data === 0) {
-					alert("Error occurred");
-				}
-				else if (res.data === 1) {
-					alert("Team registered successfully");
-				}
-			})
+	async function submit() {
+		if (form['mail'] === "" || form['phone'] === "" || form["name"] === "") {
+			alert("Please enter your personal details");
+		}
+		else if (form['hash1'] === "" || form['name1'] === "" || form['hash2'] === "" || form['name2'] === "" || form['hash3'] === "" || form["name3"] === "") {
+			alert("Please upload all 3 images");
+		}
+		else {
+			alert("Please wait...Don't refresh the page");
+			const file1 = document.getElementById("file1").files[0];
+			var fileInput = document.getElementById("file1");
+
+			var rootCid = await client.put(fileInput.files, {
+				name: file1.name,
+				maxRetries: 3
+			});
+			console.log(rootCid);
+			form['hash1'] = rootCid;
+			form["name1"] = file1.name;
+
+
+			const file2 = document.getElementById("file2").files[0];
+			var fileInput = document.getElementById("file2");
+
+			var rootCid = await client.put(fileInput.files, {
+				name: file2.name,
+				maxRetries: 3
+			});
+			console.log(rootCid);
+			form['hash2'] = rootCid;
+			form["name2"] = file2.name;
+
+
+			const file3 = document.getElementById("file3").files[0];
+			var fileInput = document.getElementById("file3");
+
+			var rootCid = await client.put(fileInput.files, {
+				name: file3.name,
+				maxRetries: 3
+			});
+			console.log(rootCid);
+			form["hash3"] = rootCid;
+			form["name3"] = file3.name;
+
+			console.log(form);
+
+			axios.post(`http://localhost:8000/clickovartan/${JSON.stringify(form)}`)
+				.then(res => {
+					if (res.data === 0) {
+						alert("Error occurred");
+					}
+					else if (res.data === 1) {
+						alert("Team registered successfully");
+					}
+				})
+		}
 	}
 
 	const [attri, setAttri] = useState(false);
@@ -170,16 +219,15 @@ function Clickovartan() {
 									<Grid container spacing={2}>
 										<Grid item xs={12} >
 											<TextField
-											autoFocus
+												autoFocus
 												margin="normal"
 												required
 												fullWidth
 												id="email"
 												label="Email Address"
-												name="email"
+												name="mail"
 												autoComplete="email"
 												variant="outlined"
-												
 												onKeyUp={(e) => handle(e)}
 
 											/>
@@ -206,7 +254,7 @@ function Clickovartan() {
 												fullWidth
 												type="phone"
 												id="phone_no"
-												name="phone_no"
+												name="phone"
 												label="	Phone No"
 												variant="outlined"
 												autoComplete='off'
@@ -220,7 +268,7 @@ function Clickovartan() {
 												required
 												fullWidth
 												id="whatsapp_no"
-												name="whatsapp_no"
+												name="whatsapp"
 												label="WhatsApp No"
 												variant="outlined"
 
@@ -237,7 +285,7 @@ function Clickovartan() {
 												required
 												fullWidth
 												id="college_name"
-												name="college_name"
+												name="college"
 												label="College Name"
 												variant="outlined"
 												autoComplete='off'
@@ -250,7 +298,7 @@ function Clickovartan() {
 												required
 												fullWidth
 												id="year"
-												name="year"
+												name="yos"
 												label="Year of Study"
 												variant="outlined"
 												autoComplete='off'
@@ -285,14 +333,44 @@ function Clickovartan() {
 												component="label"
 											>
 												Upload File
-												<input onChange={handleFile}
+												<input id="file1"
 													type="file"
 													hidden
-													multiple
+													required
 												/>
 											</Button>
+											<span>File name format: your_name1</span>
+											<br />
+											<br />
+											<Button
+												margin="normal"
+												variant="contained"
+												component="label"
+											>
+												Upload File
+												<input id="file2"
+													type="file"
+													hidden
+													required
+												/>
+											</Button>
+											<span>File name format: your_name2</span>
+											<br />
+											<br />
+											<Button
+												margin="normal"
+												variant="contained"
+												component="label"
+											>
+												Upload File
+												<input id="file3"
+													type="file"
+													hidden
+													required
+												/>
+											</Button>
+											<span>File name format: your_name3</span>
 										</Grid>
-
 									</Grid>
 									<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 								</form>

@@ -56,6 +56,7 @@ function CodeTag() {
 		"yos": "",
 		"mem2": "",
 		"mem3": "",
+		"lang": ""
 	});
 
 	function handle(e) {
@@ -201,8 +202,6 @@ function CodeTag() {
 										/>
 									</Grid>
 
-
-
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
@@ -214,7 +213,6 @@ function CodeTag() {
 											variant="outlined"
 											autoComplete='off'
 											type="number"
-
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
@@ -264,6 +262,20 @@ function CodeTag() {
 											name="mem3"
 											id="name3"
 											label="Team Member Name 3"
+											type="text"
+											required
+											fullWidth
+											variant="outlined"
+											autoComplete='none'
+											onKeyUp={(e) => handle(e)}
+										/>
+									</Grid>
+									<Grid item xs={12}>
+										<TextField
+											margin="normal"
+											name="lang"
+											id="name3"
+											label="Preferred programming language"
 											type="text"
 											required
 											fullWidth

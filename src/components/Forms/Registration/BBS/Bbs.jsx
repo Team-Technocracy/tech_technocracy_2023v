@@ -65,7 +65,7 @@ function Bbs() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://aavartan-backend-production.up.railway.app/bbs/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/bbs/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -159,7 +159,7 @@ function Bbs() {
 											fullWidth
 											type="email"
 											id="team_leader_email"
-											name="leader_email"
+											name="leader_mail"
 											label="Team Leader Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -226,8 +226,8 @@ function Bbs() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<p className={styles.team_details}>Team Member Details</p>
-									{count.map((i) => {
+									
+									{/* {count.map((i) => {
 										return (
 											<div>
 												<div className={`${styles.common} ${styles.name_1}`}>
@@ -262,7 +262,7 @@ function Bbs() {
 												</div>
 											</div>
 										)
-									})}
+									})} */}
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>

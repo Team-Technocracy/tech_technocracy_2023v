@@ -114,6 +114,32 @@ function CodeTag() {
                             victory!
                             #imagine #improve #implement
 							</p>
+							<p><b>Description :</b>It is a city planning event. The purpose of this
+competition is choosing the best architectural and urban planning
+concept (master plan) of a new city.</p>
+							<p>
+								<b>Rules : </b>
+								<ul>
+									<li>Team of 2-3 members will be allowed to participate.</li>
+									<li>A time limit of 150 mins will be there for the whole
+competition.</li>
+									<li>Not more than 25 teams will be allowed for this event.</li>
+									<li>Participants should bring their own requirements like T scales,. Etc. Only sheets will be provided there.</li>
+								</ul>
+								<b>Event Justification :</b>
+								<ul>
+									<li>Core Knowledge - Arch. , Civil</li>
+									<li>Planning skills</li>
+									<li>Optimize & critical thinking (Design Thinking)</li>
+									<li>Far-distant thinking</li>
+									<li>Teamwork</li>
+									<li>Research</li>
+								</ul>
+							</p>
+							<p className={styles.event_location}><b>LOCATION : </b>Studio 3,4 (Architecture Building)</p>
+							<p className={styles.event_time}><b>TIME : </b>2 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Paila Likhitha - 9441745587</p>
 							{/* <p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p> */}
 							{/* <p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p> */}
 							{/* <p className={styles.event_location}><b>LOCATION : </b>CCC or Lab</p> */}

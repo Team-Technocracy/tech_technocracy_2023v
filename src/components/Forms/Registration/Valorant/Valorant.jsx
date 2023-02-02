@@ -10,7 +10,8 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 // import Cookies from 'js-cookie';
 import { NavLink } from "react-router-dom";
-import img from '../../../../assets/images/leftArrow.png'
+import img from '../../../../assets/images/leftArrow.png';
+import valo from '../../../../assets/images/valo.png';
 
 const darkTheme = createTheme({
 	palette: {
@@ -100,6 +101,33 @@ function Valorant() {
 							<h3 className={styles.event_title}>Valorant Tournament</h3>
 							<p className={styles.event_description}> Buckle Up! As easy as this event may seem ,the harder it is in actuality. Can you last everyone out in this 5v5 face-off ?
 							</p>
+							<p><b>Rules and Regulations for Valorant Tournament</b>
+							<b>Eligibility</b>
+							<ul>
+								<li>- The person playing must be a student of NIT RAIPUR</li>
+								<li>- The first 8-team to fill the form will be selected for the tournament.</li>
+							</ul>
+							<b>Maps</b>
+							<ul>
+								<li>- All valorant competitive maps are allowed.</li>
+								<li>- Map will be eliminated with a toss just like in VCT.</li>
+							</ul>
+							</p>
+							<div>
+							<p>
+								<b >Rounds</b>
+								<img  style={{marginTop:"0.5rem"}} src={valo} width="100%" alt="Valorant Round Information" />
+							</p></div>
+							<ul>
+								<li>- No replacement is allowed.</li>
+								<li>- Any unfair means will result in disqualification</li>
+								<li>- All the rules and regulation applied at VCT will be applied here as well</li>
+								
+								<div style={{display:"flex", justifyContent:"center", marginTop:"1rem"}}>
+								<a href="https://liquipedia.net/commons/images/8/82/VCT_MY-SG_Challengers_rulebook.pdf" style={{color:"white", cursor:"pointer", textDecoration:"underline", fontStyle:"italic"}}><b>Check Rules Here</b></a>
+								</div>
+								
+							</ul>
 						</div>
 					</div>
 				</Container>

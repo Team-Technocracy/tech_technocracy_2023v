@@ -56,8 +56,8 @@ function TreasureHunt() {
 		"yos": "",
 		"mem2": "",
 		"mem3": "",
-		"mem4": "",
-		"mem5": ""
+		"mem4": ""
+		// "mem5": ""
 	});
 
 	function handle(e) {
@@ -101,15 +101,19 @@ function TreasureHunt() {
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
-							<h3 className={styles.event_title}>Treasure Hunt</h3>
+							<h3 className={styles.event_title}>UNCHARTED- The Treasure Hunt</h3>
 							<p className={styles.event_description}>Explore the extraordinary treasures nearby and enrich the thrill of a treasure hunt. Make the most of your time by participating in the entertainment.</p>
-							<p className={styles.event_materials}><b>RULES : </b><br />1. A team should have a minimum 1 girl participant. <br />2. There will be 1 round , in this 1 round only we will have various rallies. In each rally 1 winner will be there .<br />3. 1 rally will have 5 teams and they will compete among themselves and 1 team will be the winner.<br />4. We will have a maximum of 50 groups in our event .</p>
-							<p className={styles.event_team}><b>TEAM : </b>5 Members</p>
+							<p className={styles.event_materials}><b>RULES : </b><br />1. Make sure you’ve registered through the form till 6pm 3rd FEB '23 . <br />2.No late requests will be entertained.<br /></p>
+							<p className={styles.event_team}><b>NO. OF MEMBERS IN TEAM : </b>4 (min 1 girl, 1 boy)</p>
 							<p className={styles.event_procedure}><b>PROCEDURE : </b>Your Teams will be provided with multiple clues one after the another and they have to compete with other teams to complete the task asap to get the next clue .</p>
-							<p className={styles.event_location}><b>LOCATION : </b>Round 1 : G41 ,Round 2 : Central Garden </p>
+							<p className={styles.event_procedure}><b>
+PRELIMS TEST< br/>
+TIME: 7pm  <br/>
+DATE : 3rd feb </b></p>
+							<p className={styles.event_location}><b>LOCATION OF MAIN EVENT: </b>Amul Parlour </p>
 							<p className={styles.event_time}><b>TIME : </b>12 PM- 4 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Akshat - , Shreeyansh Sharma </p>
+							<p className={styles.event_time}><b>CONTACT : </b>Akshat - 8319609131 , Shreeyansh Sharma-9630498585 </p>
 						</div>
 					</div>
 				</Container>
@@ -275,7 +279,7 @@ function TreasureHunt() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<Grid item xs={12}>
+									{/* <Grid item xs={12}>
 										<TextField
 											margin="normal"
 											name="mem5"
@@ -288,7 +292,7 @@ function TreasureHunt() {
 											autoComplete='none'
 											onKeyUp={(e) => handle(e)}
 										/>
-									</Grid>
+									</Grid> */}
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>

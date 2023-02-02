@@ -45,11 +45,15 @@ function Robotrek() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
-		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"event": "Robotrek",
+		"mail": "",
+		"leader_name": "",
+		"leader_number":"",
+		"leader_mail": "",
+		"name2":"",
+		"name3":"",
+		"name4":"",
+		// "college_name": "",
 	});
 
 	function handle(e) {
@@ -61,7 +65,7 @@ function Robotrek() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/robotrek/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -123,7 +127,7 @@ function Robotrek() {
 											fullWidth
 											id="email"
 											label="Email Address"
-											name="email"
+											name="mail"
 											autoComplete="email"
 											variant="outlined"
 											autoFocus
@@ -182,7 +186,7 @@ function Robotrek() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name="mem2"
+											name="name2"
 											id="name2"
 											label="Team Member Name 2"
 											type="text"
@@ -196,7 +200,7 @@ function Robotrek() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name="mem3"
+											name="name3"
 											id="name3"
 											label="Team Member Name 3"
 											type="text"
@@ -210,7 +214,7 @@ function Robotrek() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name="mem4"
+											name="name4"
 											id="name4"
 											label="Team Member Name 4"
 											type="text"

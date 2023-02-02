@@ -94,10 +94,6 @@ function Clickovartan() {
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
 
-				<Container>
-				<div className={styles.goback}>
-					
-					</div>
 						<div className={styles.description}>
 							{/* <div className={styles.event_image}></div> */}
 							<div>

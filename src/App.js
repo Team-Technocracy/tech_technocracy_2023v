@@ -34,6 +34,7 @@ import OpenMic from './components/Forms/Registration/OpenMic/OpenMic';
 import SpeedCubing from './components/Forms/Registration/Speed Cubing/SpeedCubing';
 import Valorant from './components/Forms/Registration/Valorant/Valorant';
 import Clickovartan from './components/Forms/Registration/Click o vartan/Clickovartan';
+import Ecopolis from './components/Forms/Registration/Ecopolis/Ecopolis';
 
 
 const App = () => {
@@ -88,6 +89,7 @@ const App = () => {
 					<Route exact path='/register/speedcubing' element={<SpeedCubing />} />
 					<Route exact path='/register/valotournament' element={<Valorant />} />
 					<Route exact path='/register/ClickOVartan' element={<Clickovartan />} />
+					<Route exact path='/register/Ecopolis' element={<Ecopolis />} />
 					{/* <Route exact path='/techteam' element={<TechTeam/>} /> */}
 				</Routes>
 				<Helmet>

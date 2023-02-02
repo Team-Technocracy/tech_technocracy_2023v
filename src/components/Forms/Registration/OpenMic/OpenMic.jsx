@@ -99,6 +99,29 @@ function OpenMic() {
 							<p className={styles.event_description}>  “Just give me a mic, and I’ll rock it”, is often what we think in our confident minds.
 								Now get a chance to showcase your talent and skills, through the power of a mic, and your words!
 							</p>
+							<p><b>Description :</b>Fun event which will be on the first day along with the other events. Anyone interested can come and entertain the audience with their singing/poetry/mimicry act/any sort of act, If interested people can come in a group to perform as a band as well.</p>
+							<p>
+								<b>Rules :</b>
+								<ul>
+									<li>- No offensive/violent content should be presented.</li>
+									<li>- Participants will be giving their names on the spot.</li>
+									<li>- The participants will perform on a first come first serve manner.</li>
+								</ul>
+							</p>
+							<p>
+								<b>Event Justification :</b>
+								<ul>
+									<li>- Oration</li>
+									<li>- Communication Skills</li>
+									<li>- Confidence Building</li>
+								</ul>
+							</p>
+							<p className={styles.event_location}><b>LOCATION : </b>AMUL PARLOUR</p>
+							<p className={styles.event_time}><b>TIME : </b>9:00AM -6:00PM</p>
+							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Aral Bhagat</p>
+
+							{/* <p><b>Requirements:</b>A set of karaoke speakers with mic will be required.</p> */}
 						</div>
 					</div>
 				</Container>

@@ -104,7 +104,7 @@ function TreasureHunt() {
 							<h3 className={styles.event_title}>UNCHARTED- The Treasure Hunt</h3>
 							<p className={styles.event_description}>Explore the extraordinary treasures nearby and enrich the thrill of a treasure hunt. Make the most of your time by participating in the entertainment.</p>
 							<p className={styles.event_materials}><b>RULES : </b><br />1. Make sure you’ve registered through the form till 6pm 3rd FEB '23 . <br />2.No late requests will be entertained.<br /></p>
-							<p className={styles.event_team}><b>NO. OF MEMBERS IN TEAM : </b>4</p>
+							<p className={styles.event_team}><b>NO. OF MEMBERS IN TEAM : </b>4 (min 1 girl, 1 boy)</p>
 							<p className={styles.event_procedure}><b>PROCEDURE : </b>Your Teams will be provided with multiple clues one after the another and they have to compete with other teams to complete the task asap to get the next clue .</p>
 							<p className={styles.event_procedure}><b>
 PRELIMS TEST< br/>

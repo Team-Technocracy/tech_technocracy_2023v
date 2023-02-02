@@ -11,6 +11,8 @@ import axios from "axios";
 import { Button } from "@material-ui/core";
 // import Cookies from 'js-cookie';
 import { Web3Storage } from "web3.storage";
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 
 const apiToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGREZjk0RDI4MjJiMkE2MjlEYWFmYkM5ZDg0OTdDMTdmNTBCMDYzMGQiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NzQwNTIzNTg1NTYsIm5hbWUiOiJ2aWd5YW4ifQ.JtNwmaiFc3CEBte5wO5-OF50nrXRbo3w8YIzXY6ZJWc"
 const client = new Web3Storage({ token: apiToken });
@@ -157,6 +159,9 @@ function Clickovartan() {
 				<div className={styles.container}>
 
 					<Container>
+					<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 						<div className={styles.description}>
 							{/* <div className={styles.event_image}></div> */}
 							<div>

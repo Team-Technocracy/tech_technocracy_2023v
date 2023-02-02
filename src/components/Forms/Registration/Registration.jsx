@@ -105,7 +105,7 @@ function Registration() {
 											name="team_name"
 											label="Team Name"
 											variant="standard"
-											
+											autoFocus
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>

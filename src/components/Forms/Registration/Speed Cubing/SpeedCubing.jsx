@@ -43,13 +43,13 @@ function SpeedCubing() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": "Speed Cubing",
+		"event": "Speedcubing",
 		"name": "",
 		"mail": "",
-		"phone": "",
+		"mobile": "",
 		"whatsapp": "",
 		"college": "",
-		"yos": "",
+		"yos":"",
 		"branch": "",
 	});
 
@@ -62,7 +62,7 @@ function SpeedCubing() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/hydrolift/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/speedcubing/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -125,7 +125,7 @@ Can you find your way out of the storm and be the fastest to win the speedcubing
 											fullWidth
 											type="email"
 											id="email"
-											name="email"
+											name="mail"
 											label="Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -138,7 +138,7 @@ Can you find your way out of the storm and be the fastest to win the speedcubing
 											required
 											fullWidth
 											id="team_leader_mail"
-											name="phone"
+											name="mobile"
 											label="Mobile Number"
 											variant="outlined"
 											autoComplete='none'

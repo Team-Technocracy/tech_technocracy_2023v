@@ -45,11 +45,14 @@ function Circuitrix() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
-		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"event": "Circuitrix",
+		"name": "",
+		"mail": "",
+		"phone": "",
+		"whatsapp": "",
+		"college":"",
+		"yos":"",
+		"branch":""
 	});
 
 	function handle(e) {
@@ -61,7 +64,7 @@ function Circuitrix() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/circuitrix/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -160,7 +163,7 @@ function Circuitrix() {
 											fullWidth
 											id="email"
 											label="Email Address"
-											name="email"
+											name="mail"
 											autoComplete="email"
 											variant="outlined"
 											autoFocus
@@ -174,7 +177,7 @@ function Circuitrix() {
 											required
 											fullWidth
 											id="phone_no"
-											name="phone_no"
+											name="phone"
 											label="	Phone No"
 											variant="outlined"
 											autoComplete='off'
@@ -188,7 +191,7 @@ function Circuitrix() {
 											required
 											fullWidth
 											id="whatsapp_no"
-											name="whatsapp_no"
+											name="whatsapp"
 											label="WhatsApp No"
 											variant="outlined"
 											autoComplete='off'
@@ -202,7 +205,7 @@ function Circuitrix() {
 											required
 											fullWidth
 											id="college_name"
-											name="college_name"
+											name="college"
 											label="College Name"
 											variant="outlined"
 											autoComplete='off'
@@ -215,7 +218,7 @@ function Circuitrix() {
 											required
 											fullWidth
 											id="year"
-											name="year"
+											name="yos"
 											label="Year of Study"
 											variant="outlined"
 											autoComplete='off'

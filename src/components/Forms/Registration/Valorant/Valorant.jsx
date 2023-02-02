@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "../Styles/styles.module.css";
 import Navbar from '../../../Home/Navbar-new/Navbar'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Container, TextField, Grid, useThemeProps } from "@mui/material";
+import { Container, TextField, Grid, useThemeProps, Alert } from "@mui/material"; 
 import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
@@ -12,7 +12,7 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import img from '../../../../assets/images/leftArrow.png';
 import valo from '../../../../assets/images/valo.png';
-
+import useFullPageLoader from '../../../utils/useFullPageLoader';
 const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
@@ -20,7 +20,11 @@ const darkTheme = createTheme({
 });
 
 function Valorant() {
-
+	const [loader,showLoader,hideLoader]= useFullPageLoader();
+	const [alert0, setErrorAlert] = useState(false);
+	const [alert1, setAlert] = useState(false);
+    const [alertContent0, setErrorAlertContent] = useState('');
+	const [alertContent1, setSuccessAlertContent] = useState('');
 	const { id } = useParams();
 	// data of event
 	const data = {
@@ -64,17 +68,30 @@ function Valorant() {
 	}
 
 	function submit() {
-		console.log(form);
-		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/valorant/${JSON.stringify(form)}`)
-			.then(res => {
-				if (res.data === 0) {
-					alert("Error occurred");
-				}
-				else if (res.data === 1) {
-					alert("Team registered successfully");
-				}
-			})
+		showLoader();
+		if (form.event !== ""&&form.mail !== ""&&form.team_name !== ""&&form.leader_username !== ""&&form.leader_whatsapp !== "" && form.mem2_username !== ""&&form.mem3_username !== ""&&form.mem4_username !== ""&&form.mem5_username !== "") {
+			console.log(form);
+			axios.post(`https://aavartan-backend-production.up.railway.app/valorant/${JSON.stringify(form)}`)
+				.then(res => {
+					if (res.data === 0) {
+						hideLoader();
+						setErrorAlertContent('Error occurred');
+						setErrorAlert(true);
+						setAlert(false);
+					}
+					else if (res.data === 1) {
+						hideLoader();
+						setSuccessAlertContent('Registered successfully');
+						setAlert(true);
+						setErrorAlert(false);
+					}
+				})
+		}else{
+			hideLoader();
+			setErrorAlertContent('Fill the required details!!!');
+			setErrorAlert(true);
+			setAlert(false);
+		}
 	}
 
 	const [attri, setAttri] = useState(false);
@@ -253,6 +270,11 @@ function Valorant() {
 										/>
 									</Grid>
 								</Grid>
+								<br></br>
+								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
+								   <br></br>
+								   {alert1 ? <Alert variant="outlined" severity='success'>{alertContent1}</Alert> : <></> }
+								   <br></br>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
 						</Formik>
@@ -262,6 +284,7 @@ function Valorant() {
 
 			</div>
 		</ThemeProvider>
+		{loader}
 		</>
 	);
 }

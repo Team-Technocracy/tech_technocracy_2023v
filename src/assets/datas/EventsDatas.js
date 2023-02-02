@@ -43,50 +43,60 @@ const events = [
         title: "Animatrix",
         details: "Bring your imagination to life. Animate your ideas and let them come alive in our competition. Unleash the power of animation and join us! Your creativity knows no bounds.",
         date: "04-02-23",
-        time: "3 P.M.",
+        time: "3 P.M. - 5 P.M.",
         img: file1,
         teamSize: 1,
-        teamMin: 1
+        teamMin: 1,
+        venue:"S4 Classroom",
+        regis:1
     },
     {
         id: 2,
         title: "Best Out of Waste",
         details: "“Recycle it all, No matter how small! “ with this intent unveil your creativity, artistry, proficiency and dexterity, spawning marvelous adornments from discarded scrap. ",
         date: "04-02-23",
-        time: "11 A.M.",
+        time: "12 P.M. - 2 P.M.",
         img: file3,
         teamSize: 3,
-        teamMin: 2
+        teamMin: 2,
+        venue:"Left Garden",
+        regis:1
     },
     {
         id: 3,
         title: "Blind Coding",
         details: " Even without sight, there is still a vision. Hold on tight for this electrifying coding escapade to appraise your skills, logic, and limits.",
         date: "04-02-23",
-        time: "9 A.M.",
+        time: "2:30 P.M. - 5 P.M.",
         img: file4,
         teamSize: 1,
-        teamMin: 1
+        teamMin: 1,
+        venue:"CSE Lab 2",
+        regis:1
     },
     {
         id: 4,
         title: "Circuitrix",
         details: " A circuit-related game that will pique your interest. Get ready to step into the circuit realm.",
-        date: "04-02-23",
-        time: "10 A.M.",
+        date: "04-02-23 to 05-02-23",
+        time: "Day 1: 1 P.M. - 2 P.M. , Day 2: 12 P.M. - 2:30 P.M.",
         img: file5,
         teamSize: 0,
-        condition: ''
+        condition: '',
+        venue:"G4 Lecture Hall",
+        regis:1
     },
     {
         id: 5,
         title: "CodeTag",
         details: "Get yourself prepared to scrutinize, perceive, and decode the problem statement from images. Make no provision to compete with the finest intellects of coding.",
         date: "05-02-23",
-        time: "9 A.M.",
+        time: "9:30 A.M. - 11:30 A.M.",
         img: file7,
         teamSize: 3,
-        teamMin: 3
+        teamMin: 3,
+        venue:"Lab",
+        regis:1
     },
     {
         id: 6,
@@ -96,54 +106,66 @@ const events = [
         time: "2 P.M.",
         img: file20,
         teamSize: 3,
-        teamMin: 1
+        teamMin: 1,
+        venue:"Studio 3, 4 (Architecture Building)",
+        regis:1
     },
     {
         id: 7,
         title: "Hydrolift",
         details: "Experience the extraordinary at our one-of-a-kind event.This is that one time in life that pressure's good for you .Apply that pressure on the correct area and may the force be with you.",
         date: "05-02-23",
-        time: "3 P.M.",
+        time: "2 P.M. - 5 P.M.",
         img: file8,
         teamSize: 3,
-        teamMin: 2
+        teamMin: 2,
+        venue:"Football Ground",
+        regis:1
     },
     {
         id: 8,
         title: "Robotrek",
         details: "Slow and steady wins the race”, but is it true for the robots as well? Find out in this extraordinary racing event where the self made robot cars will compete to accomplish the race. ",
         date: "04-02-23",
-        time: "3 P.M.",
+        time: " Quiz: 12 P.M. to 12:30 P.M. , Final Race: 2 P.M. - 5 P.M.",
         img: file11,
-        teamSize: 3
+        teamSize: 3,
+        venue:"Basketball Ground",
+        regis:1
     },
     {
         id: 9,
         title: "Scavenger Hunt",
         details: "A box with no hinges, key or lid, yet has a golden treasure hidden in it. Solve this riddle, and you may be the one to uncover the exceptional treasure within.",
         date: "05-02-23",
-        time: "2 P.M.",
+        time: "12 P.M. - 5 P.M.",
         img: file12,
         teamSize: 4,
-        teamMin: 4
+        teamMin: 4,
+        venue:"Stage 1 : G4 , Stage 2 : Central Garden to whole Campus",
+        regis:1
     },
     {
         id: 10,
         title: "Shipwreck",
         details: " A fun-driving event where one has to portray the personality of an eminent person, and save oneself from a sinking ship, beating out others.        ",
         date: "05-02-23",
-        time: "11 A.M.",
+        time: "11 A.M. - 1 P.M.",
         img: file13,
-        teamSize: 5
+        teamSize: 5,
+        venue:"In front of Central Garden",
+        regis:1
     },
     {
         id: 11,
         title: "Treasure Hunt",
         details: "Find the blackbox lost in space-time by decoding cryptic signals",
         date: "04-02-23",
-        time: "12 P.M.",
+        time: "12 P.M. - 4 P.M.",
         img: file16,
         teamSize: 5,
+        venue:"Amul Parlour",
+        regis:1
     },
 
     {
@@ -151,27 +173,33 @@ const events = [
         title: "Valo Tournament",
         details: "Buckle Up! As easy as this event may seem ,the harder it is in actuality. Can you last everyone out in this 5v5 face-off ? ",
         date: "05-02-23",
-        time: "9 A.M.",
+        time: "9 A.M. - 5 P.M.",
         img: file17,
         teamSize: 5,
-        teamMin: 5
+        teamMin: 5,
+        venue:"CCC Lab 1",
+        regis:1
     },
     {
         id: 13,
         title: "VR Show",
         details: " Get yourself ready for a thrilling chance to explore the world of Virtual Reality through VR headsets recreating the images in our mind.",
-        date: "05-02-23",
-        time: "9 A.M.",
+        date: "04-02-23",
+        time: "12 P.M. - 4 P.M.",
         img: file19,
-        teamSize: 1
+        teamSize: 1,
+        venue: "Foundry Lab",
+        regis:0
     },
     {
         id:14, 
         title: "Beg Borrow Steal",
         details:"Beg! Borrow! Steal! Whatever it takes, succeed at all costs! Come on down to this epic activity and have a truly memorable experience.",
         date: "04-02-23",
-        time:"3 P.M.",
+        time:"3 P.M. - 6 P.M.",
         img: file2,
+        venue:"Central Garden",
+        regis:1
         // teamSize:
     },
     {
@@ -179,9 +207,11 @@ const events = [
         title: "Open Mic",
         details:'“Just give me a mic, and I will rock it”, is often what we think in our confident minds. Now get a chance to showcase your talent and skills, through the power of a mic, and your words! ',
         date: "05-02-23",
-        time: "9 A.M.",
+        time: "9 A.M. - 6 P.M.",
         img: file10,
         teamSize:1,
+        venue:"Amul Parlour",
+        regis:1
     },
     {
         id:16,
@@ -190,6 +220,8 @@ const events = [
         date: "04-02-23",
         time:"Whole fest",
         img: file6,
+        venue:"Whole Campus",
+        regis:1
         // teamSize:,
     },
     {
@@ -199,6 +231,7 @@ const events = [
         date: "05-02-23",
         // time:"",
         img: file15,
+        regis:0
         // teamSize:,
     },
     {
@@ -206,8 +239,10 @@ const events = [
         title:"Jenga",
         details:'Do you have what it takes to stand at the top() of the tower ? If yes then grace us with your presence at the Jenga event and push() all your rivals down to win it all! ',
         date: "04-02-23",
-        time:"9:30 A.M.",
+        time:"4 P.M. - 6 P.M.",
         img:file9,
+        venue:"Left Garden",
+        regis:0
         // teamSize:,
     },
     {
@@ -215,8 +250,10 @@ const events = [
         title:"Speed Cubing",
         details:'"Time is a storm in which we are all lost." Can you find your way out of the storm and be the fastest to win the speedcubing competition ?',
         date: "05-02-23",
-        time:"1 PM - 2 PM",
+        time:"1 P.M. - 2 P.M.",
         img:file14,
+        venue:"Left Garden",
+        regis:1
         // teamSize:,
     }
 ];

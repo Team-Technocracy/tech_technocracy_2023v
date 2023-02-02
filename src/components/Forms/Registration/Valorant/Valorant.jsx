@@ -9,6 +9,8 @@ import { useParams } from "react-router-dom";
 // import events from '../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
 
 const darkTheme = createTheme({
 	palette: {
@@ -43,19 +45,15 @@ function Valorant() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": "Treasure Hunt",
+		"event": "Valorant",
+		"mail": "",
 		"team_name": "",
-		"leader_name": "",
-		"leader_mail": "",
+		"leader_username": "",
 		"leader_whatsapp": "",
-		"leader_college": "",
-		"leader_number": "",
-		"leader_branch": "",
-		"yos": "",
-		"mem2": "",
-		"mem3": "",
-		"mem4": "",
-		"mem5": ""
+		"mem2_username": "",
+		"mem3_username": "",
+		"mem4_username": "",
+		"mem5_username": "",
 	});
 
 	function handle(e) {
@@ -67,7 +65,7 @@ function Valorant() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/valorant/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -93,6 +91,9 @@ function Valorant() {
 			<div className={styles.container}>
 
 				<Container>
+				<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
@@ -115,7 +116,7 @@ function Valorant() {
 											fullWidth
 											id="email"
 											label="Email Address"
-											name="email"
+											name="mail"
 											autoComplete="email"
 											variant="outlined"
 											autoFocus
@@ -143,7 +144,7 @@ function Valorant() {
 											required
 											fullWidth
 											id="team_leader_name"
-											name="leader_name"
+											name="leader_username"
 											label="Team Leader Name, Valo username & rank"
 											variant="outlined"
 											autoComplete='off'
@@ -170,7 +171,7 @@ function Valorant() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name="mem2"
+											name="mem2_username"
 											id="name2"
 											label="Team Member Name 2, Valo username & rank"
 											type="text"
@@ -184,7 +185,7 @@ function Valorant() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name="mem3"
+											name="mem3_username"
 											id="name3"
 											label="Team Member Name 3, Valo username & rank"
 											type="text"
@@ -198,7 +199,7 @@ function Valorant() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name="mem4"
+											name="mem4_username"
 											id="name4"
 											label="Team Member Name 4, Valo username & rank"
 											type="text"
@@ -212,7 +213,7 @@ function Valorant() {
 									<Grid item xs={12}>
 										<TextField
 											margin="normal"
-											name="mem5"
+											name="mem5_username"
 											id="name5"
 											label="Team Member Name 5, Valo username & rank"
 											type="text"

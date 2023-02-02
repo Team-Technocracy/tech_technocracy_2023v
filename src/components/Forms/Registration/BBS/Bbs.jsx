@@ -45,11 +45,15 @@ function Bbs() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
+		"event": "Beg Borrow Steal",
 		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"leader_name": "",
+		"leader_mail": "",
+		"mobile": "",
+		"whatsapp":"",
+		"college":"",
+		"yos":"",
+		"branch":"",
 	});
 
 	function handle(e) {
@@ -61,7 +65,7 @@ function Bbs() {
 	function submit() {
 		console.log(form);
 		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
+		axios.post(`https://aavartan-backend-production.up.railway.app/bbs/${JSON.stringify(form)}`)
 			.then(res => {
 				if (res.data === 0) {
 					alert("Error occurred");
@@ -141,10 +145,10 @@ function Bbs() {
 											required
 											fullWidth
 											id="team_leader_name"
-											name="team_leader_name"
+											name="leader_name"
 											label="Team Leader Name"
 											variant="outlined"
-											autoFocus
+											
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
@@ -155,7 +159,7 @@ function Bbs() {
 											fullWidth
 											type="email"
 											id="team_leader_email"
-											name="team_leader_email"
+											name="leader_mail"
 											label="Team Leader Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -167,7 +171,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="team_leader_number"
-											name="team_leader_number"
+											name="mobile"
 											label="Mobile Number (Team Leader)"
 											variant="outlined"
 											autoComplete='none'
@@ -179,7 +183,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="whatsapp_number"
-											name="whatsapp_number"
+											name="whatsapp"
 											label="WhatsApp Number (Team Leader)"
 											variant="outlined"
 											autoComplete='none'
@@ -191,7 +195,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="college_name"
-											name="college_name"
+											name="college"
 											label="College (Team Leader)"
 											variant="outlined"
 											autoComplete='off'
@@ -203,7 +207,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="year"
-											name="year"
+											name="yos"
 											label="Year of Study (Team Leader)"
 											variant="outlined"
 											autoComplete='off'
@@ -222,8 +226,8 @@ function Bbs() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<p className={styles.team_details}>Team Member Details</p>
-									{count.map((i) => {
+									
+									{/* {count.map((i) => {
 										return (
 											<div>
 												<div className={`${styles.common} ${styles.name_1}`}>
@@ -234,7 +238,7 @@ function Bbs() {
 																required
 																id="full_name_1"
 																label="Full Name"
-																autoFocus
+																
 																variant="outlined"
 																autoComplete='none'
 																onKeyUp={(e) => handle(e)}
@@ -258,7 +262,7 @@ function Bbs() {
 												</div>
 											</div>
 										)
-									})}
+									})} */}
 								</Grid>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>

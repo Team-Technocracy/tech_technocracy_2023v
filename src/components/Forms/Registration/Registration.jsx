@@ -159,7 +159,7 @@ function Registration() {
 																required
 																id="full_name_1"
 																label="Full Name"
-																autoFocus
+																
 																variant="standard"
 																autoComplete='none'
 																onKeyUp={(e) => handle(e)}

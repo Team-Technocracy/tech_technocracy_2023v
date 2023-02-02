@@ -144,6 +144,7 @@ function Circuitrix() {
 								<Grid container spacing={2}>
 								<Grid item xs={12} >
 										<TextField
+										autoFocus
 											margin="normal"
 											required
 											fullWidth
@@ -166,7 +167,7 @@ function Circuitrix() {
 											name="mail"
 											autoComplete="email"
 											variant="outlined"
-											autoFocus
+											
 											onKeyUp={(e) => handle(e)}
 
 										/>

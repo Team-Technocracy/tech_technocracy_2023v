@@ -2,8 +2,13 @@ import React from 'react'
 import styles from './EventCard.module.css'
 import {Link} from 'react-router-dom';
 
-const EventCard = ({id, img, title, date, time, details,venue }) => {
+const EventCard = ({id, img, title, date, time, details,venue, regis }) => {
     const url = "/register/" + title.replaceAll(' ','');
+    
+    let btn;
+    if(regis==1){btn= "Register";}
+    else{btn= "Details"};
+    
     return (
         <>
             <div className={styles.eventcardcard}>
@@ -28,7 +33,7 @@ const EventCard = ({id, img, title, date, time, details,venue }) => {
                     </div>
                     <div className={styles.aavartanbutton}>
                         <Link to={url}>
-                        <button>Register</button>
+                        <button>{btn}</button>
                         </Link>
                     </div>
                 </div>

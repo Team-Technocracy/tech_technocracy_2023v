@@ -174,7 +174,7 @@ function Robotrek() {
 											name="leader_mail"
 											autoComplete="email"
 											variant="outlined"
-											autoFocus
+											
 											onKeyUp={(e) => handle(e)}
 
 										/>

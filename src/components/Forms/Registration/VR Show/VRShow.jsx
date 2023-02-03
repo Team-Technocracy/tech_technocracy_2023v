@@ -18,7 +18,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function VRShow() {
+function Jenga() {
 
 	const { id } = useParams();
 	// data of event
@@ -61,19 +61,19 @@ function VRShow() {
 		set(newData)
 	}
 
-	// function submit() {
-	// 	console.log(form);
-	// 	alert("Please wait...Don't refresh the page");
-	// 	axios.post(`https://aavartan-backend-production.up.railway.app/animatrix/${JSON.stringify(form)}`)
-	// 		.then(res => {
-	// 			if (res.data === 0) {
-	// 				alert("Error occurred");
-	// 			}
-	// 			else if (res.data === 1) {
-	// 				alert("Team registered successfully");
-	// 			}
-	// 		})
-	// }
+	function submit() {
+		console.log(form);
+		alert("Please wait...Don't refresh the page");
+		axios.post(`https://aavartan-backend-production.up.railway.app/animatrix/${JSON.stringify(form)}`)
+			.then(res => {
+				if (res.data === 0) {
+					alert("Error occurred");
+				}
+				else if (res.data === 1) {
+					alert("Team registered successfully");
+				}
+			})
+	}
 
 	const [attri, setAttri] = useState(false);
 	const [toggle, setToggle] = useState(false);
@@ -85,49 +85,62 @@ function VRShow() {
 
 	return (
 		<>
-		<Navbar />
-		<ThemeProvider className={styles} theme={darkTheme}>
-			
-			<div className={styles.container}>
+			<Navbar />
+			<ThemeProvider className={styles} theme={darkTheme}>
 
-				<Container>
-				<div className={styles.goback}>
-						<NavLink to="/events"><img src={img} alt="" /></NavLink>
-					</div>
-					{/* <div className={styles.description}>
-						<div>
-							<h3 className={styles.event_title}>VR Show</h3>
-							<p className={styles.event_description}>Bring your imagination to life. Animate your ideas and let them come alive in our competition. Unleash the power of animation and join us! Your creativity knows no bounds.</p>
-							<p className={styles.event_more}><b>DESCRIPTION: </b>Animated video making competition. </p>
-							<p className={styles.event_materials}>
-								<b>RULES : </b>
-								<ul>
-									<li>- The participants will be provided a theme on which they will have to make a 30 second animation within the allotted time. </li>
-									<li>- To avoid plagiarism, each contestant will be given a unique object that they will have to use inside their animation.</li>
-									<li>- The participants will have to bring their own laptop/device for making the animation. </li>
-									<li>- The animation will be judged on the basis of originality and detailing. </li>
+				<div className={styles.container}>
+
+					<Container>
+						<div className={styles.goback}>
+							<NavLink to="/events"><img src={img} alt="" /></NavLink>
+						</div>
+						<div className={styles.description}>
+							<div>
+								<h3 className={styles.event_title}>VR SHOW</h3>
+								<p className={styles.event_description}><center><b>“Technology like art is a soaring exercise of the human imagination.” – Daniel Bell</b></center><br/>
+									Our world is now getting ready for a leading lifestyle, involving the art of the human mind, and the magic of technology!
+									Virtual reality promises a kind of transcendence of the limits of physical reality.
+									This Aavartan you have a chance to experience the innovation of this contemporary world.
+									Presenting to you, the VR Show, for an exploration of the world of virtual reality!
+									So stand by, with all your excitement for an inimitable and illuminating event!</p>
+								{/* <p className={styles.event_more}><b>OBJECTIVE : </b>Remove one block at a time from the tower, and then stack it on top. The last player to stack a block without making the tower fall wins the game! </p>
+								<p className={styles.event_materials}>
+									<b>GAMEPLAY :</b>
+									<ul>
+										<li> • The player who built the tower goes first. Play passes to the left.On Your Turn. </li>
+										<li> • Carefully remove a block from anywhere BELOW the highest completed story. Use only one hand! Then stack the block on top of the tower at right angles to the blocks just below it.</li>
+										<li> • Remove and stack one block per turn. Remember use only one hand (you can switch hands whenever you wish)!</li>
+										<li> • As play proceeds and the weight of the tower shifts, some blocks become looser than others and are easier to remove. You can touch other blocks to find a loose one- but if you move a block out of place. you must fix it (using one hand only) before touching another block.</li>
+										<li> • While stacking, always complete a 3-block story before starting a higher one.</li>
+										<li> • Your turn ends 10 seconds after you stack your block - or as soon as the player to your left touches one.</li>
+										<li> • Keep removing and stacking blocks until someone topples the tower. A real pro can build a tower 36 stories high or more!</li>
 									</ul>
-							</p>
-							<p className={styles.event_materials}>
+									<br />
+									<b>WINNING</b>
+									<br />
+									<p>If you're the last player to stack a block without toppling the tower, you win! The player who makes the tower fall gets to set up the tower for the next game.</p>
+								</p> */}
+								{/* <p className={styles.event_materials}>
 								<b>EVENT JUSTIFICATION : </b>
 								<ul>
 									<li>- Tech skills</li>
 									<li>- Creative Thinking</li>
 									<li>- Presence of mind</li>
 								</ul>
-							</p>
-							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers and Goodies</p>
-							<p className={styles.event_location}><b>LOCATION : </b>S4</p>
-							<p className={styles.event_time}><b>TIME : </b>3 PM- 5 PM</p>
-							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Suraj , Shivani</p>
+							</p> */}
+								{/* <p className={styles.event_procedure}><b>PRIZES : </b>Vouchers and Goodies</p> */}
+								<p className={styles.event_location}><b>LOCATION : </b>Foundry Lab</p>
+								<p className={styles.event_time}><b>TIME : </b>12 PM - 4 PM</p>
+								<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+								<p className={styles.event_time}><b>PRICE : </b>Rs 120/-</p>
+								<p className={styles.event_time}><b>CONTACT : </b><br/>Ishan Nayak - 9406272793<br/>Mansi Kumari - 7999298531</p>
+							</div>
 						</div>
-					</div> */}
-				</Container>
+					</Container>
 
-			</div>
-		</ThemeProvider>
+				</div>
+			</ThemeProvider>
 		</>
 	);
 }
-export default VRShow;
+export default Jenga;

@@ -71,30 +71,33 @@ function TreasureHunt() {
 	}
 
 	function submit() {
-		showLoader();
-		if (form.event !== ""&&form.team_name !== ""&&form.leader_name !== ""&&form.leader_mail !== ""&&form.leader_number !== "" && form.leader_whatsapp !== ""&&form.leader_college !== ""&&form.yos !== ""&&form.leader_branch !== ""&&form.mem3 !== ""&&form.mem2 !== ""&&form.mem4 !== "") {
-			console.log(form);
-			axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
-				.then(res => {
-					if (res.data === 0) {
-						hideLoader();
-						setErrorAlertContent('Error occurred');
-						setErrorAlert(true);
-						setAlert(false);
-					}
-					else if (res.data === 1) {
-						hideLoader();
-						setSuccessAlertContent('Registered successfully');
-						setAlert(true);
-						setErrorAlert(false);
-					}
-				})
-		}else{
-			hideLoader();
-			setErrorAlertContent('Fill the required details!!!');
+		// showLoader();
+		// if (form.event !== ""&&form.team_name !== ""&&form.leader_name !== ""&&form.leader_mail !== ""&&form.leader_number !== "" && form.leader_whatsapp !== ""&&form.leader_college !== ""&&form.yos !== ""&&form.leader_branch !== ""&&form.mem3 !== ""&&form.mem2 !== ""&&form.mem4 !== "") {
+		// 	console.log(form);
+		// 	axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
+		// 		.then(res => {
+		// 			if (res.data === 0) {
+		// 				hideLoader();
+		// 				setErrorAlertContent('Error occurred');
+		// 				setErrorAlert(true);
+		// 				setAlert(false);
+		// 			}
+		// 			else if (res.data === 1) {
+		// 				hideLoader();
+		// 				setSuccessAlertContent('Registered successfully');
+		// 				setAlert(true);
+		// 				setErrorAlert(false);
+		// 			}
+		// 		})
+		// }else{
+		// 	hideLoader();
+		// 	setErrorAlertContent('Fill the required details!!!');
+		// 	setErrorAlert(true);
+		// 	setAlert(false);
+		// }
+		setErrorAlertContent('Currently not accepting forms!!!');
 			setErrorAlert(true);
 			setAlert(false);
-		}
 	}
 
 	const [attri, setAttri] = useState(false);

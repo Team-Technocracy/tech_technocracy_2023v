@@ -138,7 +138,7 @@ const events = [
         title: "Scavenger Hunt",
         details: "A box with no hinges, key or lid, yet has a golden treasure hidden in it. Solve this riddle, and you may be the one to uncover the exceptional treasure within.",
         date: "05-02-23",
-        time: "11:30 P.M. - 3:15 P.M.",
+        time: "Round 1 :- 11:30 A.M. - 11:45 A.M. , Round 2 :- 12:15 P.M. - 3:15 P.M.",
         img: file12,
         teamSize: 4,
         teamMin: 4,

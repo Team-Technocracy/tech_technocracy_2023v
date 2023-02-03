@@ -18,7 +18,7 @@ const darkTheme = createTheme({
 	},
 });
 
-function Jenga() {
+function VRShow() {
 
 	const { id } = useParams();
 	// data of event
@@ -143,4 +143,4 @@ function Jenga() {
 		</>
 	);
 }
-export default Jenga;
+export default VRShow;

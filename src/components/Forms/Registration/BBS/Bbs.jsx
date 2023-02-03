@@ -141,8 +141,8 @@ function Bbs() {
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" , whatsapp_number:"",year: "",branch:"" }}>
+						<h2 className={styles.heading}>Registration Closed</h2>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" , whatsapp_number:"",year: "",branch:"" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 									<Grid item xs={12} >
@@ -245,42 +245,7 @@ function Bbs() {
 										/>
 									</Grid>
 									
-									{/* {count.map((i) => {
-										return (
-											<div>
-												<div className={`${styles.common} ${styles.name_1}`}>
-													<div>
-														<Grid item xs={12}>
-															<TextField
-																name={"name" + i}
-																required
-																id="full_name_1"
-																label="Full Name"
-																
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-													<div>
-														<Grid marginLeft={1} item xs={12}>
-															<TextField
-																name={"phone" + i}
-																id="number_1"
-																label="Mobile Number"
-																type="text"
-																required
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-												</div>
-											</div>
-										)
-									})} */}
+									
 								</Grid>
 								<br></br>
 								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
@@ -289,7 +254,7 @@ function Bbs() {
 								   <br></br>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */}
 
 					</div>
 				</Container>

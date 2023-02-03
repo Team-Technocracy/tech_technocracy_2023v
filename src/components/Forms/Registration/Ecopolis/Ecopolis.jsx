@@ -212,7 +212,7 @@ competition.</li>
 											label="Team Leader Contact no"
 											variant="outlined"
 											autoComplete='off'
-											type="number"
+										
 
 											onKeyUp={(e) => handle(e)}
 										/>

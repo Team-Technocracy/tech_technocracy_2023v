@@ -219,7 +219,6 @@ function Valorant() {
 											name="mem2_username"
 											id="name2"
 											label="Team Member Name 2, Valo username & rank"
-											type="text"
 											required
 											fullWidth
 											variant="outlined"
@@ -233,7 +232,6 @@ function Valorant() {
 											name="mem3_username"
 											id="name3"
 											label="Team Member Name 3, Valo username & rank"
-											type="text"
 											required
 											fullWidth
 											variant="outlined"
@@ -247,7 +245,6 @@ function Valorant() {
 											name="mem4_username"
 											id="name4"
 											label="Team Member Name 4, Valo username & rank"
-											type="text"
 											required
 											fullWidth
 											variant="outlined"
@@ -261,7 +258,6 @@ function Valorant() {
 											name="mem5_username"
 											id="name5"
 											label="Team Member Name 5, Valo username & rank"
-											type="text"
 											required
 											fullWidth
 											variant="outlined"

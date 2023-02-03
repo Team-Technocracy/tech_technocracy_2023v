@@ -126,7 +126,7 @@ function Robotrek() {
 							</p>
 							{/* <p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p> */}
 							{/* <p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p> */}
-							<p className={styles.event_location}><b>QUIZ : </b>12 PM - 12:30 PM at G4</p>
+							<p className={styles.event_location}><b>QUIZ : </b>12 PM - 12:30 PM at ELLEX GALLERY</p>
 							<p className={styles.event_time}><b>VEHICLE MAKING : </b>2 PM - 5 PM at BasketBall court</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
 							<p className={styles.event_time}><b>CONTACT : </b>Pramil Kesarwani: 8004559662</p>

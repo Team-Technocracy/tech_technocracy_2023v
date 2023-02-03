@@ -142,7 +142,7 @@ const events = [
         img: file12,
         teamSize: 4,
         teamMin: 4,
-        venue:"Stage 1 : G4 , Stage 2 : Central Garden to whole Campus",
+        venue:"Stage 1 : ELLEX GALLERY , Stage 2 : Central Garden to whole Campus",
         regis:1
     },
     {

@@ -95,7 +95,7 @@ const events = [
         img: file7,
         teamSize: 3,
         teamMin: 3,
-        venue:"Lab",
+        venue:"To be announced soon",
         regis:1
     },
     {

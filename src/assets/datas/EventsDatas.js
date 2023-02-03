@@ -172,7 +172,7 @@ const events = [
         id: 12,
         title: "Valo Tournament",
         details: "Buckle Up! As easy as this event may seem ,the harder it is in actuality. Can you last everyone out in this 5v5 face-off ? ",
-        date: "05-02-23",
+        date: "04-02-23",
         time: "9 A.M. - 5 P.M.",
         img: file17,
         teamSize: 5,

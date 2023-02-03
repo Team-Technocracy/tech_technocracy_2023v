@@ -83,7 +83,7 @@ const events = [
         img: file5,
         teamSize: 0,
         condition: '',
-        venue:"G4 Lecture Hall",
+        venue:" Elex Gallery, ",
         regis:1
     },
     {
@@ -142,7 +142,7 @@ const events = [
         img: file12,
         teamSize: 4,
         teamMin: 4,
-        venue:"Stage 1 : ELLEX GALLERY , Stage 2 : Central Garden to whole Campus",
+        venue:"Stage 1 : Central Garden , Stage 2 : Central Garden to whole Campus",
         regis:1
     },
     {
@@ -240,7 +240,7 @@ const events = [
         title:"Jenga",
         details:'Do you have what it takes to stand at the top() of the tower ? If yes then grace us with your presence at the Jenga event and push() all your rivals down to win it all! ',
         date: "04-02-23",
-        time:"9:30 A.M. - 11:30 A.M.",
+        time: "4 P.M. - 6 P.M.",
         img:file9,
         venue:"Left Garden",
         regis:0

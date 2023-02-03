@@ -133,7 +133,7 @@ DATE : 3rd feb </b></p>
 							<p className={styles.event_location}><b>LOCATION OF MAIN EVENT: </b>Amul Parlour </p>
 							<p className={styles.event_time}><b>TIME : </b>12 PM - 4 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b><br/>Akshat Shrivastava: 8319609131<br/> Shreeyansh Sharma: 9630498585 </p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Akshat Shrivastava: 8319609131<br/> Shreeyansh Agarwal: 9630498585 </p>
 						</div>
 					</div>
 				</Container>

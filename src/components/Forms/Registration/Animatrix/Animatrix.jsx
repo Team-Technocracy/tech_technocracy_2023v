@@ -124,7 +124,7 @@ function Animatrix() {
 							<p className={styles.event_location}><b>LOCATION : </b>S4</p>
 							<p className={styles.event_time}><b>TIME : </b>3 PM- 5 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : <br/></b>Suraj Jogani:- 9126026800 <br/>Shivani Gupta:- 6388574069</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Suraj Jogani:- 9126026800, Shivani Gupta:- 6388574069</p>
 						</div>
 					</div>
 				</Container>

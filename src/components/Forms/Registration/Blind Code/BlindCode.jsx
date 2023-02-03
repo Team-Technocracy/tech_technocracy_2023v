@@ -233,7 +233,7 @@ function BlindCode() {
 											fullWidth
 											id="hacker_rank"
 											name="hackerrank"
-											label="Hacker Rank ID"
+											label="Hacker Rank(username only)"
 											variant="outlined"
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}

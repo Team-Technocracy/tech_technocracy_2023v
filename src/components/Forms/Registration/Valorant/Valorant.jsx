@@ -68,6 +68,7 @@ function Valorant() {
 	}
 
 	function submit() {
+		window.location.href="https://forms.gle/VM9egpYXPSvBLoqf9";
 		showLoader();
 		if (form.event !== ""&&form.mail !== ""&&form.team_name !== ""&&form.leader_username !== ""&&form.leader_whatsapp !== "" && form.mem2_username !== ""&&form.mem3_username !== ""&&form.mem4_username !== ""&&form.mem5_username !== "") {
 			console.log(form);

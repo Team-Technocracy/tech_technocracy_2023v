@@ -229,9 +229,10 @@ const events = [
         title:"Technomic Quotient",
         details:'Participate in this entertaining yet educational event to show off your mastery of trivia. Do you have what it takes to be one of the "Remainders" of the Technomic “Quotients” ?',
         date: "05-02-23",
-        // time:"",
+        time:"12 P.M. - 3:30 P.M.",
         img: file15,
-        regis:0
+        regis:0,
+        venue:"G4 Lecture Hall"
         // teamSize:,
     },
     {

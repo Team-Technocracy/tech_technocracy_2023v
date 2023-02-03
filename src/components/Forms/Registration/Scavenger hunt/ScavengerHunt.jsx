@@ -169,10 +169,10 @@ function ScavengerHunt() {
 									<li>ROUND 3: 25 MINUTES</li>
 								</ul>
 							</p>
-							<p className={styles.event_location}><b>LOCATION : </b>Start With Central Garden Then Whole Campus</p>
-							<p className={styles.event_time}><b>TIME : </b>2 PM- 5 PM</p>
+							<p className={styles.event_location}><b>LOCATION : </b><br/> Stage 1: G4 <br/> Stage 2: Central Garden along with Whole Campus</p>
+							<p className={styles.event_time}><b>TIME : </b><br/>Stage 1: 12 PM <br/>Stage 2: 2 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Aparna , Suchit</p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Aparna Gupta: 9399699450 <br/>Suchit Kukuna: 7082948141</p>
 						</div>
 					</div>
 				</Container>

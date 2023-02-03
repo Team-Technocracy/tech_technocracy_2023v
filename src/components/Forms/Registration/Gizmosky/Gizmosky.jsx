@@ -122,7 +122,7 @@ function Gizmosky() {
 							<p className={styles.event_location}><b>LOCATION : </b>Football Ground</p>
 							<p className={styles.event_time}><b>TIME : </b>2 PM- 5 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Viplow - , Shreeyansh Sharma - </p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Viplow Kumar Das- 9109887623 <br/> Shreeyansh Sharma- 8770410758 <br/> Shazma Siddiqui- 9919304491</p>
 						</div>
 					</div>
 				</Container>

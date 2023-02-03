@@ -71,30 +71,33 @@ function TreasureHunt() {
 	}
 
 	function submit() {
-		showLoader();
-		if (form.event !== ""&&form.team_name !== ""&&form.leader_name !== ""&&form.leader_mail !== ""&&form.leader_number !== "" && form.leader_whatsapp !== ""&&form.leader_college !== ""&&form.yos !== ""&&form.leader_branch !== ""&&form.mem3 !== ""&&form.mem2 !== ""&&form.mem4 !== "") {
-			console.log(form);
-			axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
-				.then(res => {
-					if (res.data === 0) {
-						hideLoader();
-						setErrorAlertContent('Error occurred');
-						setErrorAlert(true);
-						setAlert(false);
-					}
-					else if (res.data === 1) {
-						hideLoader();
-						setSuccessAlertContent('Registered successfully');
-						setAlert(true);
-						setErrorAlert(false);
-					}
-				})
-		}else{
-			hideLoader();
-			setErrorAlertContent('Fill the required details!!!');
+		// showLoader();
+		// if (form.event !== ""&&form.team_name !== ""&&form.leader_name !== ""&&form.leader_mail !== ""&&form.leader_number !== "" && form.leader_whatsapp !== ""&&form.leader_college !== ""&&form.yos !== ""&&form.leader_branch !== ""&&form.mem3 !== ""&&form.mem2 !== ""&&form.mem4 !== "") {
+		// 	console.log(form);
+		// 	axios.post(`https://aavartan-backend-production.up.railway.app/treasurehunt/${JSON.stringify(form)}`)
+		// 		.then(res => {
+		// 			if (res.data === 0) {
+		// 				hideLoader();
+		// 				setErrorAlertContent('Error occurred');
+		// 				setErrorAlert(true);
+		// 				setAlert(false);
+		// 			}
+		// 			else if (res.data === 1) {
+		// 				hideLoader();
+		// 				setSuccessAlertContent('Registered successfully');
+		// 				setAlert(true);
+		// 				setErrorAlert(false);
+		// 			}
+		// 		})
+		// }else{
+		// 	hideLoader();
+		// 	setErrorAlertContent('Fill the required details!!!');
+		// 	setErrorAlert(true);
+		// 	setAlert(false);
+		// }
+		setErrorAlertContent('Currently not accepting forms!!!');
 			setErrorAlert(true);
 			setAlert(false);
-		}
 	}
 
 	const [attri, setAttri] = useState(false);
@@ -128,16 +131,16 @@ PRELIMS TEST< br/>
 TIME: 7pm  <br/>
 DATE : 3rd feb </b></p>
 							<p className={styles.event_location}><b>LOCATION OF MAIN EVENT: </b>Amul Parlour </p>
-							<p className={styles.event_time}><b>TIME : </b>12 PM- 4 PM</p>
+							<p className={styles.event_time}><b>TIME : </b>12 PM - 4 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Akshat - 8319609131 , Shreeyansh Sharma-9630498585 </p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Akshat Shrivastava: 8319609131<br/> Shreeyansh Sharma: 9630498585 </p>
 						</div>
 					</div>
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
+						<h2 className={styles.heading}>Registration Closed</h2>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 									<Grid item xs={12} >
@@ -224,7 +227,7 @@ DATE : 3rd feb </b></p>
 											label="Team Leader Contact no"
 											variant="outlined"
 											autoComplete='off'
-											type="number"
+											
 
 											onKeyUp={(e) => handle(e)}
 										/>
@@ -311,7 +314,7 @@ DATE : 3rd feb </b></p>
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid> */}
-								</Grid>
+								{/* </Grid>
 								<br></br>
 								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
 								   <br></br>
@@ -319,7 +322,7 @@ DATE : 3rd feb </b></p>
 								   <br></br>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */} 
 
 					</div>
 				</Container>

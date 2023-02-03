@@ -128,12 +128,12 @@ function Shipwreck() {
 									<li>- Ship captain may bring an orderly acting schedule in case chaos occurs.</li>
 								</ul>
 							</p>
-							<p className={styles.event_team}><b>Requirements: </b>5 team members 1ship captain, 2outer judges and 2-3 members for maintaining the crowd.</p>
+							<p className={styles.event_team}><b>Requirements: </b>5 team members 1 ship captain, 2 outer judges and 2-3 members for maintaining the crowd.</p>
 							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p>
 							<p className={styles.event_location}><b>LOCATION : </b>In front of Central Garden</p>
-							<p className={styles.event_time}><b>TIME : </b>11 AM- 1 PM</p>
+							<p className={styles.event_time}><b>TIME : </b>11 AM - 1 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Nakshatra, Vaibhav Jangid</p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Nakshatra Singh: 9198005550<br/>Vaibhav Jangid: 9983882497</p>
 						</div>
 					</div>
 				</Container>

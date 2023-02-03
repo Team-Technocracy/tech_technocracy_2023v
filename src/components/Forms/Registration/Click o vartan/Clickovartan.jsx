@@ -222,7 +222,7 @@ function Clickovartan() {
 								<p className={styles.event_location}><b>LOCATION : </b>Entire NIT's Campus</p>
 								<p className={styles.event_time}><b>Duration : </b>Whole fest</p>
 								{/* <p className={styles.event_time}><b>DATE : </b>04.02.2023</p> */}
-								<p className={styles.event_time}><b>CONTACT : </b>Shalini</p>
+								<p className={styles.event_time}><b>CONTACT : </b><br/>Shalini Kashyap: 7223051902</p>
 							</div>
 						</div>
 					</Container>

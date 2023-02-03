@@ -95,7 +95,7 @@ const events = [
         img: file7,
         teamSize: 3,
         teamMin: 3,
-        venue:"Lab",
+        venue:"To be announced soon",
         regis:1
     },
     {
@@ -115,7 +115,7 @@ const events = [
         title: "Hydrolift",
         details: "Experience the extraordinary at our one-of-a-kind event.This is that one time in life that pressure's good for you .Apply that pressure on the correct area and may the force be with you.",
         date: "05-02-23",
-        time: "2 P.M. - 5 P.M.",
+        time: "1 P.M. - 3 P.M.",
         img: file8,
         teamSize: 3,
         teamMin: 2,
@@ -138,11 +138,11 @@ const events = [
         title: "Scavenger Hunt",
         details: "A box with no hinges, key or lid, yet has a golden treasure hidden in it. Solve this riddle, and you may be the one to uncover the exceptional treasure within.",
         date: "05-02-23",
-        time: "12 P.M. - 5 P.M.",
+        time: "Round 1 :- 11:30 A.M. - 11:45 A.M. , Round 2 :- 12:15 P.M. - 3:15 P.M.",
         img: file12,
         teamSize: 4,
         teamMin: 4,
-        venue:"Stage 1 : G4 , Stage 2 : Central Garden to whole Campus",
+        venue:"Stage 1 : ELLEX GALLERY , Stage 2 : Central Garden to whole Campus",
         regis:1
     },
     {
@@ -229,9 +229,10 @@ const events = [
         title:"Technomic Quotient",
         details:'Participate in this entertaining yet educational event to show off your mastery of trivia. Do you have what it takes to be one of the "Remainders" of the Technomic “Quotients” ?',
         date: "05-02-23",
-        // time:"",
+        time:"12 P.M. - 3:30 P.M.",
         img: file15,
-        regis:0
+        regis:0,
+        venue:"G4 Lecture Hall"
         // teamSize:,
     },
     {
@@ -239,7 +240,7 @@ const events = [
         title:"Jenga",
         details:'Do you have what it takes to stand at the top() of the tower ? If yes then grace us with your presence at the Jenga event and push() all your rivals down to win it all! ',
         date: "04-02-23",
-        time:"4 P.M. - 6 P.M.",
+        time:"9:30 A.M. - 11:30 A.M.",
         img:file9,
         venue:"Left Garden",
         regis:0

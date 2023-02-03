@@ -114,9 +114,14 @@ function SpeedCubing() {
 						{/* <div className={styles.event_image}></div> */}
 						<div>
 							<h3 className={styles.event_title}>Speed Cubing</h3>
-							<p className={styles.event_description}> "Time is a storm in which we are all lost." 
-Can you find your way out of the storm and be the fastest to win the speedcubing competition ?
+							<p className={styles.event_description}> Only if you don't grasp the essence of something can it be considered complicated. When you grasp the essence, complexity becomes simplicity. Prove to the world your speed and skills by participating in the speedcubing competition with a 3x3 puzzle in hand. Show that you are the quickest and the best!"
 							</p>
+							<div>
+								<p className={styles.event_location}><b>LOCATION : </b>Left Garden</p>
+								<p className={styles.event_time}><b>TIME : </b>1 PM - 2 PM</p>
+								<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
+								<p className={styles.event_time}><b>CONTACT : </b><br/>Sumapriya: 9059881988 <br/> Nakshatra Singh: 9198005550</p>
+							</div>
 						</div>
 					</div>
 				</Container>

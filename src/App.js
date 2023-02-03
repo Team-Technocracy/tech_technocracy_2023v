@@ -37,6 +37,7 @@ import Ecopolis from "./components/Forms/Registration/Ecopolis/Ecopolis";
 import Jenga from "./components/Forms/Registration/Jenga/Jenga";
 import VRShow from "./components/Forms/Registration/VR Show/VRShow";
 import QR_FINDER from "./components/QR_FINDER";
+import ValoForm from "./components/Forms/Registration/ValoForm"
 
 const App = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -94,7 +95,7 @@ const App = () => {
           <Route exact path="/register/robotrek" element={<Robotrek />} />
           <Route exact path="/register/openmic" element={<OpenMic />} />
           <Route exact path="/register/speedcubing" element={<SpeedCubing />} />
-          <Route exact path="/register/valotournament" element={<Valorant />} />
+          <Route exact path="/register/valotournament" element={<ValoForm />} />
           <Route
             exact
             path="/register/ClickOVartan"

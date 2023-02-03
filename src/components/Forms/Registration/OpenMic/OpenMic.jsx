@@ -54,7 +54,6 @@ function OpenMic() {
 		"mail": "",
 		"performance": "",
 		"whatsapp": "",
-		"college": "",
 		"branch": ""
 	});
 
@@ -65,8 +64,9 @@ function OpenMic() {
 	}
 
 	function submit() {
+		console.log(form);
 		showLoader();
-		if (form.event !== ""&&form.name !== ""&&form.mail !== "" && form.whatsapp !== ""&&form.college !== ""&&form.performance !== ""&&form.branch !== "") {
+		if (form.event !== ""&&form.name !== ""&&form.mail !== "" && form.whatsapp !== ""&&form.performance !== ""&&form.branch !== "") {
 			console.log(form);
 			axios.post(`https://aavartan-backend-production.up.railway.app/openmic/${JSON.stringify(form)}`)
 				.then(res => {

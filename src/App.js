@@ -95,11 +95,11 @@ const App = () => {
           <Route exact path="/register/robotrek" element={<Robotrek />} />
           <Route exact path="/register/openmic" element={<OpenMic />} />
           <Route exact path="/register/speedcubing" element={<SpeedCubing />} />
-          <Route exact path="/register/valotournament" element={<ValoForm />} />
-          <Route
+          <Route path='/register/valotournament' element={<ValoForm />}/>
+          < Route
             exact
             path="/register/ClickOVartan"
-            element={<Clickovartan />}
+            element={< Clickovartan />}
           />
           <Route exact path="/register/Ecopolis" element={<Ecopolis />} />
           <Route exact path="/register/Jenga" element={<Jenga />} />

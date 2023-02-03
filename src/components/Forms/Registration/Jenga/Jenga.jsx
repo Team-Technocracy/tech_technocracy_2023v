@@ -127,7 +127,7 @@ function Jenga() {
 							<p className={styles.event_location}><b>LOCATION : </b>Left Garden</p>
 							<p className={styles.event_time}><b>TIME : </b>9:30 AM- 11:30 AM</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
-							<p className={styles.event_time}><b>CONTACT : </b>Suraj - 9126026800, Shivani - 6388574069</p>
+							<p className={styles.event_time}><b>CONTACT : </b>Vaibhav : 9983882497</p>
 						</div>
 					</div>
 				</Container>

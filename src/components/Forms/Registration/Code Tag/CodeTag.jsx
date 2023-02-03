@@ -119,11 +119,11 @@ function CodeTag() {
 						<div>
 							<h3 className={styles.event_title}>CODE TAG</h3>
 							<p className={styles.event_description}>Get yourself prepared to scrutinize, perceive, and decode the problem statement from images. Make no provision to compete with the finest intellects of coding.</p>
-							<p className={styles.event_more}><b>DESCRIPTION: </b>A team of 2 will participate in the event and compete with multiple other teams. A coding question will be explained to one of the teammates and they will try to explain the problem statement to their teammate through gestures and illustrations/drawings on a whiteboard/blackboard. The other teammate has to solve the question according to their interpretation of what their teammate is trying to explain. The code will be judged by the coder’s comprehension of the question and the number of test cases passed upon submission. The code will be submitted on reliable online platforms like InterviewBit, SPOJ, CodeStudio, etc.</p>
+							<p className={styles.event_more}><b>DESCRIPTION: </b>A team of 3 will participate in the event and compete with multiple other teams. A coding question will be explained to one of the teammates and they will try to explain the problem statement to their teammate through gestures and illustrations/drawings on a whiteboard/blackboard. The other teammate has to solve the question according to their interpretation of what their teammate is trying to explain. The code will be judged by the coder’s comprehension of the question and the number of test cases passed upon submission. The code will be submitted on reliable online platforms like InterviewBit, SPOJ, CodeStudio, etc.</p>
 							<p className={styles.event_materials}>
 								<b>RULES : </b>
 								<ul>
-									<li>- Each team strictly consists of 2 people.</li>
+									<li>- Each team strictly consists of 3 people.</li>
 									<li>- Participants are free to use any programming language (C, C++, Java, Python etc.).</li>
 									<li>- The question will be based on DSA, and will be explained to only one of the teammates.</li>
 									<li>- A blackboard/whiteboard and a computer system with a code editor will be provided to the participants by the management team.</li>
@@ -133,7 +133,7 @@ function CodeTag() {
 									<li>- Any malpractice or illicit activities will lead to immediate disqualification.</li>
 								</ul>
 							</p>
-							<p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p>
+							{/* <p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p> */}
 							<p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p>
 							<p className={styles.event_location}><b>LOCATION : </b>CCC or Lab</p>
 							<p className={styles.event_time}><b>TIME : </b>9:30 AM- 11 AM</p>

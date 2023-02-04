@@ -155,8 +155,8 @@ function Circuitrix() {
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
+						<h2 className={styles.heading}>Registration Closed</h2>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 								<Grid item xs={12} >
@@ -255,7 +255,7 @@ function Circuitrix() {
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
-									</Grid>
+									</Grid> */}
 									{/* {count.map((i) => {
 										return (
 											<div>
@@ -311,7 +311,7 @@ function Circuitrix() {
 											</div>
 										)
 									})} */}
-								</Grid>
+								{/* </Grid>
 								<br></br>
 								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
 								   <br></br>
@@ -319,7 +319,7 @@ function Circuitrix() {
 								   <br></br>
 								<button type="button"  className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */}
 
 					</div>
 				</Container>

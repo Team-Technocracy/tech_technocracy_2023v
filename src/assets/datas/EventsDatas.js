@@ -130,7 +130,7 @@ const events = [
         time: " Quiz: 12 P.M. to 12:30 P.M. , Final Race: 2 P.M. - 5 P.M.",
         img: file11,
         teamSize: 3,
-        venue:"Basketball Ground",
+        venue:"S42 Ellex Gallery",
         regis:1
     },
     {

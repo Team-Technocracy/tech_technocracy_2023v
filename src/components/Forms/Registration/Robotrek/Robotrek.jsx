@@ -127,7 +127,7 @@ function Robotrek() {
 							{/* <p className={styles.event_team}><b>Requirements: </b>3 Whiteboards markers and dusters. 3-4 Executives for invigilation and setting up the code editor. 3-4 volunteers for managing the oncoming teams. The number of volunteers/executives required can vary with the number of registrations.</p> */}
 							{/* <p className={styles.event_procedure}><b>PRIZES : </b>Vouchers</p> */}
 							<p className={styles.event_location}><b>QUIZ : </b>12 PM - 12:30 PM at ELLEX GALLERY</p>
-							<p className={styles.event_time}><b>VEHICLE MAKING : </b>2 PM - 5 PM at BasketBall court</p>
+							<p className={styles.event_time}><b>VEHICLE MAKING : </b>2 PM - 5 PM at S42 ELLEX GALLERY</p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
 							<p className={styles.event_time}><b>CONTACT : </b>Pramil Kesarwani: 8004559662</p>
 						</div>
@@ -135,8 +135,8 @@ function Robotrek() {
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
+						<h2 className={styles.heading}>Registration Closed</h2>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
 							<form className={styles.form} >
 							<Grid item xs={12} >
 										<TextField
@@ -298,7 +298,7 @@ function Robotrek() {
 											</div>
 										)
 									})} */}
-								</Grid>
+								{/* </Grid>
 								<br></br>
 								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
 								   <br></br>
@@ -306,7 +306,7 @@ function Robotrek() {
 								   <br></br>
 								<button type="button"  className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */}
 
 					</div>
 				</Container>

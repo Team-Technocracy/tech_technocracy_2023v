@@ -91,11 +91,11 @@ const events = [
         title: "CodeTag",
         details: "Get yourself prepared to scrutinize, perceive, and decode the problem statement from images. Make no provision to compete with the finest intellects of coding.",
         date: "05-02-23",
-        time: "9:30 A.M. - 11:30 A.M.",
+        time: "9:30 A.M. - 11 A.M.",
         img: file7,
         teamSize: 3,
         teamMin: 3,
-        venue:"To be announced soon",
+        venue:"F-40",
         regis:1
     },
     {

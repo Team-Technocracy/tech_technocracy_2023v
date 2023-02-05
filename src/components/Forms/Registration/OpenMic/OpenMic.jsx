@@ -145,7 +145,7 @@ function OpenMic() {
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
 						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "", whatsapp_number: "", year: "", branch: "" }}>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "", whatsapp_number: "", year: "", branch: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 
@@ -242,7 +242,7 @@ function OpenMic() {
 								   <br></br>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */}
 
 					</div>
 				</Container>

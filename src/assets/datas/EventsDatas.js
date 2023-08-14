@@ -83,7 +83,7 @@ const events = [
         img: file5,
         teamSize: 0,
         condition: '',
-        venue:"G4 Lecture Hall",
+        venue:" Elex Gallery, ",
         regis:1
     },
     {
@@ -91,11 +91,11 @@ const events = [
         title: "CodeTag",
         details: "Get yourself prepared to scrutinize, perceive, and decode the problem statement from images. Make no provision to compete with the finest intellects of coding.",
         date: "05-02-23",
-        time: "9:30 A.M. - 11:30 A.M.",
+        time: "9:30 A.M. - 11 A.M.",
         img: file7,
         teamSize: 3,
         teamMin: 3,
-        venue:"To be announced soon",
+        venue:"F-40",
         regis:1
     },
     {
@@ -130,7 +130,7 @@ const events = [
         time: " Quiz: 12 P.M. to 12:30 P.M. , Final Race: 2 P.M. - 5 P.M.",
         img: file11,
         teamSize: 3,
-        venue:"Basketball Ground",
+        venue:"S42 Ellex Gallery",
         regis:1
     },
     {
@@ -142,7 +142,7 @@ const events = [
         img: file12,
         teamSize: 4,
         teamMin: 4,
-        venue:"Stage 1 : ELLEX GALLERY , Stage 2 : Central Garden to whole Campus",
+        venue:"Stage 1 : Central Garden , Stage 2 : Central Garden to whole Campus",
         regis:1
     },
     {
@@ -240,7 +240,7 @@ const events = [
         title:"Jenga",
         details:'Do you have what it takes to stand at the top() of the tower ? If yes then grace us with your presence at the Jenga event and push() all your rivals down to win it all! ',
         date: "04-02-23",
-        time:"9:30 A.M. - 11:30 A.M.",
+        time: "4 P.M. - 6 P.M.",
         img:file9,
         venue:"Left Garden",
         regis:0

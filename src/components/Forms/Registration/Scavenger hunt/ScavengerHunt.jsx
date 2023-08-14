@@ -169,7 +169,7 @@ function ScavengerHunt() {
 									<li>ROUND 3: 25 MINUTES</li>
 								</ul>
 							</p>
-							<p className={styles.event_location}><b>LOCATION : </b><br/> Stage 1: ELLEX GALLERY <br/> Stage 2: Central Garden along with Whole Campus</p>
+							<p className={styles.event_location}><b>LOCATION : </b><br/> Stage 1: Central Garden <br/> Stage 2: Central Garden along with Whole Campus</p>
 							<p className={styles.event_time}><b>TIME : </b><br/>Round 1: 11:30 AM - 11:45 AM <br/>Round 2: 12:15 PM - 3:15 PM</p>
 							<p className={styles.event_time}><b>DATE : </b>05.02.2023</p>
 							<p className={styles.event_time}><b>CONTACT : </b><br/>Aparna Gupta: 9399699450 <br/>Suchit Kukuna: 7082948141</p>
@@ -178,8 +178,8 @@ function ScavengerHunt() {
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
+						<h2 className={styles.heading}>Registration Closed</h2>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 									<Grid item xs={12} >
@@ -347,7 +347,7 @@ function ScavengerHunt() {
 								   <br></br>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */}
 
 					</div>
 				</Container>

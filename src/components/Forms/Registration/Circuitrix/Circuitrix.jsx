@@ -146,8 +146,8 @@ function Circuitrix() {
 								CIRCUITRIX is an exciting event that provides an opportunity to showcase your skills and knowledge of electronics. So, brush up on your concepts, bring your A-game, and join the battle for electronics supremacy. The final winner will be decided based on performance, so let your electronics skills do the talking.
 
 							</p>
-							<p className={styles.event_location}><b>LOCATION : </b>G4</p>
-							<p className={styles.event_time}><b>TIME : </b><br/>Day 1: 10 AM - 11 AM <br/>Day 2: 12 PM - 2:30 PM </p>
+							<p className={styles.event_location}><b>LOCATION : </b>Ellex Gallery</p>
+							<p className={styles.event_time}><b>TIME : </b><br/>Day 1: 1 PM - 2 PM <br/>Day 2: 12 PM - 2:30 PM </p>
 							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
 							<p className={styles.event_time}><b>CONTACT : </b><br/>Durgesh Verma: 9827731951 <br/>Chirag Gajbhiye: 9630817137</p>
 						</div>
@@ -155,8 +155,8 @@ function Circuitrix() {
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
+						<h2 className={styles.heading}>Registration Closed</h2>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 								<Grid item xs={12} >
@@ -255,7 +255,7 @@ function Circuitrix() {
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
-									</Grid>
+									</Grid> */}
 									{/* {count.map((i) => {
 										return (
 											<div>
@@ -311,7 +311,7 @@ function Circuitrix() {
 											</div>
 										)
 									})} */}
-								</Grid>
+								{/* </Grid>
 								<br></br>
 								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
 								   <br></br>
@@ -319,7 +319,7 @@ function Circuitrix() {
 								   <br></br>
 								<button type="button"  className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */}
 
 					</div>
 				</Container>

@@ -3,17 +3,17 @@ import styles from './ProblemSt.module.css'
 import classnames from 'classnames';
 import registerform from '../../assets/ProblemSt/SampleAbstract.pdf';
 import vigyaanrules from '../../assets/ProblemSt/VigyaanRules.pdf';
-import BArch from '../../assets/ProblemSt/BArch.pdf';
-import Biomed from '../../assets/ProblemSt/Biomed.pdf';
-import Biotech from '../../assets/ProblemSt/Biotech.pdf';
-import Chemical from '../../assets/ProblemSt/Chemical.pdf';
+import Architecture from '../../assets/ProblemSt/ARCHITECTURE.pdf';
+import Biomed from '../../assets/ProblemSt/BIOMED.pdf';
+import Biotech from '../../assets/ProblemSt/BIOTECH.pdf';
+// import Chemical from '../../assets/ProblemSt/Chemical.pdf';
 import Civil from '../../assets/ProblemSt/Civil.pdf';
-import CSE from '../../assets/ProblemSt/CSE.pdf';
+import CSE from '../../assets/ProblemSt/CSE+IT+MCA.pdf';
 import ECE from '../../assets/ProblemSt/ECE.pdf';
 import EE from '../../assets/ProblemSt/EE.pdf';
-import IT from '../../assets/ProblemSt/IT.pdf';
-import MCA from '../../assets/ProblemSt/MCA.pdf';
-import MECH from '../../assets/ProblemSt/Mech.pdf';
+import IT from '../../assets/ProblemSt/CSE+IT+MCA.pdf';
+import MCA from '../../assets/ProblemSt/CSE+IT+MCA.pdf';
+import MECH from '../../assets/ProblemSt/Mechanical.pdf';
 import META from '../../assets/ProblemSt/Meta.pdf';
 import Mining from '../../assets/ProblemSt/Mining.pdf';
 
@@ -36,12 +36,12 @@ const ProblemSt = () => {
                         Problem &nbsp; Statements
                     </div>
                     <div className={styles.psrow}>
-                        <div className={styles.pscol}><a href={BArch} target="_blank" rel='noreferrer'><button className={styles.button49}>B. ARCH</button></a></div>
+                        <div className={styles.pscol}><a href={Architecture} target="_blank" rel='noreferrer'><button className={styles.button49}>ARCH</button></a></div>
                         <div className={styles.pscol}><a href={Biomed} target="_blank" rel='noreferrer'><button className={styles.button49}>BIOMED</button></a></div>
                         <div className={styles.pscol}><a href={Biotech} target="_blank" rel='noreferrer'><button className={styles.button49}>BIOTECH</button></a></div>
                     </div>
                     <div className={styles.psrow}>
-                        <div className={styles.pscol}><a href={Chemical} target="_blank" rel='noreferrer'><button className={styles.button49}>CHEMICAL</button></a></div>
+                        {/* <div className={styles.pscol}><a href={Chemical} target="_blank" rel='noreferrer'><button className={styles.button49}>CHEMICAL</button></a></div> */}
                         <div className={styles.pscol}><a href={Civil} target="_blank" rel='noreferrer'><button className={styles.button49}>CIVIL</button></a></div>
                         <div className={styles.pscol}><a href={CSE} target="_blank" rel='noreferrer'><button className={styles.button49}>CSE</button></a></div>
                     </div>

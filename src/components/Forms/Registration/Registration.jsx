@@ -81,7 +81,6 @@ function Registration() {
 	return (
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
-
 				<Container>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
@@ -160,7 +159,7 @@ function Registration() {
 																required
 																id="full_name_1"
 																label="Full Name"
-																autoFocus
+																
 																variant="standard"
 																autoComplete='none'
 																onKeyUp={(e) => handle(e)}

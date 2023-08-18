@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 .eventcardevents{
     display: flex;
     justify-content: center;
@@ -26,11 +28,19 @@
     margin: 2rem 1rem;
     font-family: 'Poppins', sans-serif; 
     width: 340px;
+    background-color: #0e8187aa;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.eventcardcard img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .aavartanbutton button{
     padding: 0.5rem 1rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     font-size: 17px;
     border-radius: 5px;
     font-weight: 0;
@@ -43,7 +53,7 @@
 }
 .aavartanbutton button:hover{
 	background-color: cyan;
-	color: #161622 !important;
+	color: #0e8187 !important;
 	transition: background-color 0.2s ease;
 }
 
@@ -73,17 +83,22 @@
     /* height: calc(100% - 270px); */
     border-radius: 0px 0px 5px 5px;
     padding: 0 0.5rem;
-    backdrop-filter: blur(5px) saturate(100%);
+    /* backdrop-filter: blur(5px) saturate(100%); */
 }
 
 .eventcardcarddetails{
-    margin: 1rem 0;
+    margin-top: 1rem;
     color: rgb(220, 220, 220);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     /* color: black; */
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Kanit', sans-serif;
+    /* letter-spacing: 1px; */
+    line-height: 1.2rem;
+    text-align: justify;
+    font-size: 16px;
 }
 
 .eventcardimage{
@@ -107,5 +122,5 @@
 .eventcardimage:hover{
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
+    /* cursor: pointer; */
 }

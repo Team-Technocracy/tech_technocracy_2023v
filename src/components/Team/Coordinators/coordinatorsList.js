@@ -1,159 +1,225 @@
-import Aayush_Mandal from "../../../images/coordinators/Aayush_Mandalnew.jpg";
-import Abhisht_Pandey from "../../../images/coordinators/Abhisht_Pandey.jpg";
-import Ambar_Dixit from "../../../images/coordinators/Ambar_Dixit_new.jpg";
-import Ananya_Agrahari from "../../../images/coordinators/Ananya_Agrahari.jpg";
-import Apoorva_Singh_ from "../../../images/coordinators/Apoorva_Singh2.jpg";
-import Astitva from "../../../images/coordinators/Astitva.jpg";
-import Dinesh_Jain from "../../../images/coordinators/Dinesh_Jain.JPG";
-import K_Srigauri from "../../../images/coordinators/K_Srigauri.jpg";
-import Parimal_Mathur from "../../../images/coordinators/Parimal_Mathur.jpg";
-import Rajesh_Sahu from "../../../images/coordinators/Rajesh_Sahu.jpg";
-import Saurabh_Patel from "../../../images/coordinators/Saurabh_Patel.jpg";
-import Shubham_Agrawal from "../../../images/coordinators/Shubham_Agrawal.jpg";
-import Swapnil_Pandey from "../../../images/coordinators/Swapnil_Pandey.jpg";
-import Syam_Yadavalli from "../../../images/coordinators/Syam_Yadavalli.jpg";
+// import Vaibhav_Sawant from "../../../images/coordinators/Vaibhav_Sawant.jpg";
+// import Chirag_Singhal from "../../../images/coordinators/Chirag_Singhal.jpg";
+// import Ishan_Nayak from "../../../images/coordinators/Ishan_Nayak.jpg";
+// import Arpit_Pandey from "../../../images/coordinators/Arpit_Pandey.jpg";
+// import Anushree_Banerjee from "../../../images/coordinators/Anushree_Banerjee.jpg";
+// import Aparna_Gupta from "../../../images/coordinators/Aparna_Gupta.jpg";
+// import Kushal_Jain from "../../../images/coordinators/Kushal_Jain.JPG";
+// import Pratham_Gandhi from "../../../images/coordinators/Pratham_Gandhi.jpg";
+// import Shreya_Borikar from "../../../images/coordinators/Shreya_Borikar.jpg";
+// import Satyam_Singh from "../../../images/coordinators/Satyam_Singh.jpg";
+// import Pramil_Kesarwani from "../../../images/coordinators/Pramil_Kesarwani.jpg";
+// import Arkita_Dam from "../../../images/coordinators/Arkita_Dam.jpg";
+// import Sameer_Trivedi from "../../../images/coordinators/Sameer_Trivedi.jpg";
+// import Sujoy_Banerjee from "../../../images/coordinators/Sujoy_Banerjee.jpg";
+// import Gopal_Katankar from "../../../images/coordinators/Gopal_Katankar.jpg";
+// import Suraj_Jogani from "../../../images/coordinators/Suraj_Jogani.jpg";
+// import Nakshatra_Singh from "../../../images/coordinators/Nakshatra_Singh.jpg";
+// import Pranshul_Hatwar from "../../../images/coordinators/Pranshul_Hatwar.jpg";
+// import Abhijeet_Kumar_Singh from "../../../images/coordinators/Abhijeet_Kumar_Singh.jpg";
+// import Rishav_Gandhi from "../../../images/coordinators/Rishav_Gandhi.jpg";
 
 export const coordinatorsList = [
   {
-    id: 3,
-    name: "Ananya Agrahari",
-    imgUrl: Ananya_Agrahari,
-    linkedinUrl: "https://www.linkedin.com/in/ananyaagrahari09",
-    domain:"Sponsorship",
-    // instaUrl: "#",
+    id: 1,
+    name: "Vaibhav Sawant",
+    // imgUrl: Vaibhav_Sawant,
+    linkedinUrl: "https://www.linkedin.com/in/vaibhav-sawant-59522922a/",
+    instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
+    domain: "Chemical"
     
   },
   {
-    id: 1,
-    name: "Abhisht Pandey",
-    imgUrl: Abhisht_Pandey,
-    linkedinUrl: "https://www.linkedin.com/in/abhisht-pandey-6a80a91ab",
+    id: 2,
+    name: "Chirag Singhal",
+    // imgUrl: Chirag_Singhal,
+    linkedinUrl: "https://www.linkedin.com/in/chirag-singhal-a61b40228/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Sponsorship"
+    domain:"CSE"
 
   },
   {
-    id: 2,
-    name: "Ambar Dixit",
-    imgUrl: Ambar_Dixit,
-    linkedinUrl: "https://www.linkedin.com/in/ambar-dixit-a975151a6",
+    id: 3,
+    name: "Ishan Nayak",
+    // imgUrl: Ishan_Nayak,
+    linkedinUrl: "https://www.linkedin.com/in/ishan-nayak-340b6b218/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Event Management"
+    domain:"ECE"
   },
   {
     id: 4,
-    name: "Aayush Mandal",
-    imgUrl: Aayush_Mandal,
-    linkedinUrl: "https://www.linkedin.com/in/aayush-mandal-0436b21b6",
+    name: "Arpit Pandey",
+    // imgUrl: Arpit_Pandey,
+    linkedinUrl: "https://www.linkedin.com/in/arpit-pandey-1866a2142/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Event Management"
+    domain:"MME"
   },
   {
     id: 5,
-    name: "Apoorva Singh ",
-    imgUrl: Apoorva_Singh_,
-    linkedinUrl: "#",
+    name: "Anushree Banerjee",
+    // imgUrl: Anushree_Banerjee,
+    linkedinUrl: "https://www.linkedin.com/in/anushree001/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Vigyaan"
+    domain:"Bio-Med"
   },
   {
     id: 6,
-    name: "Astitva Choubey",
-    imgUrl: Astitva,
-    linkedinUrl: "https://www.linkedin.com/in/astitva-choubey-595003190",
+    name: "Aparna Gupta",
+    // imgUrl: Aparna_Gupta,
+    linkedinUrl: "https://www.linkedin.com/in/aparna-gupta-185981214/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Sponsorship"
+    domain:"Chemical"
   },
   {
     id: 7,
-    name: "Dinesh Jain",
-    imgUrl: Dinesh_Jain,
-    linkedinUrl: "https://www.linkedin.com/in/dinesh-jain-43963a19b",
+    name: "Kushal Jain",
+    // imgUrl: Kushal_Jain,
+    linkedinUrl: "https://www.linkedin.com/in/kushal-jain-8645ab202/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Public Relations"
+    domain:"Chemical"
   },
   {
     id: 8,
-    name: "K Srigauri",
-    imgUrl: K_Srigauri,
-    linkedinUrl: "https://www.linkedin.com/in/k-srigauri/",
+    name: "Pratham Gandhi",
+    // imgUrl: Pratham_Gandhi,
+    linkedinUrl: "https://www.linkedin.com/in/prathamgandhi1308/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Design"
+    domain:"CSE"
   },
   {
     id: 9,
-    name: "Parimal Mathur",
-    imgUrl: Parimal_Mathur,
-    linkedinUrl: "https://www.linkedin.com/in/parimal-mathur-6687ba1a8",
+    name: "Shreya Borikar",
+    // imgUrl: Shreya_Borikar,
+    linkedinUrl: "https://www.linkedin.com/in/shreya-borikar-223b75227/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Vigyaan"
+    domain:"CSE"
   },
   {
     id: 10,
-    name: "Rajesh Sahu",
-    imgUrl: Rajesh_Sahu,
-    linkedinUrl: "https://www.linkedin.com/in/rajeshsahu02",
+    name: "Satyam Singh",
+    // imgUrl: Satyam_Singh,
+    linkedinUrl: "https://www.linkedin.com/in/satyam-singh-0a0b4721a/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Design"
+    domain:"CSE"
   },
   {
     id: 11,
-    name: "Saurabh Patel",
-    imgUrl: Saurabh_Patel,
-    linkedinUrl: "https://www.linkedin.com/in/saurabh-patel-9a73061b4",
+    name: "Pramil Kesarwani",
+    // imgUrl: Pramil_Kesarwani,
+    linkedinUrl: "https://www.linkedin.com/in/pramil-kesarwani-10b374214/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Event Management"
+    domain:"ECE"
   },
   {
     id: 12,
-    name: "Shubham Agrawal",
-    imgUrl: Shubham_Agrawal,
-    linkedinUrl: "https://www.linkedin.com/in/shubham-agrawal-3839b3191",
+    name: "Arkita Dam",
+    // imgUrl: Arkita_Dam,
+    linkedinUrl: "https://www.linkedin.com/in/arkita-dam-7865551a1/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Public Relations"
+    domain:"ECE"
   },
   {
     id: 13,
-    name: "Swapnil Pandey",
-    imgUrl: Swapnil_Pandey,
-    linkedinUrl: "https://www.linkedin.com/in/swapnil-pandey-nitrr",
+    name: "Sameer Trivedi",
+    // imgUrl: Sameer_Trivedi,
+    linkedinUrl: "https://www.linkedin.com/in/sameert89/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Documentation"
+    domain:"ECE"
   },
   {
     id: 14,
-    name: "Syam Yadavalli",
-    imgUrl: Syam_Yadavalli,
-    linkedinUrl: "https://www.linkedin.com/in/syam-yadavalli",
+    name: "Sujoy Banerjee",
+    // imgUrl: Sujoy_Banerjee,
+    linkedinUrl: "https://www.linkedin.com/in/sujoy-banerjee-a698aa210/",
     instaUrl: "#",
     facebookUrl : "#",
     githubUrl : "#",
-    domain:"Tech"
+    domain:"ECE"
   },
+  {
+    id: 15,
+    name: "Gopal Katankar",
+    // imgUrl: Gopal_Katankar,
+    linkedinUrl: "https://www.linkedin.com/in/gopal-katankar-a03849206/",
+    instaUrl: "#",
+    facebookUrl : "#",
+    githubUrl : "#",
+    domain:"ECE"
+  },
+  {
+    id: 16,
+    name: "Suraj Jogani",
+    // imgUrl: Suraj_Jogani,
+    linkedinUrl: "https://www.linkedin.com/in/suraj-jogani/",
+    instaUrl: "#",
+    facebookUrl : "#",
+    githubUrl : "#",
+    domain:"Electrical"
+  },
+  {
+    id: 17,
+    name: "Nakshatra Singh",
+    // imgUrl: Nakshatra_Singh,
+    linkedinUrl: "https://www.linkedin.com/in/nakshatra-singh-96929a21b/",
+    instaUrl: "#",
+    facebookUrl : "#",
+    githubUrl : "#",
+    domain:"IT"
+  },
+  {
+    id: 18,
+    name: "Pranshul Hatwar",
+    // imgUrl: Pranshul_Hatwar,
+    linkedinUrl: "https://www.linkedin.com/in/pranshul-hatwar/",
+    instaUrl: "#",
+    facebookUrl : "#",
+    githubUrl : "#",
+    domain:"IT"
+  },
+  {
+    id: 19,
+    name: "Abhijeet Kumar Singh",
+    // imgUrl: Abhijeet_Kumar_Singh,
+    linkedinUrl: "https://www.linkedin.com/in/abhijeet-kumar-singh-3517b7122/",
+    instaUrl: "#",
+    facebookUrl : "#",
+    githubUrl : "#",
+    domain:"MME"
+  },
+  {
+    id: 20,
+    name: "Rishav Gandhi",
+    // imgUrl: Rishav_Gandhi,
+    linkedinUrl: "https://www.linkedin.com/in/rishav-gandhi-998a74211/",
+    instaUrl: "#",
+    facebookUrl : "#",
+    githubUrl : "#",
+    domain:"MME"
+  }
 ];

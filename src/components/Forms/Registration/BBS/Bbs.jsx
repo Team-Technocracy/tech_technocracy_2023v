@@ -1,13 +1,17 @@
 import React from "react";
 import { Formik } from "formik";
 import { useState } from "react";
+import Navbar from '../../../Home/Navbar-new/Navbar'
 import styles from "../Styles/styles.module.css";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Container, TextField, Grid, useThemeProps } from "@mui/material";
+import { Container, TextField, Grid, useThemeProps, Alert } from "@mui/material";
 import { useParams } from "react-router-dom";
-import events from '../../../assets/datas/EventsDatas'
+import events from '../../../../assets/datas/EventsDatas'
 import axios from "axios";
 // import Cookies from 'js-cookie';
+import { NavLink } from "react-router-dom";
+import img from '../../../../assets/images/leftArrow.png'
+import useFullPageLoader from '../../../utils/useFullPageLoader';
 
 const darkTheme = createTheme({
 	palette: {
@@ -16,7 +20,11 @@ const darkTheme = createTheme({
 });
 
 function Bbs() {
-
+	const [loader,showLoader,hideLoader]= useFullPageLoader();
+	const [alert0, setErrorAlert] = useState(false);
+	const [alert1, setAlert] = useState(false);
+    const [alertContent0, setErrorAlertContent] = useState('');
+	const [alertContent1, setSuccessAlertContent] = useState('');
 	const { id } = useParams();
 	// data of event
 	const data = {
@@ -42,11 +50,15 @@ function Bbs() {
 	console.log(count);
 
 	const [form, set] = useState({
-		"event": data.name,
+		"event": "Beg Borrow Steal",
 		"team_name": "",
-		"team_leader_name": "",
-		"team_leader_mail": "",
-		"college_name": "",
+		"leader_name": "",
+		"leader_mail": "",
+		"mobile": "",
+		"whatsapp":"",
+		"college":"",
+		"yos":"",
+		"branch":"",
 	});
 
 	function handle(e) {
@@ -56,17 +68,30 @@ function Bbs() {
 	}
 
 	function submit() {
-		console.log(form);
-		alert("Please wait...Don't refresh the page");
-		axios.post(`http://localhost:8000/register/${JSON.stringify(form)}`)
-			.then(res => {
-				if (res.data === 0) {
-					alert("Error occurred");
-				}
-				else if (res.data === 1) {
-					alert("Team registered successfully");
-				}
-			})
+		showLoader();
+		if (form.event !== ""&&form.team_name !== "" && form.leader_name !== ""&&form.leader_mail !== ""&&form.mobile !== "" && form.whatsapp !== ""&&form.college !== ""&&form.yos !== ""&&form.branch !== "" ) {
+			console.log(form);
+			axios.post(`https://aavartan-backend-production.up.railway.app/bbs/${JSON.stringify(form)}`)
+				.then(res => {
+					if (res.data === 0) {
+						hideLoader();
+						setErrorAlertContent('Error occurred');
+						setErrorAlert(true);
+						setAlert(false);
+					}
+					else if (res.data === 1) {
+						hideLoader();
+						setSuccessAlertContent('Registered successfully');
+						setAlert(true);
+						setErrorAlert(false);
+					}
+				})
+		}else{
+			hideLoader();
+			setErrorAlertContent('Fill the required details!!!');
+			setErrorAlert(true);
+			setAlert(false);
+		}
 	}
 
 	const [attri, setAttri] = useState(false);
@@ -78,24 +103,46 @@ function Bbs() {
 	}
 
 	return (
+		<>
+		<Navbar />
 		<ThemeProvider className={styles} theme={darkTheme}>
 			<div className={styles.container}>
 
 				<Container>
+				<div className={styles.goback}>
+						<NavLink to="/events"><img src={img} alt="" /></NavLink>
+					</div>
 					<div className={styles.description}>
 						{/* <div className={styles.event_image}></div> */}
 						<div>
 							<h3 className={styles.event_title}>BEG BORROW STEAL</h3>
-							<p className={styles.event_description}> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
-
+							<p className={styles.event_description}>Beg! Borrow! Steal! Whatever it takes, succeed at all costs! Come on down to this epic activity and have a truly memorable experience.</p>
+							<p className={styles.event_description}>In Beg Borrow Steal Participants will be given chits which will contain name of any objects, picture or name of any senior/any person. The participant will have to bring the objects either by begging it to someone or by borrowing it from someone or by stealing it, in case of a picture of any person, the participant will have to find the person and take a picture with him (all the team members should be present in the picture) without letting him know about the task and come with the picture to us and show us, the participant completing the task first will be the winner.</p>
+							<p className={styles.event_materials}>
+								<b>RULES : </b>
+								<ul>
+									<li>- A team should contain exact 3 members in the game.</li> <br /><br />
+									<li>- Beg Borrow Steal contain 3 rounds. <br /> 
+        In 1st round at a time 10 teams will be going for completing their task. <br />
+         In 2nd round the 5 teams completing their task first will be eligible for this round. <br />
+         In 3rd round team completing his task first will be the winner. In case of the tie in this round the teams will be given a new task.</li> <br /><br />
+									<li>- The participants will be given time of 30 minutes to complete the given task in each round.</li> <br /><br />
+									<li>- If the team brings any object of their own they will be disqualified. </li> <br /><br />
+									<li>- If participant is found doing in-disciplinary act or foul play, the organizers have the right to disqualify the team immediately (in-disciplinary does not contain forcefully stealing/snatching here this is allowed but should not hurt anyone).</li> <br /><br />
+									<li>- During the event the team members are not allowed to use their mobile phones so they will have to submit their phones to the organizers present there to avoid any type of cheating. A member from Technocracy should be provided to the participating team to avoid any foul play.</li> <br /><br />
+								</ul>
 							</p>
+							<p className={styles.event_location}><b>LOCATION : </b>Central Garden</p>
+							<p className={styles.event_time}><b>TIME : </b>3 PM- 6 PM</p>
+							<p className={styles.event_time}><b>DATE : </b>04.02.2023</p>
+							<p className={styles.event_time}><b>CONTACT : </b><br/>Mansi Kumari: 7999298531<br/> Priyanshu Agrahari: 9452316350</p>
 						</div>
 					</div>
 				</Container>
 				<Container>
 					<div className={`${styles.registration} ${styles.registration_wrapper}`}>
-						<h2 className={styles.heading}>Registration Form</h2>
-						<Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" , whatsapp_number:"",year: "",branch:"" }}>
+						<h2 className={styles.heading}>Registration Closed</h2>
+						{/* <Formik initialValues={{ team_name: "", team_leader_name: "", college: "", full_name_1: "", number_1: "", full_name_2: "", number_2: "", full_name_3: "", number_3: "" , whatsapp_number:"",year: "",branch:"" }}>
 							<form className={styles.form} >
 								<Grid container spacing={2}>
 									<Grid item xs={12} >
@@ -116,10 +163,10 @@ function Bbs() {
 											required
 											fullWidth
 											id="team_leader_name"
-											name="team_leader_name"
+											name="leader_name"
 											label="Team Leader Name"
 											variant="outlined"
-											autoFocus
+											
 											autoComplete='off'
 											onKeyUp={(e) => handle(e)}
 										/>
@@ -130,7 +177,7 @@ function Bbs() {
 											fullWidth
 											type="email"
 											id="team_leader_email"
-											name="team_leader_email"
+											name="leader_mail"
 											label="Team Leader Email Id"
 											variant="outlined"
 											autoComplete='none'
@@ -142,7 +189,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="team_leader_number"
-											name="team_leader_number"
+											name="mobile"
 											label="Mobile Number (Team Leader)"
 											variant="outlined"
 											autoComplete='none'
@@ -154,7 +201,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="whatsapp_number"
-											name="whatsapp_number"
+											name="whatsapp"
 											label="WhatsApp Number (Team Leader)"
 											variant="outlined"
 											autoComplete='none'
@@ -166,7 +213,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="college_name"
-											name="college_name"
+											name="college"
 											label="College (Team Leader)"
 											variant="outlined"
 											autoComplete='off'
@@ -178,7 +225,7 @@ function Bbs() {
 											required
 											fullWidth
 											id="year"
-											name="year"
+											name="yos"
 											label="Year of Study (Team Leader)"
 											variant="outlined"
 											autoComplete='off'
@@ -197,53 +244,25 @@ function Bbs() {
 											onKeyUp={(e) => handle(e)}
 										/>
 									</Grid>
-									<p className={styles.team_details}>Team Member Details</p>
-									{count.map((i) => {
-										return (
-											<div>
-												<div className={`${styles.common} ${styles.name_1}`}>
-													<div>
-														<Grid item xs={12}>
-															<TextField
-																name={"name" + i}
-																required
-																id="full_name_1"
-																label="Full Name"
-																autoFocus
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-													<div>
-														<Grid marginLeft={1} item xs={12}>
-															<TextField
-																name={"phone" + i}
-																id="number_1"
-																label="Mobile Number"
-																type="text"
-																required
-																variant="outlined"
-																autoComplete='none'
-																onKeyUp={(e) => handle(e)}
-															/>
-														</Grid>
-													</div>
-												</div>
-											</div>
-										)
-									})}
+									
+									
 								</Grid>
+								<br></br>
+								   {alert0 ? <Alert variant="outlined" severity='error'>{alertContent0}</Alert> : <></> }
+								   <br></br>
+								   {alert1 ? <Alert variant="outlined" severity='success'>{alertContent1}</Alert> : <></> }
+								   <br></br>
 								<button type="button" className={styles.registration_button} onClick={submit} >Register</button>
 							</form>
-						</Formik>
+						</Formik> */}
 
 					</div>
 				</Container>
 
 			</div>
 		</ThemeProvider>
+		{loader}
+		</>
 	);
 }
 export default Bbs;

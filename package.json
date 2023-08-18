@@ -5,6 +5,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@material-ui/styles": "^4.11.5",
+    "@material-ui/system": "^4.12.2",
     "@mui/joy": "^5.0.0-alpha.64",
     "@mui/material": "^5.11.6",
     "@mui/styled-engine": "^5.11.0",
@@ -27,7 +29,8 @@
     "react-vertical-timeline-component": "^3.6.0",
     "swiper": "^8.4.5",
     "universal-cookie": "^4.0.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "web3.storage": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
